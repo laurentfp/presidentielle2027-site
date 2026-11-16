@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Suivi sourcé des candidatures, programmes, sondages et événements de la présidentielle française de 2027.">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; frame-src 'none'">
+  <title>Présidentielle 2027</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<div id="pt-dashboard">
+  <div class="pt-shell">
+    <header class="pt-topbar">
+      <div class="pt-brand">
+        <div class="pt-mark" aria-hidden="true">PT</div>
+        <div>
+          <div class="pt-brand-name">Présidentielle <span class="pt-muted">2027</span></div>
+          <div class="pt-brand-sub">Les propositions, les sources, les évolutions</div>
+        </div>
+      </div>
+      <div class="pt-updated"><strong>Données mises à jour</strong>15 novembre 2026 · 05:45 UTC</div>
+    </header>
+    <nav class="pt-nav" role="tablist" aria-label="Rubriques de la présidentielle 2027">
+      <button type="button" role="tab" id="pt-tab-overview" aria-controls="pt-panel-overview" aria-selected="false" data-tab="overview">Vue d’ensemble</button>
+      <button type="button" role="tab" id="pt-tab-compare" aria-controls="pt-panel-compare" aria-selected="true" data-tab="compare">Positions</button>
+      <button type="button" role="tab" id="pt-tab-polls" aria-controls="pt-panel-polls" aria-selected="false" data-tab="polls">Sondages</button>
+      <button type="button" role="tab" id="pt-tab-programs" aria-controls="pt-panel-programs" aria-selected="false" data-tab="programs">Programmes</button>
+      <button type="button" role="tab" id="pt-tab-campaign" aria-controls="pt-panel-campaign" aria-selected="false" data-tab="campaign">Campagne</button>
+    </nav>
+    <main class="pt-content">
+      <section id="pt-panel-overview" role="tabpanel" aria-labelledby="pt-tab-overview" class="pt-hidden">
+        <div class="pt-heading"><div><h1>La campagne, en un coup d’œil</h1><p class="pt-subtitle">Repères issus des données publiques et sourcées.</p></div><span class="pt-pill">74 personnes suivies</span></div>
+        <div class="pt-grid">
+          <div class="pt-stat"><div class="pt-stat-label">Candidatures déclarées</div><div class="pt-stat-value">39</div><div class="pt-stat-note">13 pressenties · 22 retirées</div></div>
+          <div class="pt-stat"><div class="pt-stat-label">Mesures de programme</div><div class="pt-stat-value">1&nbsp;991</div><div class="pt-stat-note">Avec leur historique</div></div>
+          <div class="pt-stat"><div class="pt-stat-label">Sources référencées</div><div class="pt-stat-value">796</div><div class="pt-stat-note">Documents datés</div></div>
+          <div class="pt-stat"><div class="pt-stat-label">Sondages enregistrés</div><div class="pt-stat-value">45</div><div class="pt-stat-note">Enquêtes conservées séparément</div></div>
+        </div>
+        <div class="pt-two-col">
+          <section class="pt-section"><div class="pt-section-head"><h2>Dernières propositions ajoutées</h2><span class="pt-count">12 novembre</span></div><div class="pt-list">
+            <div class="pt-list-row"><span class="pt-date">12 nov.</span><div><div class="pt-row-title">Remplacement de Parcoursup</div><div class="pt-row-meta">Raphaël Glucksmann · Éducation</div></div><span class="pt-pill">Ajout</span></div>
+            <div class="pt-list-row"><span class="pt-date">12 nov.</span><div><div class="pt-row-title">Suppression des réductions automatiques de peine</div><div class="pt-row-meta">Gabriel Attal · Sécurité et justice</div></div><span class="pt-pill">Ajout</span></div>
+            <div class="pt-list-row"><span class="pt-date">12 nov.</span><div><div class="pt-row-title">22 Md€ investis dans les services publics</div><div class="pt-row-meta">Jean-Luc Mélenchon · Finances publiques</div></div><span class="pt-pill">Ajout</span></div>
+          </div></section>
+          <section class="pt-section"><div class="pt-section-head"><h2>Prochaines échéances</h2><span class="pt-count">Calendrier officiel</span></div><div class="pt-list">
+            <div class="pt-list-row"><span class="pt-date">12 mars 2027</span><div><div class="pt-row-title">Clôture des parrainages</div><div class="pt-row-meta">500 présentations requises</div></div></div>
+            <div class="pt-list-row"><span class="pt-date">26 mars 2027</span><div><div class="pt-row-title">Liste officielle des candidats</div><div class="pt-row-meta">Publication au plus tard à cette date</div></div></div>
+            <div class="pt-list-row"><span class="pt-date">18 avril 2027</span><div><div class="pt-row-title">Premier tour</div><div class="pt-row-meta">Vote outre-mer le 17 avril</div></div></div>
+          </div></section>
+        </div>
+      </section>
+
+      <section id="pt-panel-compare" role="tabpanel" aria-labelledby="pt-tab-compare">
+        <div class="pt-heading"><div><h1>Comparer les positions</h1><p class="pt-subtitle">Affirmations du questionnaire · chaque cellule renvoie à une position sourcée.</p></div><span class="pt-count">4 sur 34 affirmations</span></div>
+        <div class="pt-filterbar">
+          <label class="pt-field"><span class="pt-label">Thème</span><select id="pt-theme-filter" class="pt-select"><option value="all">Tous les thèmes affichés</option><option value="eco">Économie et pouvoir d’achat</option><option value="fis">Fiscalité</option></select></label>
+          <span class="pt-count">Échelle de −2 à +2 · les tirets indiquent l’absence de position documentée</span>
+        </div>
+        <div class="pt-table-wrap"><table aria-label="Positions documentées par question et par candidat"><thead><tr><th scope="col">Affirmation</th><th scope="col">Jean-Luc<br>Mélenchon</th><th scope="col">Marine<br>Le Pen</th><th scope="col">Édouard<br>Philippe</th><th scope="col">Raphaël<br>Glucksmann</th></tr></thead><tbody id="pt-stance-rows"></tbody></table></div>
+        <div class="pt-legend" aria-label="Légende des positions"><span class="pt-legend-item"><i class="pt-dot minus"></i> Plutôt opposé à l’affirmation</span><span class="pt-legend-item"><i class="pt-dot"></i> Position nuancée</span><span class="pt-legend-item"><i class="pt-dot plus"></i> Plutôt favorable à l’affirmation</span><span class="pt-legend-item">— Non documenté</span></div>
+        <aside id="pt-stance-detail" class="pt-detail" aria-live="polite"><div class="pt-detail-top"><h3>Position et source</h3><span id="pt-detail-score" class="pt-count">Sélectionne une cellule</span></div><p id="pt-detail-note" class="pt-muted">Les positions restent liées à leur affirmation : aucune moyenne ou note globale par candidat n’est calculée.</p><div id="pt-detail-link"></div></aside>
+      </section>
+
+      <section id="pt-panel-polls" role="tabpanel" aria-labelledby="pt-tab-polls" class="pt-hidden">
+        <div class="pt-heading"><div><h1>Intentions de vote</h1><p class="pt-subtitle">Une enquête à la fois · hypothèses et résultats conservés tels que publiés.</p></div><span class="pt-pill">45 enquêtes</span></div>
+        <section class="pt-section">
+          <div class="pt-section-head"><div><h2>Toluna Harris Interactive</h2><p class="pt-subtitle">Publication : 9 novembre 2026 · terrain : 3–5 novembre · échantillon : 2&nbsp;436</p></div><span class="pt-pill">1er tour</span></div>
+          <div class="pt-poll-controls" aria-label="Hypothèse de sondage">
+            <button type="button" class="pt-hypothesis" data-hypothesis="h1" aria-pressed="true">Hypothèse 1</button>
+            <button type="button" class="pt-hypothesis" data-hypothesis="h2" aria-pressed="false">Hypothèse 2</button>
+          </div>
+          <div id="pt-poll-results" class="pt-results" role="list" aria-label="Résultats de l’hypothèse sélectionnée"></div>
+          <div class="pt-method">Chaque enquête reste distincte ; aucune moyenne n’est calculée. <a href="https://www.commission-des-sondages.fr/notices/files/notices/2026/novembre/10362-pres-iv-toluna-harris-interactive-9-novembre.pdf" target="_blank" rel="noreferrer">Notice de la Commission des sondages</a><a href="https://tolunacorporate.com/wp-content/uploads/2026/11/Rapport-Toluna-Barometre-Presidentielle-2027-Vague-9-M6-RTL-9-novembre-2026-1.pdf" target="_blank" rel="noreferrer">Rapport complet</a></div>
+        </section>
+      </section>
+
+      <section id="pt-panel-programs" role="tabpanel" aria-labelledby="pt-tab-programs" class="pt-hidden">
+        <div class="pt-heading"><div><h1>Évolution des programmes</h1><p class="pt-subtitle">Nouveautés classées par date, avec candidat, thème et source.</p></div><span class="pt-count">1&nbsp;991 mesures suivies</span></div>
+        <section class="pt-section"><div class="pt-section-head"><h2>Ajouts du 12 novembre 2026</h2><span class="pt-pill">4 propositions</span></div><div class="pt-list">
+          <div class="pt-list-row"><span class="pt-date">12 nov.</span><div><div class="pt-row-title">Premier acte de procédure dans les 48 heures après une plainte pour violences sur enfant</div><div class="pt-row-meta">Gabriel Attal · Sécurité et justice · Source : Public Sénat</div></div><span class="pt-pill">Ajout</span></div>
+          <div class="pt-list-row"><span class="pt-date">12 nov.</span><div><div class="pt-row-title">Suppression des réductions automatiques de peine</div><div class="pt-row-meta">Gabriel Attal · Sécurité et justice · Source : Public Sénat</div></div><span class="pt-pill">Ajout</span></div>
+          <div class="pt-list-row"><span class="pt-date">12 nov.</span><div><div class="pt-row-title">Remplacement de Parcoursup</div><div class="pt-row-meta">Raphaël Glucksmann · Éducation · Source : Public Sénat</div></div><span class="pt-pill">Ajout</span></div>
+          <div class="pt-list-row"><span class="pt-date">12 nov.</span><div><div class="pt-row-title">Présence policière continue sur le terrain, notamment dans les quartiers populaires</div><div class="pt-row-meta">Raphaël Glucksmann · Sécurité et justice · Source : Public Sénat</div></div><span class="pt-pill">Ajout</span></div>
+        </div></section>
+      </section>
+
+      <section id="pt-panel-campaign" role="tabpanel" aria-labelledby="pt-tab-campaign" class="pt-hidden">
+        <div class="pt-heading"><div><h1>Chronologie de campagne</h1><p class="pt-subtitle">Événements datés et prochaines échéances.</p></div><span class="pt-count">102 événements enregistrés</span></div>
+        <div class="pt-two-col">
+          <section class="pt-section"><div class="pt-section-head"><h2>Derniers événements</h2><span class="pt-count">Novembre 2026</span></div><div class="pt-timeline">
+            <div class="pt-event"><span class="pt-event-date">10 nov. 2026</span><i class="pt-event-marker" aria-hidden="true"></i><div class="pt-event-body"><h3>Bruno Retailleau propose une primaire</h3><p>Propose une primaire de la droite et du centre les 31 janvier et 7 février 2027, dans une lettre à Édouard Philippe, Gabriel Attal et David Lisnard.</p></div></div>
+            <div class="pt-event"><span class="pt-event-date">10 nov. 2026</span><i class="pt-event-marker" aria-hidden="true"></i><div class="pt-event-body"><h3>Éric Zemmour confirme sa candidature</h3><p>Déclaration au journal de 20 heures de TF1.</p></div></div>
+            <div class="pt-event"><span class="pt-event-date">9 nov. 2026</span><i class="pt-event-marker" aria-hidden="true"></i><div class="pt-event-body"><h3>Teddy Riner annonce sa candidature</h3><p>Annonce dans une vidéo publiée sur son compte X et dans un entretien au Parisien.</p></div></div>
+          </div></section>
+          <section class="pt-section"><div class="pt-section-head"><h2>À venir</h2><span class="pt-count">Dates publiées</span></div><div class="pt-list">
+            <div class="pt-list-row"><span class="pt-date">12 mars 2027</span><div><div class="pt-row-title">Clôture des parrainages</div><div class="pt-row-meta">Conseil constitutionnel</div></div><span class="pt-pill">Échéance</span></div>
+            <div class="pt-list-row"><span class="pt-date">26 mars 2027</span><div><div class="pt-row-title">Publication de la liste officielle des candidats</div><div class="pt-row-meta">Au plus tard à cette date</div></div><span class="pt-pill">Échéance</span></div>
+            <div class="pt-list-row"><span class="pt-date">17–18 avr. 2027</span><div><div class="pt-row-title">Premier tour</div><div class="pt-row-meta">Outre-mer le 17 avril · métropole le 18 avril</div></div><span class="pt-pill">Scrutin</span></div>
+          </div></section>
+        </div>
+      </section>
+    </main>
+    <footer class="pt-footer">Site indépendant, sans lien officiel avec l’État ni avec un candidat.</footer>
+  </div>
+</div>
+
+<script src="./app.js" defer></script>
+</body>
+</html>
