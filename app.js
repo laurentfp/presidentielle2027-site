@@ -121,6 +121,33 @@
         { id:"q-fis-isf", theme:"fis", themeName:"Fiscalité", text:"L’impôt de solidarité sur la fortune (ISF) doit être rétabli.", stances:{melenchon:{value:2,note:"Propose de rétablir et de renforcer l’ISF, avec un volet climatique.",source:sources.taxPolicy},lepen:{value:0,note:"Propose de remplacer l’IFI par un impôt sur la fortune financière, qu’elle distingue de l’ISF.",source:sources.rnBudget},glucksmann:{value:1,note:"Propose de taxer davantage les hauts patrimoines, sans mention de l’ISF.",source:sources.sudRadio}} },
         { id:"q-fis-successions-baisse", theme:"fis", themeName:"Fiscalité", text:"Les droits de succession doivent être supprimés ou fortement réduits.", stances:{melenchon:{value:-2,note:"Propose d’augmenter les droits de succession sur les plus hauts patrimoines et de créer un héritage maximal de 12 M€.",source:sources.taxPolicy},lepen:{value:1,note:"Propose de supprimer la fiscalité sur les transmissions de TPE, PME et ETI sous condition de détention.",source:sources.rnProject},glucksmann:{value:-2,note:"Propose de taxer davantage les très grands héritages.",source:sources.sudRadio}} }
       ];
+      const positionThemes = [
+        ["eco", "Économie et pouvoir d’achat"],
+        ["fis", "Fiscalité"],
+        ["finances", "Finances publiques"],
+        ["emploi", "Travail et emploi"],
+        ["retraites", "Retraites et solidarité"],
+        ["services-publics", "Services publics"],
+        ["education", "Éducation et jeunesse"],
+        ["sante", "Santé"],
+        ["securite", "Sécurité et justice"],
+        ["immigration", "Immigration et intégration"],
+        ["institutions", "Institutions et démocratie"],
+        ["ecologie", "Écologie et climat"],
+        ["energie", "Énergie"],
+        ["industrie", "Industrie et souveraineté"],
+        ["agriculture", "Agriculture et alimentation"],
+        ["logement", "Logement et territoires"],
+        ["europe", "Europe et politique étrangère"],
+        ["defense", "Défense"]
+      ];
+      const themeFilter = root.querySelector("#pt-theme-filter");
+      positionThemes.forEach(([value, label]) => {
+        const option = document.createElement("option");
+        option.value = value;
+        option.textContent = label;
+        themeFilter.appendChild(option);
+      });
       const h1 = [
         ["Marine Le Pen",34],["Jean-Luc Mélenchon",19],["Édouard Philippe",12],["Raphaël Glucksmann",11],["David Lisnard",9],["Bruno Retailleau",5],["Éric Zemmour",3],["Marine Tondelier",2],["Dominique de Villepin",2],["Nathalie Arthaud",1],["Fabien Roussel",1],["Nicolas Dupont-Aignan",1]
       ];
@@ -160,9 +187,20 @@
         }
       }
       function renderQuestions() {
-        const theme = root.querySelector("#pt-theme-filter").value;
+        const theme = themeFilter.value;
         tbody.replaceChildren();
-        questions.filter(q => theme === "all" || q.theme === theme).forEach((q, index, list) => {
+        const visibleQuestions = questions.filter(q => theme === "all" || q.theme === theme);
+        if (visibleQuestions.length === 0) {
+          const row = document.createElement("tr");
+          const message = document.createElement("td");
+          message.colSpan = 5;
+          message.className = "pt-muted";
+          message.textContent = "Aucune affirmation n’est encore documentée dans ce thème.";
+          row.appendChild(message);
+          tbody.appendChild(row);
+          return;
+        }
+        visibleQuestions.forEach((q, index, list) => {
           if (index === 0 || list[index - 1].theme !== q.theme) {
             const group = document.createElement("tr");
             group.className = "pt-theme-row";
