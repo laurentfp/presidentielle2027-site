@@ -54,34 +54,33 @@
       </section>
 
       <section id="pt-panel-compare" role="tabpanel" aria-labelledby="pt-tab-compare">
-        <div class="pt-heading"><div><h1>Comparer les positions</h1><p class="pt-subtitle">Affirmations du questionnaire · chaque cellule renvoie à une position sourcée.</p></div><span class="pt-count">4 sur 34 affirmations</span></div>
+        <div class="pt-heading"><div><h1>Comparer les positions</h1><p class="pt-subtitle">Affirmations du questionnaire · chaque cellule renvoie à une position sourcée.</p></div><span id="pt-question-count" class="pt-count">Chargement…</span></div>
         <div class="pt-filterbar">
           <label class="pt-field"><span class="pt-label">Thème</span><select id="pt-theme-filter" class="pt-select">
             <option value="all">Tous les thèmes</option>
-            <option value="eco">Économie et pouvoir d’achat</option>
+            <option value="eco">Économie et pouvoir d'achat</option>
+            <option value="ent">Entreprises, travail et emploi</option>
             <option value="fis">Fiscalité</option>
-            <option value="finances">Finances publiques</option>
-            <option value="emploi">Travail et emploi</option>
-            <option value="retraites">Retraites et solidarité</option>
-            <option value="services-publics">Services publics</option>
-            <option value="education">Éducation et jeunesse</option>
-            <option value="sante">Santé</option>
-            <option value="securite">Sécurité et justice</option>
-            <option value="immigration">Immigration et intégration</option>
-            <option value="institutions">Institutions et démocratie</option>
-            <option value="ecologie">Écologie et climat</option>
-            <option value="energie">Énergie</option>
-            <option value="industrie">Industrie et souveraineté</option>
-            <option value="agriculture">Agriculture et alimentation</option>
-            <option value="logement">Logement et territoires</option>
-            <option value="europe">Europe et politique étrangère</option>
-            <option value="defense">Défense</option>
+            <option value="fin">Finances publiques et dette</option>
+            <option value="ret">Retraites et protection sociale</option>
+            <option value="edu">Éducation et enseignement supérieur</option>
+            <option value="san">Santé</option>
+            <option value="def">Défense</option>
+            <option value="eur">Europe</option>
+            <option value="etr">Politique étrangère</option>
+            <option value="imm">Immigration</option>
+            <option value="sec">Sécurité et justice</option>
+            <option value="ecol">Écologie et énergie</option>
+            <option value="inst">Institutions et démocratie</option>
+            <option value="num">Numérique, IA et souveraineté technologique</option>
+            <option value="log">Logement et territoires</option>
+            <option value="agr">Agriculture et alimentation</option>
           </select></label>
           <span class="pt-count">Échelle de −2 à +2 · les tirets indiquent l’absence de position documentée</span>
         </div>
         <div class="pt-table-wrap"><table aria-label="Positions documentées par question et par candidat"><thead><tr><th scope="col">Affirmation</th><th scope="col">Jean-Luc<br>Mélenchon</th><th scope="col">Marine<br>Le Pen</th><th scope="col">Édouard<br>Philippe</th><th scope="col">Raphaël<br>Glucksmann</th></tr></thead><tbody id="pt-stance-rows"></tbody></table></div>
         <div class="pt-legend" aria-label="Légende des positions"><span class="pt-legend-item"><i class="pt-dot minus"></i> Plutôt opposé à l’affirmation</span><span class="pt-legend-item"><i class="pt-dot"></i> Position nuancée</span><span class="pt-legend-item"><i class="pt-dot plus"></i> Plutôt favorable à l’affirmation</span><span class="pt-legend-item">— Non documenté</span></div>
-        <aside id="pt-stance-detail" class="pt-detail" aria-live="polite"><div class="pt-detail-top"><h3>Position et source</h3><span id="pt-detail-score" class="pt-count">Sélectionne une cellule</span></div><p id="pt-detail-note" class="pt-muted">Les positions restent liées à leur affirmation : aucune moyenne ou note globale par candidat n’est calculée.</p><div id="pt-detail-link"></div></aside>
+        <aside id="pt-stance-detail" class="pt-detail" aria-live="polite"><div class="pt-detail-top"><h3>Position et source</h3><span id="pt-detail-score" class="pt-count">Sélectionne une cellule</span></div><p id="pt-detail-note" class="pt-muted">Les positions restent liées à leur affirmation : aucune moyenne ou note globale par candidat n’est calculée.</p><p id="pt-detail-context" class="pt-muted"></p><div id="pt-detail-link"></div></aside>
       </section>
 
       <section id="pt-panel-polls" role="tabpanel" aria-labelledby="pt-tab-polls" class="pt-hidden">
