@@ -50,7 +50,7 @@
           matrix.appendChild(card);
         });
         archive.replaceChildren();
-        reportCount.textContent = `${entries.length} ${entries.length === 1 ? "rapport" : "rapport"}`;
+        reportCount.textContent = `${entries.length} ${entries.length === 1 ? "rapport" : "rapports"}`;
         if (entries.length === 0) {
           reportStatus.textContent = "Aucune synthèse hebdomadaire publiée pour l’instant.";
           const empty = document.createElement("p");
