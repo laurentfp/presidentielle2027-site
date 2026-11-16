@@ -2,16 +2,13 @@
       const root = document.getElementById("pt-dashboard");
       if (!root) return;
       const sourceDateNodes = root.querySelectorAll("#pt-source-updated, #pt-source-date");
-      fetch("https://raw.githubusercontent.com/fcroiseaux/presitracker2027-data/main/presitracker-data.json", {
-        headers: { Range: "bytes=0-255" },
-        cache: "no-cache"
-      }).then(response => {
+      const dataUrl = "https://raw.githubusercontent.com/fcroiseaux/presitracker2027-data/main/presitracker-data.json";
+      const dataPromise = fetch(dataUrl, { cache: "no-cache" }).then(response => {
         if (!response.ok) throw new Error("Source indisponible");
-        return response.text();
-      }).then(prefix => {
-        const match = prefix.match(/\"updatedAt\"\s*:\s*\"([^\"]+)\"/);
-        if (!match) throw new Error("Date de mise à jour absente");
-        const updatedAt = new Date(match[1]);
+        return response.json();
+      });
+      dataPromise.then(data => {
+        const updatedAt = new Date(data.updatedAt);
         if (!Number.isFinite(updatedAt.getTime())) throw new Error("Date de mise à jour invalide");
         const label = new Intl.DateTimeFormat("fr-FR", { dateStyle: "long", timeZone: "UTC" }).format(updatedAt);
         sourceDateNodes.forEach(node => {
@@ -100,12 +97,13 @@
       }).then(renderReports).catch(() => {
         reportStatus.textContent = "La liste des synthèses est momentanément indisponible.";
       });
-      const names = {
+      let names = {
         melenchon: "Jean-Luc Mélenchon",
         lepen: "Marine Le Pen",
         philippe: "Édouard Philippe",
         glucksmann: "Raphaël Glucksmann"
       };
+      let positionCandidateIds = ["melenchon", "lepen", "philippe", "glucksmann"];
       const sources = {
         melenchonBudget: { title: "Comment nous allons remettre de l'ordre dans les comptes publics", url: "https://melenchon2027.fr/wp-content/uploads/2026/10/Comment-nous-allons-remettre-de-l-ordre-dans-les-comptes-publics.pdf" },
         orange: { title: "Présidentielle 2027 : Édouard Philippe écarte la proposition de Gabriel Attal", url: "https://actu.orange.fr/france/presidentielle-2027-une-primaire-de-la-division-edouard-philippe-ecarte-la-proposition-de-gabriel-attal-l-express-via-6medias-CNT000002tuZdH.html" },
@@ -115,7 +113,7 @@
         rnBudget: { title: "Contre-budget 2026, conférence de presse du 23 octobre 2025", url: "https://rassemblementnational.fr/documents/GRN-CONTRE-BUDGET-2026.pdf" },
         sudRadio: { title: "Primaire de la gauche : Mélenchon toujours au centre des débats", url: "https://www.sudradio.fr/societe/un-dernier-debat-pour-departager-les-candidats-de-la-primaire-de-la-gauche" }
       };
-      const questions = [
+      let questions = [
         {
           "id": "q-eco-smic-hausse",
           "theme": "eco",
@@ -1822,6 +1820,7 @@
         }
       ];
       const themeFilter = root.querySelector("#pt-theme-filter");
+      const candidateFilter = root.querySelector("#pt-candidate-filter");
       const h1 = [
         ["Marine Le Pen",34],["Jean-Luc Mélenchon",19],["Édouard Philippe",12],["Raphaël Glucksmann",11],["David Lisnard",9],["Bruno Retailleau",5],["Éric Zemmour",3],["Marine Tondelier",2],["Dominique de Villepin",2],["Nathalie Arthaud",1],["Fabien Roussel",1],["Nicolas Dupont-Aignan",1]
       ];
@@ -1831,6 +1830,7 @@
       const scoreLabel = value => value > 0 ? `+${value}` : `${value}`;
       const scoreClass = value => value === null ? "unknown" : String(value);
       const tbody = root.querySelector("#pt-stance-rows");
+      const stanceHead = root.querySelector("#pt-stance-head");
       const questionCount = root.querySelector("#pt-question-count");
       const detailNote = root.querySelector("#pt-detail-note");
       const detailScore = root.querySelector("#pt-detail-score");
@@ -1854,7 +1854,7 @@
       }
       function showDetail(question, candidateId) {
         const stance = question.stances[candidateId];
-        const candidate = names[candidateId];
+        const candidate = names[candidateId] || candidateId;
         detailLink.replaceChildren();
         detailContext.textContent = question.context ? `Contexte : ${question.context}` : "";
         if (!stance) {
@@ -1870,13 +1870,27 @@
       }
       function renderQuestions() {
         const theme = themeFilter.value;
-        questionCount.textContent = `${questions.length} affirmations au questionnaire`;
+        const selectedCandidate = candidateFilter.value;
+        const candidateIds = selectedCandidate === "all" ? positionCandidateIds : [selectedCandidate];
+        const displayedQuestions = questions.filter(q => theme === "all" || q.theme === theme);
+        questionCount.textContent = `${displayedQuestions.length} sur ${questions.length} affirmations · ${candidateIds.length} candidat${candidateIds.length === 1 ? "" : "s"} affiché${candidateIds.length === 1 ? "" : "s"}`;
+        stanceHead.replaceChildren();
+        const questionHeading = document.createElement("th");
+        questionHeading.scope = "col";
+        questionHeading.textContent = "Affirmation";
+        stanceHead.appendChild(questionHeading);
+        candidateIds.forEach(id => {
+          const heading = document.createElement("th");
+          heading.scope = "col";
+          heading.textContent = names[id] || id;
+          stanceHead.appendChild(heading);
+        });
         tbody.replaceChildren();
-        const visibleQuestions = questions.filter(q => theme === "all" || q.theme === theme);
+        const visibleQuestions = displayedQuestions;
         if (visibleQuestions.length === 0) {
           const row = document.createElement("tr");
           const message = document.createElement("td");
-          message.colSpan = 5;
+          message.colSpan = candidateIds.length + 1;
           message.className = "pt-muted";
           message.textContent = "Aucune affirmation n’est encore documentée dans ce thème.";
           row.appendChild(message);
@@ -1888,7 +1902,7 @@
             const group = document.createElement("tr");
             group.className = "pt-theme-row";
             const heading = document.createElement("td");
-            heading.colSpan = 5;
+            heading.colSpan = candidateIds.length + 1;
             heading.textContent = q.themeName;
             group.appendChild(heading);
             tbody.appendChild(group);
@@ -1898,7 +1912,6 @@
           questionCell.className = "pt-question";
           questionCell.textContent = q.text;
           row.appendChild(questionCell);
-          const candidateIds = ["melenchon","lepen","philippe","glucksmann"];
           candidateIds.forEach(id => {
             const stance = q.stances[id];
             const value = stance ? stance.value : null;
@@ -1951,10 +1964,56 @@
         root.querySelector(`#pt-panel-${tab.dataset.tab}`).classList.remove("pt-hidden");
       }));
       root.querySelector("#pt-theme-filter").addEventListener("change", renderQuestions);
+      candidateFilter.addEventListener("change", renderQuestions);
       root.querySelectorAll("[data-hypothesis]").forEach(button => button.addEventListener("click", () => {
         root.querySelectorAll("[data-hypothesis]").forEach(item => item.setAttribute("aria-pressed", String(item === button)));
         renderPoll(button.dataset.hypothesis);
       }));
       renderQuestions();
       renderPoll("h1");
+      dataPromise.then(data => {
+        const candidates = data.candidates.filter(candidate => candidate.status === "declare");
+        const candidateIds = candidates
+          .filter(candidate => data.questionnaire.questions.some(question => question.stances[candidate.id]))
+          .sort((a, b) => a.lastName.localeCompare(b.lastName, "fr"))
+          .map(candidate => candidate.id);
+        names = Object.fromEntries(candidates.map(candidate => [candidate.id, `${candidate.firstName} ${candidate.lastName}`]));
+        positionCandidateIds = candidateIds;
+        questions = data.questionnaire.questions.map(question => {
+          const theme = data.themes.find(item => item.key === question.themeKey);
+          const toSources = sourceIds => (sourceIds || []).map(id => data.sources[id]).filter(Boolean).map(source => ({
+            title: source.title,
+            publisher: source.publisher,
+            date: source.date,
+            url: source.url
+          }));
+          const stances = {};
+          Object.entries(question.stances).forEach(([candidateId, stance]) => {
+            stances[candidateId] = { value: stance.value, note: stance.note, sources: toSources(stance.sourceIds) };
+          });
+          return {
+            id: question.id,
+            text: question.statement,
+            theme: question.themeKey,
+            themeName: theme?.name || question.themeKey,
+            context: question.context,
+            contextSources: toSources(question.contextSourceIds),
+            stances
+          };
+        });
+        candidateFilter.replaceChildren();
+        const allCandidates = document.createElement("option");
+        allCandidates.value = "all";
+        allCandidates.textContent = `Tous les candidats déclarés avec position (${candidateIds.length})`;
+        candidateFilter.appendChild(allCandidates);
+        candidates.filter(candidate => candidateIds.includes(candidate.id)).sort((a, b) => a.lastName.localeCompare(b.lastName, "fr")).forEach(candidate => {
+          const option = document.createElement("option");
+          option.value = candidate.id;
+          option.textContent = `${candidate.firstName} ${candidate.lastName}`;
+          candidateFilter.appendChild(option);
+        });
+        renderQuestions();
+      }).catch(() => {
+        questionCount.textContent = "Données complètes momentanément indisponibles · aperçu limité";
+      });
     })();
