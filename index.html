@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Suivi sourcé des candidatures, programmes, sondages et événements de la présidentielle française de 2027.">
   <meta name="referrer" content="no-referrer">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; frame-src 'none'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'self' https://raw.githubusercontent.com; object-src 'none'; base-uri 'self'; form-action 'none'; frame-src 'none'">
   <title>Présidentielle 2027</title>
   <link rel="stylesheet" href="./styles.css">
 </head>
@@ -20,7 +20,7 @@
           <div class="pt-brand-sub">Les propositions, les sources, les évolutions</div>
         </div>
       </div>
-      <div class="pt-updated"><strong>Données mises à jour</strong>15 novembre 2026 · 05:45 UTC</div>
+      <div class="pt-updated"><strong>Source mise à jour le</strong><time id="pt-source-updated">Chargement…</time></div>
     </header>
     <nav class="pt-nav" role="tablist" aria-label="Rubriques de la présidentielle 2027">
       <button type="button" role="tab" id="pt-tab-overview" aria-controls="pt-panel-overview" aria-selected="false" data-tab="overview">Vue d’ensemble</button>
@@ -102,7 +102,11 @@
         </div>
       </section>
     </main>
-    <footer class="pt-footer">Site indépendant, sans lien officiel avec l’État ni avec un candidat.</footer>
+    <footer class="pt-footer">
+      <p>Site indépendant, sans lien officiel avec l’État ni avec un candidat.</p>
+      <p>La maquette des visualisations est basée sur l’instantané du 15 novembre 2026. La date de mise à jour de la source PresiTracker2027 est chargée dynamiquement : <time id="pt-source-date">chargement…</time>.</p>
+      <p>Sources : <a href="https://github.com/fcroiseaux/presitracker2027-data/blob/main/presitracker-data.json" target="_blank" rel="noopener noreferrer">fichier de données</a> et <a href="https://presitracker2027.fr/consultation/donnees" target="_blank" rel="noopener noreferrer">totaux de la consultation</a>. Réutilisation sous <a href="https://www.etalab.gouv.fr/wp-content/uploads/2017/04/ETALAB-Licence-Ouverte-v2.0.pdf" target="_blank" rel="noopener noreferrer">Licence Ouverte / Open Licence 2.0 (Etalab)</a>. Cette adaptation n’est ni une version officielle ni une approbation de PresiTracker2027.</p>
+    </footer>
   </div>
 </div>
 

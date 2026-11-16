@@ -8,7 +8,7 @@ Maquette interactive du tableau de bord de suivi de la présidentielle français
 - `styles.css` : styles, palette bleu France / blanc / rouge Marianne.
 - `app.js` : interactions du tableau de bord.
 
-Les contenus affichés sont une maquette statique datée du 15 novembre 2026 ; cette version ne charge pas encore automatiquement `presidentielle2027.json`. Le site est indépendant et n'est pas un site officiel de l'État.
+Les visualisations affichées sont une maquette statique basée sur un instantané du 15 novembre 2026. Le pied de page lit dynamiquement la date `updatedAt` du fichier de données original de PresiTracker2027 (requête HTTP partielle, limitée au début du fichier). Le site est indépendant et n'est pas un site officiel de l'État.
 
 ## GitHub Pages
 

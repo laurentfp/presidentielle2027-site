@@ -1,6 +1,28 @@
 (() => {
       const root = document.getElementById("pt-dashboard");
       if (!root) return;
+      const sourceDateNodes = root.querySelectorAll("#pt-source-updated, #pt-source-date");
+      fetch("https://raw.githubusercontent.com/fcroiseaux/presitracker2027-data/main/presitracker-data.json", {
+        headers: { Range: "bytes=0-255" },
+        cache: "no-cache"
+      }).then(response => {
+        if (!response.ok) throw new Error("Source indisponible");
+        return response.text();
+      }).then(prefix => {
+        const match = prefix.match(/\"updatedAt\"\s*:\s*\"([^\"]+)\"/);
+        if (!match) throw new Error("Date de mise à jour absente");
+        const updatedAt = new Date(match[1]);
+        if (!Number.isFinite(updatedAt.getTime())) throw new Error("Date de mise à jour invalide");
+        const label = new Intl.DateTimeFormat("fr-FR", { dateStyle: "long", timeZone: "UTC" }).format(updatedAt);
+        sourceDateNodes.forEach(node => {
+          node.dateTime = updatedAt.toISOString();
+          node.textContent = label;
+        });
+      }).catch(() => {
+        sourceDateNodes.forEach(node => {
+          node.textContent = "date indisponible";
+        });
+      });
       const names = {
         melenchon: "Jean-Luc Mélenchon",
         lepen: "Marine Le Pen",

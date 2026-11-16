@@ -98,7 +98,9 @@
     #pt-dashboard .pt-value { text-align:right; font-variant-numeric:tabular-nums; font-weight:600; }
     #pt-dashboard .pt-method { margin-top:17px; padding-top:12px; border-top:1px solid var(--pt-line); color:var(--pt-muted); font-size:11px; line-height:1.55; }
     #pt-dashboard .pt-method a { color:var(--pt-accent); text-decoration:none; margin-right:10px; }
-    #pt-dashboard .pt-footer { padding:0 28px 18px; color:var(--pt-muted); font-size:11px; }
+    #pt-dashboard .pt-footer { padding:0 28px 18px; color:var(--pt-muted); font-size:11px; line-height:1.55; }
+    #pt-dashboard .pt-footer p + p { margin-top:5px; }
+    #pt-dashboard .pt-footer a { color:var(--pt-accent); text-decoration:underline; text-underline-offset:2px; }
     #pt-dashboard .pt-timeline { position:relative; }
     #pt-dashboard .pt-event { display:grid; grid-template-columns:96px 13px minmax(0,1fr); gap:10px; padding:0 0 17px; }
     #pt-dashboard .pt-event-date { color:var(--pt-muted); font-size:11px; padding-top:2px; }
