@@ -28,6 +28,7 @@
       <button type="button" role="tab" id="pt-tab-polls" aria-controls="pt-panel-polls" aria-selected="false" data-tab="polls">Sondages</button>
       <button type="button" role="tab" id="pt-tab-programs" aria-controls="pt-panel-programs" aria-selected="false" data-tab="programs">Programmes</button>
       <button type="button" role="tab" id="pt-tab-campaign" aria-controls="pt-panel-campaign" aria-selected="false" data-tab="campaign">Campagne</button>
+      <button type="button" role="tab" id="pt-tab-france2040" aria-controls="pt-panel-france2040" aria-selected="false" data-tab="france2040">France 2040</button>
     </nav>
     <main class="pt-content">
       <section id="pt-panel-overview" role="tabpanel" aria-labelledby="pt-tab-overview" class="pt-hidden">
@@ -100,6 +101,23 @@
             <div class="pt-list-row"><span class="pt-date">17–18 avr. 2027</span><div><div class="pt-row-title">Premier tour</div><div class="pt-row-meta">Outre-mer le 17 avril · métropole le 18 avril</div></div><span class="pt-pill">Scrutin</span></div>
           </div></section>
         </div>
+      </section>
+
+      <section id="pt-panel-france2040" role="tabpanel" aria-labelledby="pt-tab-france2040" class="pt-hidden">
+        <div class="pt-heading"><div><h1>Présidentielle 2027 × France 2040</h1><p class="pt-subtitle">Veille hebdomadaire des évolutions politiques et de leurs conséquences à long terme.</p></div><span id="pt-report-updated" class="pt-count">Première édition à venir</span></div>
+        <section class="pt-section pt-report-intro">
+          <h2>Et si avoir 30 ans en 2040 était une chance ?</h2>
+          <p class="pt-report-copy">Chaque synthèse distingue les annonces confirmées des projets et hypothèses, confronte les propositions aux enjeux de 2040 et cite des sources datées. La base de données PresiTracker2027 sert de point de comparaison.</p>
+          <p id="pt-report-status" class="pt-muted" aria-live="polite">Aucune synthèse hebdomadaire publiée pour l’instant.</p>
+        </section>
+        <section class="pt-section pt-report-section">
+          <div class="pt-section-head"><div><h2>Matrice France 2040</h2><p class="pt-subtitle">Les enjeux suivis dans chaque édition.</p></div></div>
+          <div id="pt-matrix" class="pt-matrix" aria-live="polite"></div>
+        </section>
+        <section class="pt-section pt-report-section">
+          <div class="pt-section-head"><div><h2>Archives des synthèses</h2><p class="pt-subtitle">Rapports hebdomadaires avec leurs sources.</p></div><span id="pt-report-count" class="pt-count">0 rapport</span></div>
+          <div id="pt-report-archive" class="pt-list" aria-live="polite"></div>
+        </section>
       </section>
     </main>
     <footer class="pt-footer">

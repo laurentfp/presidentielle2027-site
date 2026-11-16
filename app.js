@@ -23,6 +23,83 @@
           node.textContent = "date indisponible";
         });
       });
+      const matrixThemes = ["Démographie", "IA et emploi", "Productivité", "Industrie", "Finances publiques", "Éducation", "Énergie", "Eau", "Alimentation", "Adaptation climatique", "Politique de santé", "Défense", "Souveraineté européenne", "Contrat intergénérationnel"];
+      const matrix = root.querySelector("#pt-matrix");
+      const archive = root.querySelector("#pt-report-archive");
+      const reportStatus = root.querySelector("#pt-report-status");
+      const reportUpdated = root.querySelector("#pt-report-updated");
+      const reportCount = root.querySelector("#pt-report-count");
+      function renderReports(data) {
+        const entries = Array.isArray(data.reports) ? data.reports : [];
+        const latestMatrix = Array.isArray(data.matrix) ? data.matrix : [];
+        matrix.replaceChildren();
+        matrixThemes.forEach(theme => {
+          const current = latestMatrix.find(item => item && item.theme === theme);
+          const card = document.createElement("article");
+          card.className = "pt-matrix-item";
+          const heading = document.createElement("h3");
+          heading.textContent = theme;
+          const detail = document.createElement("p");
+          detail.textContent = typeof current?.analysis === "string" && current.analysis.trim() ? current.analysis : "En attente de la première synthèse hebdomadaire.";
+          card.append(heading, detail);
+          if (typeof current?.implication === "string" && current.implication.trim()) {
+            const implication = document.createElement("p");
+            implication.textContent = `Pour 2040 : ${current.implication}`;
+            card.appendChild(implication);
+          }
+          matrix.appendChild(card);
+        });
+        archive.replaceChildren();
+        reportCount.textContent = `${entries.length} ${entries.length === 1 ? "rapport" : "rapport"}`;
+        if (entries.length === 0) {
+          reportStatus.textContent = "Aucune synthèse hebdomadaire publiée pour l’instant.";
+          const empty = document.createElement("p");
+          empty.className = "pt-muted";
+          empty.textContent = "La première édition paraîtra après le prochain contrôle du samedi.";
+          archive.appendChild(empty);
+          reportUpdated.textContent = "Première édition à venir";
+          return;
+        }
+        const latest = entries[0];
+        reportStatus.textContent = typeof latest.summary === "string" ? latest.summary : "La dernière synthèse hebdomadaire est disponible dans les archives.";
+        reportUpdated.textContent = latest.date ? `Dernière édition · ${latest.date}` : "Dernière édition publiée";
+        entries.forEach(entry => {
+          if (!entry || typeof entry.title !== "string" || typeof entry.path !== "string") return;
+          let href;
+          try {
+            const parsed = new URL(entry.path, document.baseURI);
+            if (parsed.origin !== location.origin || !parsed.pathname.includes("/reports/")) return;
+            href = parsed.href;
+          } catch { return; }
+          const row = document.createElement("div");
+          row.className = "pt-list-row";
+          const date = document.createElement("span");
+          date.className = "pt-date";
+          date.textContent = typeof entry.date === "string" ? entry.date : "";
+          const info = document.createElement("div");
+          const link = document.createElement("a");
+          link.className = "pt-report-link";
+          link.href = href;
+          link.target = "_blank";
+          link.rel = "noopener noreferrer";
+          link.textContent = entry.title;
+          info.appendChild(link);
+          if (typeof entry.summary === "string" && entry.summary.trim()) {
+            const summary = document.createElement("div");
+            summary.className = "pt-report-meta";
+            summary.textContent = entry.summary;
+            info.appendChild(summary);
+          }
+          row.append(date, info);
+          archive.appendChild(row);
+        });
+      }
+      fetch("./reports/index.json", { cache: "no-cache" }).then(response => {
+        if (!response.ok) throw new Error("Archives indisponibles");
+        return response.json();
+      }).then(renderReports).catch(() => {
+        reportStatus.textContent = "La liste des synthèses est momentanément indisponible.";
+      });
       const names = {
         melenchon: "Jean-Luc Mélenchon",
         lepen: "Marine Le Pen",
