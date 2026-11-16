@@ -104,6 +104,7 @@
         glucksmann: "Raphaël Glucksmann"
       };
       let positionCandidateIds = ["melenchon", "lepen", "philippe", "glucksmann"];
+      const selectedCandidateIds = new Set();
       const sources = {
         melenchonBudget: { title: "Comment nous allons remettre de l'ordre dans les comptes publics", url: "https://melenchon2027.fr/wp-content/uploads/2026/10/Comment-nous-allons-remettre-de-l-ordre-dans-les-comptes-publics.pdf" },
         orange: { title: "Présidentielle 2027 : Édouard Philippe écarte la proposition de Gabriel Attal", url: "https://actu.orange.fr/france/presidentielle-2027-une-primaire-de-la-division-edouard-philippe-ecarte-la-proposition-de-gabriel-attal-l-express-via-6medias-CNT000002tuZdH.html" },
@@ -1820,7 +1821,10 @@
         }
       ];
       const themeFilter = root.querySelector("#pt-theme-filter");
-      const candidateFilter = root.querySelector("#pt-candidate-filter");
+      const candidateOptions = root.querySelector("#pt-candidate-options");
+      const candidateSummary = root.querySelector("#pt-candidate-summary");
+      const candidateHelp = root.querySelector("#pt-candidate-help");
+      const candidateReset = root.querySelector("#pt-candidate-reset");
       const h1 = [
         ["Marine Le Pen",34],["Jean-Luc Mélenchon",19],["Édouard Philippe",12],["Raphaël Glucksmann",11],["David Lisnard",9],["Bruno Retailleau",5],["Éric Zemmour",3],["Marine Tondelier",2],["Dominique de Villepin",2],["Nathalie Arthaud",1],["Fabien Roussel",1],["Nicolas Dupont-Aignan",1]
       ];
@@ -1836,6 +1840,42 @@
       const detailScore = root.querySelector("#pt-detail-score");
       const detailContext = root.querySelector("#pt-detail-context");
       const detailLink = root.querySelector("#pt-detail-link");
+      function updateCandidatePickerLabel() {
+        const selected = [...selectedCandidateIds];
+        candidateSummary.textContent = selected.length
+          ? `${selected.length} candidat${selected.length === 1 ? "" : "s"} sélectionné${selected.length === 1 ? "" : "s"}`
+          : `Tous les candidats avec position (${positionCandidateIds.length})`;
+        candidateHelp.textContent = selected.length
+          ? `${selected.length} sur 6 sélectionné${selected.length === 1 ? "" : "s"}. Choisissez jusqu’à 6 candidats pour comparer leurs positions.`
+          : "Choisissez jusqu’à 6 candidats pour comparer leurs positions.";
+      }
+      function renderCandidateOptions(candidates) {
+        candidateOptions.replaceChildren();
+        candidates.forEach(candidate => {
+          const label = document.createElement("label");
+          label.className = "pt-candidate-option";
+          const checkbox = document.createElement("input");
+          checkbox.type = "checkbox";
+          checkbox.value = candidate.id;
+          checkbox.checked = selectedCandidateIds.has(candidate.id);
+          checkbox.addEventListener("change", () => {
+            if (checkbox.checked && selectedCandidateIds.size >= 6) {
+              checkbox.checked = false;
+              candidateHelp.textContent = "La limite est de 6 candidats. Décochez-en un avant d’en choisir un autre.";
+              return;
+            }
+            if (checkbox.checked) selectedCandidateIds.add(candidate.id);
+            else selectedCandidateIds.delete(candidate.id);
+            updateCandidatePickerLabel();
+            renderQuestions();
+          });
+          const name = document.createElement("span");
+          name.textContent = `${candidate.firstName} ${candidate.lastName}`;
+          label.append(checkbox, name);
+          candidateOptions.appendChild(label);
+        });
+        updateCandidatePickerLabel();
+      }
       function appendSources(sources, label) {
         sources.forEach(source => {
           try {
@@ -1870,8 +1910,7 @@
       }
       function renderQuestions() {
         const theme = themeFilter.value;
-        const selectedCandidate = candidateFilter.value;
-        const candidateIds = selectedCandidate === "all" ? positionCandidateIds : [selectedCandidate];
+        const candidateIds = selectedCandidateIds.size ? [...selectedCandidateIds] : positionCandidateIds;
         const displayedQuestions = questions.filter(q => theme === "all" || q.theme === theme);
         questionCount.textContent = `${displayedQuestions.length} sur ${questions.length} affirmations · ${candidateIds.length} candidat${candidateIds.length === 1 ? "" : "s"} affiché${candidateIds.length === 1 ? "" : "s"}`;
         stanceHead.replaceChildren();
@@ -1964,7 +2003,12 @@
         root.querySelector(`#pt-panel-${tab.dataset.tab}`).classList.remove("pt-hidden");
       }));
       root.querySelector("#pt-theme-filter").addEventListener("change", renderQuestions);
-      candidateFilter.addEventListener("change", renderQuestions);
+      candidateReset.addEventListener("click", () => {
+        selectedCandidateIds.clear();
+        candidateOptions.querySelectorAll("input[type=checkbox]").forEach(checkbox => { checkbox.checked = false; });
+        updateCandidatePickerLabel();
+        renderQuestions();
+      });
       root.querySelectorAll("[data-hypothesis]").forEach(button => button.addEventListener("click", () => {
         root.querySelectorAll("[data-hypothesis]").forEach(item => item.setAttribute("aria-pressed", String(item === button)));
         renderPoll(button.dataset.hypothesis);
@@ -2001,17 +2045,7 @@
             stances
           };
         });
-        candidateFilter.replaceChildren();
-        const allCandidates = document.createElement("option");
-        allCandidates.value = "all";
-        allCandidates.textContent = `Tous les candidats déclarés avec position (${candidateIds.length})`;
-        candidateFilter.appendChild(allCandidates);
-        candidates.filter(candidate => candidateIds.includes(candidate.id)).sort((a, b) => a.lastName.localeCompare(b.lastName, "fr")).forEach(candidate => {
-          const option = document.createElement("option");
-          option.value = candidate.id;
-          option.textContent = `${candidate.firstName} ${candidate.lastName}`;
-          candidateFilter.appendChild(option);
-        });
+        renderCandidateOptions(candidates.filter(candidate => candidateIds.includes(candidate.id)).sort((a, b) => a.lastName.localeCompare(b.lastName, "fr")));
         renderQuestions();
       }).catch(() => {
         questionCount.textContent = "Données complètes momentanément indisponibles · aperçu limité";

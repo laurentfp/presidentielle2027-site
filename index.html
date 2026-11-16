@@ -76,7 +76,7 @@
             <option value="log">Logement et territoires</option>
             <option value="agr">Agriculture et alimentation</option>
           </select></label>
-          <label class="pt-field"><span class="pt-label">Candidat</span><select id="pt-candidate-filter" class="pt-select"><option value="all">Tous les candidats déclarés documentés</option></select></label>
+          <div class="pt-field"><span class="pt-label">Candidats</span><details id="pt-candidate-picker" class="pt-candidate-picker"><summary id="pt-candidate-summary" class="pt-select">Tous les candidats avec position</summary><div class="pt-candidate-menu"><button id="pt-candidate-reset" class="pt-candidate-reset" type="button">Tout afficher</button><p id="pt-candidate-help" class="pt-candidate-help" aria-live="polite">Choisissez jusqu’à 6 candidats pour comparer leurs positions.</p><fieldset><legend>Sélection (maximum 6)</legend><div id="pt-candidate-options" class="pt-candidate-options"></div></fieldset></div></details></div>
           <span class="pt-count">Échelle de −2 à +2 · faites défiler le tableau horizontalement pour voir tous les candidats</span>
         </div>
         <div class="pt-table-wrap"><table aria-label="Positions documentées par question et par candidat"><thead><tr id="pt-stance-head"><th scope="col">Affirmation</th></tr></thead><tbody id="pt-stance-rows"></tbody></table></div>
