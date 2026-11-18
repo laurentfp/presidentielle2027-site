@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Suivi sourcé des candidatures, programmes, sondages et événements de la présidentielle française de 2027.">
   <meta name="referrer" content="no-referrer">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'self' https://raw.githubusercontent.com; object-src 'none'; base-uri 'self'; form-action 'none'; frame-src 'none'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; frame-src 'none'">
   <title>Présidentielle 2027</title>
   <link rel="icon" type="image/png" sizes="64x64" href="./favicon.png?v=2">
   <link rel="icon" type="image/svg+xml" href="./favicon.svg?v=2">
@@ -36,24 +36,11 @@
     </nav>
     <main class="pt-content">
       <section id="pt-panel-overview" role="tabpanel" aria-labelledby="pt-tab-overview" class="pt-hidden">
-        <div class="pt-heading"><div><h1>La campagne, en un coup d’œil</h1><p class="pt-subtitle">Repères issus des données publiques et sourcées.</p></div><span class="pt-pill">74 personnes suivies</span></div>
-        <div class="pt-grid">
-          <div class="pt-stat"><div class="pt-stat-label">Candidatures déclarées</div><div class="pt-stat-value">39</div><div class="pt-stat-note">13 pressenties · 22 retirées</div></div>
-          <div class="pt-stat"><div class="pt-stat-label">Mesures de programme</div><div class="pt-stat-value">1&nbsp;991</div><div class="pt-stat-note">Avec leur historique</div></div>
-          <div class="pt-stat"><div class="pt-stat-label">Sources référencées</div><div class="pt-stat-value">796</div><div class="pt-stat-note">Documents datés</div></div>
-          <div class="pt-stat"><div class="pt-stat-label">Sondages enregistrés</div><div class="pt-stat-value">45</div><div class="pt-stat-note">Enquêtes conservées séparément</div></div>
-        </div>
+        <div class="pt-heading"><div><h1>La campagne, en un coup d’œil</h1><p class="pt-subtitle">Repères chargés depuis la base de données.</p></div><span id="pt-overview-count" class="pt-pill">Chargement…</span></div>
+        <div id="pt-overview-stats" class="pt-grid" aria-live="polite"></div>
         <div class="pt-two-col">
-          <section class="pt-section"><div class="pt-section-head"><h2>Dernières propositions ajoutées</h2><span class="pt-count">12 novembre</span></div><div class="pt-list">
-            <div class="pt-list-row"><span class="pt-date">12 nov.</span><div><div class="pt-row-title">Remplacement de Parcoursup</div><div class="pt-row-meta">Raphaël Glucksmann · Éducation</div></div><span class="pt-pill">Ajout</span></div>
-            <div class="pt-list-row"><span class="pt-date">12 nov.</span><div><div class="pt-row-title">Suppression des réductions automatiques de peine</div><div class="pt-row-meta">Gabriel Attal · Sécurité et justice</div></div><span class="pt-pill">Ajout</span></div>
-            <div class="pt-list-row"><span class="pt-date">12 nov.</span><div><div class="pt-row-title">22 Md€ investis dans les services publics</div><div class="pt-row-meta">Jean-Luc Mélenchon · Finances publiques</div></div><span class="pt-pill">Ajout</span></div>
-          </div></section>
-          <section class="pt-section"><div class="pt-section-head"><h2>Prochaines échéances</h2><span class="pt-count">Calendrier officiel</span></div><div class="pt-list">
-            <div class="pt-list-row"><span class="pt-date">12 mars 2027</span><div><div class="pt-row-title">Clôture des parrainages</div><div class="pt-row-meta">500 présentations requises</div></div></div>
-            <div class="pt-list-row"><span class="pt-date">26 mars 2027</span><div><div class="pt-row-title">Liste officielle des candidats</div><div class="pt-row-meta">Publication au plus tard à cette date</div></div></div>
-            <div class="pt-list-row"><span class="pt-date">18 avril 2027</span><div><div class="pt-row-title">Premier tour</div><div class="pt-row-meta">Vote outre-mer le 17 avril</div></div></div>
-          </div></section>
+          <section class="pt-section"><div class="pt-section-head"><h2>Dernières propositions modifiées</h2><span class="pt-count">Base de données</span></div><div id="pt-overview-latest" class="pt-list" aria-live="polite"></div></section>
+          <section class="pt-section"><div class="pt-section-head"><h2>Prochaines échéances</h2><span class="pt-count">Agenda</span></div><div id="pt-overview-agenda" class="pt-list" aria-live="polite"></div></section>
         </div>
       </section>
 
@@ -62,80 +49,40 @@
         <div class="pt-filterbar">
           <label class="pt-field"><span class="pt-label">Thème</span><select id="pt-theme-filter" class="pt-select">
             <option value="all">Tous les thèmes</option>
-            <option value="eco">Économie et pouvoir d'achat</option>
-            <option value="ent">Entreprises, travail et emploi</option>
-            <option value="fis">Fiscalité</option>
-            <option value="fin">Finances publiques et dette</option>
-            <option value="ret">Retraites et protection sociale</option>
-            <option value="edu">Éducation et enseignement supérieur</option>
-            <option value="san">Santé</option>
-            <option value="def">Défense</option>
-            <option value="eur">Europe</option>
-            <option value="etr">Politique étrangère</option>
-            <option value="imm">Immigration</option>
-            <option value="sec">Sécurité et justice</option>
-            <option value="ecol">Écologie et énergie</option>
-            <option value="inst">Institutions et démocratie</option>
-            <option value="num">Numérique, IA et souveraineté technologique</option>
-            <option value="log">Logement et territoires</option>
-            <option value="agr">Agriculture et alimentation</option>
           </select></label>
           <div class="pt-field"><span class="pt-label">Candidats</span><details id="pt-candidate-picker" class="pt-candidate-picker"><summary id="pt-candidate-summary" class="pt-select">Tous les candidats avec position</summary><div class="pt-candidate-menu"><button id="pt-candidate-reset" class="pt-candidate-reset" type="button">Tout afficher</button><p id="pt-candidate-help" class="pt-candidate-help" aria-live="polite">Choisissez jusqu’à 6 candidats pour comparer leurs positions.</p><fieldset><legend>Sélection (maximum 6)</legend><div id="pt-candidate-options" class="pt-candidate-options"></div></fieldset></div></details></div>
           <span class="pt-count">Échelle de −2 à +2 · faites défiler le tableau horizontalement pour voir tous les candidats</span>
         </div>
         <div class="pt-table-wrap"><table aria-label="Positions documentées par question et par candidat"><thead><tr id="pt-stance-head"><th scope="col">Affirmation</th></tr></thead><tbody id="pt-stance-rows"></tbody></table></div>
-        <div class="pt-legend" aria-label="Légende des positions"><span class="pt-legend-item"><i class="pt-dot minus"></i> Plutôt opposé à l’affirmation</span><span class="pt-legend-item"><i class="pt-dot"></i> Position nuancée</span><span class="pt-legend-item"><i class="pt-dot plus"></i> Plutôt favorable à l’affirmation</span><span class="pt-legend-item">— Non documenté</span></div>
+        <div id="pt-scale-legend" class="pt-legend" aria-label="Légende des positions"></div>
         <aside id="pt-stance-detail" class="pt-detail" aria-live="polite"><div class="pt-detail-top"><h3>Position et source</h3><span id="pt-detail-score" class="pt-count">Sélectionne une cellule</span></div><p id="pt-detail-note" class="pt-muted">Les positions restent liées à leur affirmation : aucune moyenne ou note globale par candidat n’est calculée.</p><p id="pt-detail-context" class="pt-muted"></p><div id="pt-detail-link"></div></aside>
       </section>
 
       <section id="pt-panel-polls" role="tabpanel" aria-labelledby="pt-tab-polls" class="pt-hidden">
-        <div class="pt-heading"><div><h1>Intentions de vote</h1><p class="pt-subtitle">Une enquête à la fois · hypothèses et résultats conservés tels que publiés.</p></div><span class="pt-pill">45 enquêtes</span></div>
+        <div class="pt-heading"><div><h1>Intentions de vote</h1><p class="pt-subtitle">Une enquête à la fois · hypothèses et résultats conservés tels que publiés.</p></div><span id="pt-poll-count" class="pt-pill">Chargement…</span></div>
         <section class="pt-section">
-          <div class="pt-section-head"><div><h2>Toluna Harris Interactive</h2><p class="pt-subtitle">Publication : 9 novembre 2026 · terrain : 3–5 novembre · échantillon : 2&nbsp;436</p></div><span class="pt-pill">1er tour</span></div>
-          <div class="pt-poll-controls" aria-label="Hypothèse de sondage">
-            <button type="button" class="pt-hypothesis" data-hypothesis="h1" aria-pressed="true">Hypothèse 1</button>
-            <button type="button" class="pt-hypothesis" data-hypothesis="h2" aria-pressed="false">Hypothèse 2</button>
-          </div>
+          <label class="pt-field" for="pt-poll-select"><span class="pt-label">Enquête</span><select id="pt-poll-select" class="pt-select"></select></label>
+          <div id="pt-poll-summary" class="pt-section-head"></div>
+          <div id="pt-poll-hypotheses" class="pt-poll-controls" aria-label="Hypothèses de sondage"></div>
           <div id="pt-poll-results" class="pt-results" role="list" aria-label="Résultats de l’hypothèse sélectionnée"></div>
-          <div class="pt-method">Chaque enquête reste distincte ; aucune moyenne n’est calculée. <a href="https://www.commission-des-sondages.fr/notices/files/notices/2026/novembre/10362-pres-iv-toluna-harris-interactive-9-novembre.pdf" target="_blank" rel="noreferrer">Notice de la Commission des sondages</a><a href="https://tolunacorporate.com/wp-content/uploads/2026/11/Rapport-Toluna-Barometre-Presidentielle-2027-Vague-9-M6-RTL-9-novembre-2026-1.pdf" target="_blank" rel="noreferrer">Rapport complet</a></div>
+          <div id="pt-poll-method" class="pt-method"></div>
         </section>
       </section>
 
       <section id="pt-panel-programs" role="tabpanel" aria-labelledby="pt-tab-programs" class="pt-hidden">
-        <div class="pt-heading"><div><h1>Évolution des programmes</h1><p class="pt-subtitle">Nouveautés classées par date, avec candidat, thème et source.</p></div><span class="pt-count">2&nbsp;007 mesures suivies</span></div>
-        <section class="pt-section"><div class="pt-section-head"><h2>Déclarations du débat du 16 novembre 2026</h2><span class="pt-pill">5 candidats</span></div><p class="pt-muted">Les propositions déjà recensées sont mises en regard des déclarations faites pendant le débat. Les montants qui divergent entre comptes rendus sont signalés.</p><div class="pt-list">
-          <div class="pt-list-row"><span class="pt-date">16 nov.</span><div><div class="pt-row-title">Suppression de la CSG sur les salaires, gain annoncé jusqu’à 270 € nets par mois</div><div class="pt-row-meta">Gabriel Attal · Fiscalité et pouvoir d’achat · <a href="https://www.boursorama.com/actualite-economique/actualites/hausse-du-smic-c-est-pas-l-urss-retorque-melenchon-a-le-pen-5879dfe879683874d275ee6dda5197a7" target="_blank" rel="noopener noreferrer">AFP / Boursorama</a></div></div><span class="pt-pill">Déclaration</span></div>
-          <div class="pt-list-row"><span class="pt-date">16 nov.</span><div><div class="pt-row-title">Baisse de la CSG sur les salaires</div><div class="pt-row-meta">Raphaël Glucksmann · Fiscalité · <a href="https://www.boursorama.com/actualite-economique/actualites/hausse-du-smic-c-est-pas-l-urss-retorque-melenchon-a-le-pen-5879dfe879683874d275ee6dda5197a7" target="_blank" rel="noopener noreferrer">AFP / Boursorama</a></div></div><span class="pt-pill">Confirmation</span></div>
-          <div class="pt-list-row"><span class="pt-date">16 nov.</span><div><div class="pt-row-title">Cantines bio et gratuites, blocage des marges agroalimentaires et objectif de 400&nbsp;000 paysans</div><div class="pt-row-meta">Jean-Luc Mélenchon · Alimentation · <a href="https://www.linternaute.com/actualite/politique/11314631-debat-presidentiel-du-16-novembre-pouvoir-d-achat-logement-etudiants-les-annonces-de-melenchon-et-le-pen/" target="_blank" rel="noopener noreferrer">Linternaute</a></div></div><span class="pt-pill">Déclarations</span></div>
-          <div class="pt-list-row"><span class="pt-date">16 nov.</span><div><div class="pt-row-title">Allocation d’autonomie : les comptes rendus citent 1&nbsp;300 € ou 1&nbsp;337 € par mois</div><div class="pt-row-meta">Jean-Luc Mélenchon · Jeunesse · <a href="https://www.tf1info.fr/politique/elections/presidentielle/quelle-societe-pour-demain-precarite-logement-retraites-revoyez-les-temps-forts-du-debat-organise-par-lci-en-association-avec-les-restos-du-coeur-2471255.html" target="_blank" rel="noopener noreferrer">TF1 Info</a> · <a href="https://www.linternaute.com/actualite/politique/11314631-debat-presidentiel-du-16-novembre-pouvoir-d-achat-logement-etudiants-les-annonces-de-melenchon-et-le-pen/" target="_blank" rel="noopener noreferrer">Linternaute</a></div></div><span class="pt-pill">Écart signalé</span></div>
-          <div class="pt-list-row"><span class="pt-date">16 nov.</span><div><div class="pt-row-title">400&nbsp;000 logements sociaux financés par le Livret A, sans périodicité précisée dans le compte rendu</div><div class="pt-row-meta">Jean-Luc Mélenchon · Logement · <a href="https://www.linternaute.com/actualite/politique/11314631-debat-presidentiel-du-16-novembre-pouvoir-d-achat-logement-etudiants-les-annonces-de-melenchon-et-le-pen/" target="_blank" rel="noopener noreferrer">Linternaute</a></div></div><span class="pt-pill">Déclaration</span></div>
-          <div class="pt-list-row"><span class="pt-date">16 nov.</span><div><div class="pt-row-title">TVA à 0 % sur les produits essentiels, TVA énergie à 5,5 %, hausse de la rémunération des apprentis et prime étudiante pouvant atteindre 20 % du salaire (30 % pour les boursiers)</div><div class="pt-row-meta">Marine Le Pen · Pouvoir d’achat, formation et jeunesse · <a href="https://www.linternaute.com/actualite/politique/11314631-debat-presidentiel-du-16-novembre-pouvoir-d-achat-logement-etudiants-les-annonces-de-melenchon-et-le-pen/" target="_blank" rel="noopener noreferrer">Linternaute</a></div></div><span class="pt-pill">Déclarations</span></div>
-          <div class="pt-list-row"><span class="pt-date">16 nov.</span><div><div class="pt-row-title">Exonération de cotisations pendant cinq ans sur une hausse de salaire de 10 %, jusqu’à trois SMIC</div><div class="pt-row-meta">Marine Le Pen · Salaires · <a href="https://www.boursorama.com/actualite-economique/actualites/hausse-du-smic-c-est-pas-l-urss-retorque-melenchon-a-le-pen-5879dfe879683874d275ee6dda5197a7" target="_blank" rel="noopener noreferrer">AFP / Boursorama</a></div></div><span class="pt-pill">Précision</span></div>
-          <div class="pt-list-row"><span class="pt-date">16 nov.</span><div><div class="pt-row-title">Permis gratuit pour les jeunes, trains gratuits aux heures creuses et transformation de bureaux vacants en logements</div><div class="pt-row-meta">Marine Le Pen · Jeunesse, transports et logement · <a href="https://www.linternaute.com/actualite/politique/11314631-debat-presidentiel-du-16-novembre-pouvoir-d-achat-logement-etudiants-les-annonces-de-melenchon-et-le-pen/" target="_blank" rel="noopener noreferrer">Linternaute</a></div></div><span class="pt-pill">Déclarations</span></div>
-          <div class="pt-list-row"><span class="pt-date">16 nov.</span><div><div class="pt-row-title">Lutter contre la pauvreté par davantage d’activité, de travail et une baisse des charges</div><div class="pt-row-meta">Bruno Retailleau · Emploi et pouvoir d’achat · <a href="https://www.boursorama.com/actualite-economique/actualites/hausse-du-smic-c-est-pas-l-urss-retorque-melenchon-a-le-pen-5879dfe879683874d275ee6dda5197a7" target="_blank" rel="noopener noreferrer">AFP / Boursorama</a></div></div><span class="pt-pill">Position exprimée</span></div>
-        </div></section>
-        <section class="pt-section"><div class="pt-section-head"><h2>Ajouts du 12 novembre 2026</h2><span class="pt-pill">4 propositions</span></div><div class="pt-list">
-          <div class="pt-list-row"><span class="pt-date">12 nov.</span><div><div class="pt-row-title">Premier acte de procédure dans les 48 heures après une plainte pour violences sur enfant</div><div class="pt-row-meta">Gabriel Attal · Sécurité et justice · Source : Public Sénat</div></div><span class="pt-pill">Ajout</span></div>
-          <div class="pt-list-row"><span class="pt-date">12 nov.</span><div><div class="pt-row-title">Suppression des réductions automatiques de peine</div><div class="pt-row-meta">Gabriel Attal · Sécurité et justice · Source : Public Sénat</div></div><span class="pt-pill">Ajout</span></div>
-          <div class="pt-list-row"><span class="pt-date">12 nov.</span><div><div class="pt-row-title">Remplacement de Parcoursup</div><div class="pt-row-meta">Raphaël Glucksmann · Éducation · Source : Public Sénat</div></div><span class="pt-pill">Ajout</span></div>
-          <div class="pt-list-row"><span class="pt-date">12 nov.</span><div><div class="pt-row-title">Présence policière continue sur le terrain, notamment dans les quartiers populaires</div><div class="pt-row-meta">Raphaël Glucksmann · Sécurité et justice · Source : Public Sénat</div></div><span class="pt-pill">Ajout</span></div>
-        </div></section>
+        <div class="pt-heading"><div><h1>Évolution des programmes</h1><p class="pt-subtitle">Mesures, ajouts et modifications sourcés dans la base de données.</p></div><span id="pt-program-count" class="pt-count">Chargement…</span></div>
+        <div class="pt-filterbar">
+          <label class="pt-field"><span class="pt-label">Candidat</span><select id="pt-program-candidate" class="pt-select"><option value="all">Tous les candidats</option></select></label>
+          <label class="pt-field"><span class="pt-label">Thème</span><select id="pt-program-theme" class="pt-select"><option value="all">Tous les thèmes</option></select></label>
+        </div>
+        <section class="pt-section"><div id="pt-program-list" class="pt-list" aria-live="polite"></div><button id="pt-program-more" class="pt-candidate-reset" type="button">Afficher plus</button></section>
       </section>
 
       <section id="pt-panel-campaign" role="tabpanel" aria-labelledby="pt-tab-campaign" class="pt-hidden">
-        <div class="pt-heading"><div><h1>Chronologie de campagne</h1><p class="pt-subtitle">Événements datés et prochaines échéances.</p></div><span class="pt-count">113 événements et échéances enregistrés</span></div>
+        <div class="pt-heading"><div><h1>Chronologie de campagne</h1><p class="pt-subtitle">Événements datés et échéances issus de la base de données.</p></div><span id="pt-campaign-count" class="pt-count">Chargement…</span></div>
         <div class="pt-two-col">
-          <section class="pt-section"><div class="pt-section-head"><h2>Derniers événements</h2><span class="pt-count">Novembre 2026</span></div><div class="pt-timeline">
-            <div class="pt-event"><span class="pt-event-date">16 nov. 2026</span><i class="pt-event-marker" aria-hidden="true"></i><div class="pt-event-body"><h3>Débat présidentiel « Quelle société pour demain ? »</h3><p>Débat organisé par LCI avec les Restos du Cœur sur le pouvoir d’achat, la précarité, le logement, la jeunesse, les retraites et la solidarité. Cinq candidats déclarés y ont participé. <a href="https://information.tv5monde.com/france/impots-logement-smic-ce-quil-faut-retenir-du-debat-entre-candidats-la-presidentielle-2846034" target="_blank" rel="noopener noreferrer">Compte rendu TV5MONDE (AFP)</a>.</p></div></div>
-            <div class="pt-event"><span class="pt-event-date">10 nov. 2026</span><i class="pt-event-marker" aria-hidden="true"></i><div class="pt-event-body"><h3>Bruno Retailleau propose une primaire</h3><p>Propose une primaire de la droite et du centre les 31 janvier et 7 février 2027, dans une lettre à Édouard Philippe, Gabriel Attal et David Lisnard.</p></div></div>
-            <div class="pt-event"><span class="pt-event-date">10 nov. 2026</span><i class="pt-event-marker" aria-hidden="true"></i><div class="pt-event-body"><h3>Éric Zemmour confirme sa candidature</h3><p>Déclaration au journal de 20 heures de TF1.</p></div></div>
-            <div class="pt-event"><span class="pt-event-date">9 nov. 2026</span><i class="pt-event-marker" aria-hidden="true"></i><div class="pt-event-body"><h3>Teddy Riner annonce sa candidature</h3><p>Annonce dans une vidéo publiée sur son compte X et dans un entretien au Parisien.</p></div></div>
-          </div></section>
-          <section class="pt-section"><div class="pt-section-head"><h2>À venir</h2><span class="pt-count">Dates publiées</span></div><div class="pt-list">
-            <div class="pt-list-row"><span class="pt-date">12 mars 2027</span><div><div class="pt-row-title">Clôture des parrainages</div><div class="pt-row-meta">Conseil constitutionnel</div></div><span class="pt-pill">Échéance</span></div>
-            <div class="pt-list-row"><span class="pt-date">26 mars 2027</span><div><div class="pt-row-title">Publication de la liste officielle des candidats</div><div class="pt-row-meta">Au plus tard à cette date</div></div><span class="pt-pill">Échéance</span></div>
-            <div class="pt-list-row"><span class="pt-date">17–18 avr. 2027</span><div><div class="pt-row-title">Premier tour</div><div class="pt-row-meta">Outre-mer le 17 avril · métropole le 18 avril</div></div><span class="pt-pill">Scrutin</span></div>
-          </div></section>
+          <section class="pt-section"><div class="pt-section-head"><h2>Derniers événements</h2></div><div id="pt-campaign-timeline" class="pt-timeline" aria-live="polite"></div></section>
+          <section class="pt-section"><div class="pt-section-head"><h2>À venir</h2><span class="pt-count">Agenda</span></div><div id="pt-campaign-upcoming" class="pt-list" aria-live="polite"></div></section>
         </div>
       </section>
 
@@ -158,12 +105,12 @@
     </main>
     <footer class="pt-footer">
       <p>Site indépendant, sans lien officiel avec l’État ni avec un candidat.</p>
-      <p>La maquette des visualisations est basée sur un instantané intégrant le débat du 16 novembre 2026. Les propositions de ce débat sont rapportées avec des sources datées, et les divergences entre comptes rendus sont signalées. La date de mise à jour de la source PresiTracker2027 est chargée dynamiquement : <time id="pt-source-date">chargement…</time>.</p>
-      <p>Sources : <a href="https://github.com/fcroiseaux/presitracker2027-data/blob/main/presitracker-data.json" target="_blank" rel="noopener noreferrer">fichier de données</a> et <a href="https://presitracker2027.fr/consultation/donnees" target="_blank" rel="noopener noreferrer">totaux de la consultation</a>. Réutilisation sous <a href="https://www.etalab.gouv.fr/wp-content/uploads/2017/04/ETALAB-Licence-Ouverte-v2.0.pdf" target="_blank" rel="noopener noreferrer">Licence Ouverte / Open Licence 2.0 (Etalab)</a>. Cette adaptation n’est ni une version officielle ni une approbation de PresiTracker2027.</p>
+      <p>Les tableaux et la chronologie sont chargés depuis la base de données locale du site. La date de dernière mise à jour est lue dans cette base : <time id="pt-source-date">chargement…</time>.</p>
+      <p>Sources : <a href="./presidentielle2027.json" target="_blank" rel="noopener noreferrer">base de données réutilisée</a> et <a href="https://presitracker2027.fr/consultation/donnees" target="_blank" rel="noopener noreferrer">totaux de la consultation</a>. Réutilisation sous <a href="https://www.etalab.gouv.fr/wp-content/uploads/2017/04/ETALAB-Licence-Ouverte-v2.0.pdf" target="_blank" rel="noopener noreferrer">Licence Ouverte / Open Licence 2.0 (Etalab)</a>. Cette adaptation n’est ni une version officielle ni une approbation de PresiTracker2027.</p>
     </footer>
   </div>
 </div>
 
-<script src="./app.js?v=20261115-3" defer></script>
+<script src="./app.js?v=20261118-1" defer></script>
 </body>
 </html>
