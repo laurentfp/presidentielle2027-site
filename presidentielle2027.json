@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-18T06:39:23Z",
+  "updatedAt": "2026-11-19T23:06:27Z",
   "election": {
     "name": "Élection présidentielle 2027",
     "round1": "2027-04-18",
@@ -6033,6 +6033,76 @@
       "url": "https://www.linternaute.com/actualite/politique/11314631-debat-presidentiel-du-16-novembre-pouvoir-d-achat-logement-etudiants-les-annonces-de-melenchon-et-le-pen/",
       "kind": "presse",
       "date": "2026-11-16"
+    },
+    "edouardphilippe-2026-11-18-programme-justice": {
+      "title": "Justice — Le programme — Avec Édouard 2027",
+      "publisher": "Édouard Philippe",
+      "url": "https://www.edouardphilippe.fr/programme/justice",
+      "date": "2026-11-18",
+      "kind": "programme"
+    },
+    "edouardphilippe-2026-11-18-programme-finances": {
+      "title": "Finances publiques — Le programme — Avec Édouard 2027",
+      "publisher": "Édouard Philippe",
+      "url": "https://www.edouardphilippe.fr/programme/comptes-publics",
+      "date": "2026-11-18",
+      "kind": "programme"
+    },
+    "edouardphilippe-2026-11-18-programme-retraites": {
+      "title": "Retraites — Le programme — Avec Édouard 2027",
+      "publisher": "Édouard Philippe",
+      "url": "https://www.edouardphilippe.fr/programme/retraites",
+      "date": "2026-11-18",
+      "kind": "programme"
+    },
+    "edouardphilippe-2026-11-18-programme-ecole": {
+      "title": "École — Le programme — Avec Édouard 2027",
+      "publisher": "Édouard Philippe",
+      "url": "https://www.edouardphilippe.fr/programme/ecole",
+      "date": "2026-11-18",
+      "kind": "programme"
+    },
+    "lcp-2026-11-18-philippe-programme": {
+      "title": "Présidentielle 2027: Édouard Philippe promet \"des réformes radicales\" pour relancer sa campagne, loin des discussions sur la primaire",
+      "publisher": "LCP - Assemblée nationale",
+      "url": "https://lcp.fr/actualites/presidentielle-2027-edouard-philippe-promet-des-reformes-radicales-pour-relancer-sa",
+      "date": "2026-11-18",
+      "kind": "presse"
+    },
+    "lcp-2026-11-17-lepen-capitalisation": {
+      "title": "Réforme des retraites: c’est quoi la capitalisation obligatoire que Marine Le Pen veut mettre en place?",
+      "publisher": "LCP - Assemblée nationale",
+      "url": "https://lcp.fr/actualites/reforme-des-retraites-c-est-quoi-la-capitalisation-obligatoire-que-marine-le-pen-veut",
+      "date": "2026-11-17",
+      "kind": "presse"
+    },
+    "lcp-2026-11-17-lepen-penibilite": {
+      "title": "Réforme des retraites: pourquoi le RN veut supprimer les critères de pénibilité du travail",
+      "publisher": "LCP - Assemblée nationale",
+      "url": "https://lcp.fr/actualites/reforme-des-retraites-pourquoi-le-rn-veut-supprimer-les-criteres-de-penibilite-du",
+      "date": "2026-11-17",
+      "kind": "presse"
+    },
+    "lcp-2026-11-18-tondelier-coalition": {
+      "title": "Présidentielle 2027: Marine Tondelier \"prête\" à une \"coalition\" autour de Jean-Luc Mélenchon",
+      "publisher": "LCP - Assemblée nationale",
+      "url": "https://lcp.fr/actualites/presidentielle-2027-marine-tondelier-prete-a-une-coalition-autour-de-jean-luc-melenchon",
+      "date": "2026-11-18",
+      "kind": "presse"
+    },
+    "lcp-2026-11-18-primaire-droite-centre": {
+      "title": "Présidentielle 2027: Entre Gabriel Attal, Bruno Retailleau et David Lisnard, une primaire se profile malgré le refus d’Edouard Philippe",
+      "publisher": "LCP - Assemblée nationale",
+      "url": "https://lcp.fr/actualites/presidentielle-2027-entre-gabriel-attal-bruno-retailleau-et-david-lisnard-une-primaire",
+      "date": "2026-11-18",
+      "kind": "presse"
+    },
+    "lcp-2026-11-17-grand-oral-jeunesse": {
+      "title": "Emission spéciale-Présidentielle 2027–Les candidats face aux étudiants",
+      "publisher": "LCP - Assemblée nationale",
+      "url": "https://lcp.fr/presse/communiques-de-presse/emission-speciale-presidentielle-2027-les-candidats-face-aux-etudiants",
+      "date": "2026-11-17",
+      "kind": "officiel"
     }
   },
   "candidates": [
@@ -23932,16 +24002,17 @@
           "id": "lepen-ret-pilier-capitalisation",
           "themeKey": "ret",
           "subthemeKey": "ret-financement",
-          "title": "Pilier de capitalisation pour les retraites",
-          "detail": "Marine Le Pen propose de créer un « véritable pilier de capitalisation » dans le système de retraite, sans chiffrage publié. Présenté le 6 octobre 2026, selon Public Sénat et Sud Radio.",
+          "title": "Pilier obligatoire de capitalisation pour les retraites",
+          "detail": "Marine Le Pen propose un pilier obligatoire pour les actifs de moins de 52 ans, alimenté d’environ 500 € annuels par personne sans cotisation supplémentaire. Le RN annonce un complément mensuel de 340 € après une carrière complète et une entrée en vigueur en 2028 ; il s’agit de ses projections. Selon LCP, présentation du 17 novembre.",
           "kind": "declaration",
           "status": "active",
           "firstSeen": "2026-10-06",
-          "lastChanged": "2026-10-06",
+          "lastChanged": "2026-11-19",
           "sourceIds": [
             "publicsenat-2026-10-06-140-milliards-d-euros-d-economies",
             "sudradio-2026-10-06-le-pen-promet-un-effort-radical",
-            "senioractu-2026-10-25-le-pen-lance-campagne-orleans"
+            "senioractu-2026-10-25-le-pen-lance-campagne-orleans",
+            "lcp-2026-11-17-lepen-capitalisation"
           ],
           "history": [
             {
@@ -23950,6 +24021,16 @@
               "sourceIds": [
                 "publicsenat-2026-10-06-140-milliards-d-euros-d-economies"
               ]
+            },
+            {
+              "date": "2026-11-19",
+              "type": "modification",
+              "before": "Pilier de capitalisation pour les retraites — Marine Le Pen propose de créer un « véritable pilier de capitalisation » dans le système de retraite, sans chiffrage publié. Présenté le 6 octobre 2026, selon Public Sénat et Sud Radio.",
+              "after": "Pilier obligatoire de capitalisation pour les retraites — Marine Le Pen propose un pilier obligatoire pour les actifs de moins de 52 ans, alimenté d’environ 500 € annuels par personne sans cotisation supplémentaire. Le RN annonce un complément mensuel de 340 € après une carrière complète et une entrée en vigueur en 2028 ; il s’agit de ses projections. Selon LCP, présentation du 17 novembre.",
+              "note": "Précisions ou changement publiés les 17 et 18 novembre 2026, intégrés lors de la veille du 18 novembre (publication le 19 UTC).",
+              "sourceIds": [
+                "lcp-2026-11-17-lepen-capitalisation"
+              ]
             }
           ]
         },
@@ -23957,15 +24038,16 @@
           "id": "lepen-ret-retraite-62-ans",
           "themeKey": "ret",
           "subthemeKey": "ret-age",
-          "title": "Retraite à 62 ans, 60 ans pour les carrières commencées avant 20 ans",
-          "detail": "Marine Le Pen propose un âge de départ à 62 ans, et à 60 ans pour les personnes ayant commencé à travailler avant 20 ans et cotisé 40 ans. Formulé devant le Medef, selon Sud Radio.",
+          "title": "Retraite entre 60 et 62 ans selon l’entrée dans la vie active",
+          "detail": "Marine Le Pen propose un départ entre 60 et 62 ans après 40 à 42 annuités, selon l’âge du premier emploi stable d’au moins six mois à temps plein, apprentissage compris. Application annoncée au 1er janvier 2028, selon LCP.",
           "kind": "declaration",
           "status": "active",
           "firstSeen": "2026-08-27",
-          "lastChanged": "2026-08-27",
+          "lastChanged": "2026-11-19",
           "sourceIds": [
             "sudradio-2026-08-27-marine-le-pen-defend-ses-reformes",
-            "senioractu-2026-10-25-le-pen-lance-campagne-orleans"
+            "senioractu-2026-10-25-le-pen-lance-campagne-orleans",
+            "lcp-2026-11-17-lepen-penibilite"
           ],
           "history": [
             {
@@ -23973,6 +24055,16 @@
               "type": "ajout",
               "sourceIds": [
                 "sudradio-2026-08-27-marine-le-pen-defend-ses-reformes"
+              ]
+            },
+            {
+              "date": "2026-11-19",
+              "type": "modification",
+              "before": "Retraite à 62 ans, 60 ans pour les carrières commencées avant 20 ans — Marine Le Pen propose un âge de départ à 62 ans, et à 60 ans pour les personnes ayant commencé à travailler avant 20 ans et cotisé 40 ans. Formulé devant le Medef, selon Sud Radio.",
+              "after": "Retraite entre 60 et 62 ans selon l’entrée dans la vie active — Marine Le Pen propose un départ entre 60 et 62 ans après 40 à 42 annuités, selon l’âge du premier emploi stable d’au moins six mois à temps plein, apprentissage compris. Application annoncée au 1er janvier 2028, selon LCP.",
+              "note": "Précisions ou changement publiés les 17 et 18 novembre 2026, intégrés lors de la veille du 18 novembre (publication le 19 UTC).",
+              "sourceIds": [
+                "lcp-2026-11-17-lepen-penibilite"
               ]
             }
           ]
@@ -24233,6 +24325,75 @@
               "note": "Déclaration rapportée lors du débat LCI du 16 novembre 2026.",
               "sourceIds": [
                 "linternaute-2026-11-16-annonces-debat-melenchon-le-pen"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "lepen-ret-suppression-criteres-penibilite",
+          "themeKey": "ret",
+          "subthemeKey": "ret-age",
+          "title": "Suppression des critères de pénibilité pour la retraite",
+          "detail": "Le projet présenté par Marine Le Pen supprime les critères de pénibilité au profit de l’âge d’entrée dans la vie active, selon LCP du 17 novembre.",
+          "kind": "declaration",
+          "status": "active",
+          "firstSeen": "2026-11-17",
+          "lastChanged": "2026-11-17",
+          "sourceIds": [
+            "lcp-2026-11-17-lepen-penibilite"
+          ],
+          "history": [
+            {
+              "date": "2026-11-17",
+              "type": "ajout",
+              "sourceIds": [
+                "lcp-2026-11-17-lepen-penibilite"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "lepen-ret-validation-trimestre-mi-temps",
+          "themeKey": "ret",
+          "subthemeKey": "ret-age",
+          "title": "Validation d’un trimestre après un trimestre travaillé au moins à mi-temps",
+          "detail": "Le projet présenté par Marine Le Pen remplace le seuil de 150 heures au SMIC par un trimestre travaillé au moins à mi-temps, sans critère salarial, selon LCP.",
+          "kind": "declaration",
+          "status": "active",
+          "firstSeen": "2026-11-17",
+          "lastChanged": "2026-11-17",
+          "sourceIds": [
+            "lcp-2026-11-17-lepen-penibilite"
+          ],
+          "history": [
+            {
+              "date": "2026-11-17",
+              "type": "ajout",
+              "sourceIds": [
+                "lcp-2026-11-17-lepen-penibilite"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "lepen-ret-capitalisation-financement-logement-formation",
+          "themeKey": "ret",
+          "subthemeKey": "ret-financement",
+          "title": "Réorientation de cotisations logement et formation vers la capitalisation",
+          "detail": "Le projet présenté par Marine Le Pen affecte les cotisations du 1 % logement, du Fnal et la moitié des cotisations de formation à un fonds géré par la Caisse des dépôts ; le RN annonce 12 Md€ annuels, selon LCP.",
+          "kind": "declaration",
+          "status": "active",
+          "firstSeen": "2026-11-17",
+          "lastChanged": "2026-11-17",
+          "sourceIds": [
+            "lcp-2026-11-17-lepen-capitalisation"
+          ],
+          "history": [
+            {
+              "date": "2026-11-17",
+              "type": "ajout",
+              "sourceIds": [
+                "lcp-2026-11-17-lepen-capitalisation"
               ]
             }
           ]
@@ -36511,7 +36672,8 @@
           "lastChanged": "2026-10-19",
           "sourceIds": [
             "edouardphilippe-nd-pour-une-france-plus-attentive-a",
-            "publicsenat-2026-11-12-grand-oral-services-publics"
+            "publicsenat-2026-11-12-grand-oral-services-publics",
+            "edouardphilippe-2026-11-18-programme-ecole"
           ],
           "history": [
             {
@@ -36583,7 +36745,8 @@
           "firstSeen": "2026-10-19",
           "lastChanged": "2026-10-19",
           "sourceIds": [
-            "edouardphilippe-nd-pour-une-france-plus-attentive-a"
+            "edouardphilippe-nd-pour-une-france-plus-attentive-a",
+            "edouardphilippe-2026-11-18-programme-ecole"
           ],
           "history": [
             {
@@ -36607,7 +36770,8 @@
           "firstSeen": "2026-10-19",
           "lastChanged": "2026-10-19",
           "sourceIds": [
-            "edouardphilippe-nd-pour-une-france-plus-attentive-a"
+            "edouardphilippe-nd-pour-une-france-plus-attentive-a",
+            "edouardphilippe-2026-11-18-programme-ecole"
           ],
           "history": [
             {
@@ -36696,14 +36860,15 @@
           "id": "philippe-edu-interdiction-portable",
           "themeKey": "edu",
           "subthemeKey": "edu-ecole",
-          "title": "Interdiction du téléphone portable à l'école",
-          "detail": "Édouard Philippe propose d'interdire strictement les téléphones portables à l'école primaire et au collège, avec confiscation immédiate en cas d'usage et restitution aux parents. Figure dans les premières orientations publiées sur son site de campagne (« Pour une France plus attentive à ses enfants »).",
+          "title": "Interdiction du téléphone portable à l’école, au collège et au lycée",
+          "detail": "Édouard Philippe étend l’interdiction stricte du téléphone au lycée, avec confiscation et restitution aux parents.",
           "kind": "programme",
           "status": "active",
           "firstSeen": "2026-10-19",
-          "lastChanged": "2026-10-19",
+          "lastChanged": "2026-11-19",
           "sourceIds": [
-            "edouardphilippe-nd-pour-une-france-plus-attentive-a"
+            "edouardphilippe-nd-pour-une-france-plus-attentive-a",
+            "edouardphilippe-2026-11-18-programme-ecole"
           ],
           "history": [
             {
@@ -36713,6 +36878,16 @@
                 "edouardphilippe-nd-pour-une-france-plus-attentive-a"
               ],
               "note": "Source non datée : date d'entrée dans le fichier."
+            },
+            {
+              "date": "2026-11-19",
+              "type": "modification",
+              "before": "Interdiction du téléphone portable à l'école — Édouard Philippe propose d'interdire strictement les téléphones portables à l'école primaire et au collège, avec confiscation immédiate en cas d'usage et restitution aux parents. Figure dans les premières orientations publiées sur son site de campagne (« Pour une France plus attentive à ses enfants »).",
+              "after": "Interdiction du téléphone portable à l’école, au collège et au lycée — Édouard Philippe étend l’interdiction stricte du téléphone au lycée, avec confiscation et restitution aux parents.",
+              "note": "Précisions ou changement publiés les 17 et 18 novembre 2026, intégrés lors de la veille du 18 novembre (publication le 19 UTC).",
+              "sourceIds": [
+                "edouardphilippe-2026-11-18-programme-ecole"
+              ]
             }
           ]
         },
@@ -37080,14 +37255,15 @@
           "id": "philippe-fin-deficit-2-pct",
           "themeKey": "fin",
           "subthemeKey": "fin-regles",
-          "title": "Déficit public ramené à 2 % du PIB",
-          "detail": "Édouard Philippe fixe l'objectif de ramener le déficit public de plus de 5 % à 2 % du PIB à la fin du quinquennat. Figure dans les premières orientations publiées sur son site de campagne (« Pour une France plus prospère »).",
+          "title": "Déficit public ramené sous 2,5 % du PIB en fin de quinquennat",
+          "detail": "Édouard Philippe fixe désormais un déficit inférieur à 2,5 % du PIB en fin de quinquennat, contre 2 % précédemment, et annonce près de 150 Md€ d’économies.",
           "kind": "programme",
           "status": "active",
           "firstSeen": "2026-10-19",
-          "lastChanged": "2026-10-19",
+          "lastChanged": "2026-11-19",
           "sourceIds": [
-            "edouardphilippe-nd-edouard-philippe-pour-une-france-plus"
+            "edouardphilippe-nd-edouard-philippe-pour-une-france-plus",
+            "edouardphilippe-2026-11-18-programme-finances"
           ],
           "history": [
             {
@@ -37097,6 +37273,16 @@
                 "edouardphilippe-nd-edouard-philippe-pour-une-france-plus"
               ],
               "note": "Source non datée : date d'entrée dans le fichier."
+            },
+            {
+              "date": "2026-11-19",
+              "type": "modification",
+              "before": "Déficit public ramené à 2 % du PIB — Édouard Philippe fixe l'objectif de ramener le déficit public de plus de 5 % à 2 % du PIB à la fin du quinquennat. Figure dans les premières orientations publiées sur son site de campagne (« Pour une France plus prospère »).",
+              "after": "Déficit public ramené sous 2,5 % du PIB en fin de quinquennat — Édouard Philippe fixe désormais un déficit inférieur à 2,5 % du PIB en fin de quinquennat, contre 2 % précédemment, et annonce près de 150 Md€ d’économies.",
+              "note": "Précisions ou changement publiés les 17 et 18 novembre 2026, intégrés lors de la veille du 18 novembre (publication le 19 UTC).",
+              "sourceIds": [
+                "edouardphilippe-2026-11-18-programme-finances"
+              ]
             }
           ]
         },
@@ -37104,15 +37290,16 @@
           "id": "philippe-fin-fusion-operateurs",
           "themeKey": "fin",
           "subthemeKey": "fin-etat",
-          "title": "Fusion et suppression d'opérateurs et d'agences de l'État",
-          "detail": "Édouard Philippe propose de fusionner et de supprimer des dizaines d'opérateurs, d'agences et de comités publics, et de regrouper ou privatiser des agences et opérateurs. Figure dans les premières orientations publiées sur son site de campagne (« Pour une France plus prospère »).",
+          "title": "Fusion, suppression ou privatisation d’une trentaine d’opérateurs publics",
+          "detail": "Édouard Philippe chiffre à une trentaine les agences et opérateurs à fusionner, supprimer ou privatiser.",
           "kind": "programme",
           "status": "active",
           "firstSeen": "2026-10-19",
-          "lastChanged": "2026-10-19",
+          "lastChanged": "2026-11-19",
           "sourceIds": [
             "edouardphilippe-nd-edouard-philippe-pour-une-france-plus",
-            "publicsenat-2026-11-12-grand-oral-services-publics"
+            "publicsenat-2026-11-12-grand-oral-services-publics",
+            "edouardphilippe-2026-11-18-programme-finances"
           ],
           "history": [
             {
@@ -37122,6 +37309,16 @@
                 "edouardphilippe-nd-edouard-philippe-pour-une-france-plus"
               ],
               "note": "Source non datée : date d'entrée dans le fichier."
+            },
+            {
+              "date": "2026-11-19",
+              "type": "modification",
+              "before": "Fusion et suppression d'opérateurs et d'agences de l'État — Édouard Philippe propose de fusionner et de supprimer des dizaines d'opérateurs, d'agences et de comités publics, et de regrouper ou privatiser des agences et opérateurs. Figure dans les premières orientations publiées sur son site de campagne (« Pour une France plus prospère »).",
+              "after": "Fusion, suppression ou privatisation d’une trentaine d’opérateurs publics — Édouard Philippe chiffre à une trentaine les agences et opérateurs à fusionner, supprimer ou privatiser.",
+              "note": "Précisions ou changement publiés les 17 et 18 novembre 2026, intégrés lors de la veille du 18 novembre (publication le 19 UTC).",
+              "sourceIds": [
+                "edouardphilippe-2026-11-18-programme-finances"
+              ]
             }
           ]
         },
@@ -37129,14 +37326,15 @@
           "id": "philippe-fin-non-remplacement-tiers",
           "themeKey": "fin",
           "subthemeKey": "fin-etat",
-          "title": "Non-remplacement d'un départ de fonctionnaire sur trois",
-          "detail": "Édouard Philippe propose de supprimer un tiers des postes de fonctionnaires partant à la retraite, soit plus de 250 000 postes sur le quinquennat. Figure dans les premières orientations publiées sur son site de campagne (« Pour une France plus prospère »).",
+          "title": "Suppression de 250 000 postes par les départs à la retraite",
+          "detail": "Édouard Philippe précise viser 250 000 postes en moins sur le quinquennat, sans licenciement ; un départ sur trois serait non remplacé dans les fonctions de bureau, avec les gains attendus de l’IA.",
           "kind": "programme",
           "status": "active",
           "firstSeen": "2026-10-19",
-          "lastChanged": "2026-10-19",
+          "lastChanged": "2026-11-19",
           "sourceIds": [
-            "edouardphilippe-nd-edouard-philippe-pour-une-france-plus"
+            "edouardphilippe-nd-edouard-philippe-pour-une-france-plus",
+            "edouardphilippe-2026-11-18-programme-finances"
           ],
           "history": [
             {
@@ -37146,6 +37344,16 @@
                 "edouardphilippe-nd-edouard-philippe-pour-une-france-plus"
               ],
               "note": "Source non datée : date d'entrée dans le fichier."
+            },
+            {
+              "date": "2026-11-19",
+              "type": "modification",
+              "before": "Non-remplacement d'un départ de fonctionnaire sur trois — Édouard Philippe propose de supprimer un tiers des postes de fonctionnaires partant à la retraite, soit plus de 250 000 postes sur le quinquennat. Figure dans les premières orientations publiées sur son site de campagne (« Pour une France plus prospère »).",
+              "after": "Suppression de 250 000 postes par les départs à la retraite — Édouard Philippe précise viser 250 000 postes en moins sur le quinquennat, sans licenciement ; un départ sur trois serait non remplacé dans les fonctions de bureau, avec les gains attendus de l’IA.",
+              "note": "Précisions ou changement publiés les 17 et 18 novembre 2026, intégrés lors de la veille du 18 novembre (publication le 19 UTC).",
+              "sourceIds": [
+                "edouardphilippe-2026-11-18-programme-finances"
+              ]
             }
           ]
         },
@@ -37160,7 +37368,8 @@
           "firstSeen": "2026-10-19",
           "lastChanged": "2026-10-19",
           "sourceIds": [
-            "edouardphilippe-nd-edouard-philippe-pour-une-france-plus"
+            "edouardphilippe-nd-edouard-philippe-pour-une-france-plus",
+            "edouardphilippe-2026-11-18-programme-finances"
           ],
           "history": [
             {
@@ -37184,7 +37393,8 @@
           "firstSeen": "2026-10-19",
           "lastChanged": "2026-10-19",
           "sourceIds": [
-            "edouardphilippe-nd-edouard-philippe-pour-une-france-plus"
+            "edouardphilippe-nd-edouard-philippe-pour-une-france-plus",
+            "edouardphilippe-2026-11-18-programme-finances"
           ],
           "history": [
             {
@@ -37256,7 +37466,8 @@
           "firstSeen": "2026-10-19",
           "lastChanged": "2026-10-19",
           "sourceIds": [
-            "edouardphilippe-nd-edouard-philippe-pour-une-france-plus"
+            "edouardphilippe-nd-edouard-philippe-pour-une-france-plus",
+            "edouardphilippe-2026-11-18-programme-finances"
           ],
           "history": [
             {
@@ -37789,7 +38000,8 @@
           "lastChanged": "2026-09-30",
           "sourceIds": [
             "lcp-2026-09-30-retraites-edouard-philippe-veut-porter-l",
-            "edouardphilippe-nd-edouard-philippe-pour-une-france-plus"
+            "edouardphilippe-nd-edouard-philippe-pour-une-france-plus",
+            "edouardphilippe-2026-11-18-programme-retraites"
           ],
           "history": [
             {
@@ -37837,7 +38049,8 @@
           "lastChanged": "2026-09-30",
           "sourceIds": [
             "lcp-2026-09-30-retraites-edouard-philippe-veut-porter-l",
-            "edouardphilippe-nd-edouard-philippe-pour-une-france-plus"
+            "edouardphilippe-nd-edouard-philippe-pour-une-france-plus",
+            "edouardphilippe-2026-11-18-programme-retraites"
           ],
           "history": [
             {
@@ -37860,7 +38073,8 @@
           "firstSeen": "2026-10-19",
           "lastChanged": "2026-10-19",
           "sourceIds": [
-            "edouardphilippe-nd-edouard-philippe-pour-une-france-plus"
+            "edouardphilippe-nd-edouard-philippe-pour-une-france-plus",
+            "edouardphilippe-2026-11-18-programme-retraites"
           ],
           "history": [
             {
@@ -38078,7 +38292,8 @@
           "sourceIds": [
             "edouardphilippe-nd-edouard-philippe-pour-une-france-plus-2",
             "orange-2026-10-27-philippe-immigration-legale-par-deux",
-            "21news-2026-10-28-philippe-echec-integration"
+            "21news-2026-10-28-philippe-echec-integration",
+            "edouardphilippe-2026-11-18-programme-justice"
           ],
           "history": [
             {
@@ -38273,7 +38488,8 @@
           "sourceIds": [
             "edouardphilippe-nd-edouard-philippe-pour-une-france-plus-2",
             "21news-2026-10-28-philippe-echec-integration",
-            "publicsenat-2026-11-12-grand-oral-services-publics"
+            "publicsenat-2026-11-12-grand-oral-services-publics",
+            "edouardphilippe-2026-11-18-programme-justice"
           ],
           "history": [
             {
@@ -38321,7 +38537,8 @@
           "firstSeen": "2026-10-19",
           "lastChanged": "2026-10-19",
           "sourceIds": [
-            "edouardphilippe-nd-edouard-philippe-pour-une-france-plus-2"
+            "edouardphilippe-nd-edouard-philippe-pour-une-france-plus-2",
+            "edouardphilippe-2026-11-18-programme-justice"
           ],
           "history": [
             {
@@ -38368,7 +38585,8 @@
           "firstSeen": "2026-11-12",
           "lastChanged": "2026-11-12",
           "sourceIds": [
-            "publicsenat-2026-11-12-grand-oral-services-publics"
+            "publicsenat-2026-11-12-grand-oral-services-publics",
+            "edouardphilippe-2026-11-18-programme-justice"
           ],
           "history": [
             {
@@ -38384,14 +38602,15 @@
           "id": "philippe-sec-nouvelles-places-prison",
           "themeKey": "sec",
           "subthemeKey": "sec-prisons",
-          "title": "Construction de nouvelles places de prison",
-          "detail": "Édouard Philippe propose de construire de nouvelles places de prison, sans nombre précisé par la source. Déclaré lors du grand oral des candidats sur les services publics organisé par Radio France le 12 novembre 2026, selon Public Sénat.",
+          "title": "Construction de 30 000 places de prison pour les peines courtes",
+          "detail": "Édouard Philippe chiffre à 30 000 les places de prison à créer pour les peines courtes et propose une loi pour en accélérer la construction.",
           "kind": "declaration",
           "status": "active",
           "firstSeen": "2026-11-12",
-          "lastChanged": "2026-11-12",
+          "lastChanged": "2026-11-19",
           "sourceIds": [
-            "publicsenat-2026-11-12-grand-oral-services-publics"
+            "publicsenat-2026-11-12-grand-oral-services-publics",
+            "edouardphilippe-2026-11-18-programme-justice"
           ],
           "history": [
             {
@@ -38399,6 +38618,16 @@
               "type": "ajout",
               "sourceIds": [
                 "publicsenat-2026-11-12-grand-oral-services-publics"
+              ]
+            },
+            {
+              "date": "2026-11-19",
+              "type": "modification",
+              "before": "Construction de nouvelles places de prison — Édouard Philippe propose de construire de nouvelles places de prison, sans nombre précisé par la source. Déclaré lors du grand oral des candidats sur les services publics organisé par Radio France le 12 novembre 2026, selon Public Sénat.",
+              "after": "Construction de 30 000 places de prison pour les peines courtes — Édouard Philippe chiffre à 30 000 les places de prison à créer pour les peines courtes et propose une loi pour en accélérer la construction.",
+              "note": "Précisions ou changement publiés les 17 et 18 novembre 2026, intégrés lors de la veille du 18 novembre (publication le 19 UTC).",
+              "sourceIds": [
+                "edouardphilippe-2026-11-18-programme-justice"
               ]
             }
           ]
@@ -38425,8 +38654,262 @@
               ]
             }
           ]
+        },
+        {
+          "id": "philippe-ent-privatisation-france-travail",
+          "themeKey": "ent",
+          "subthemeKey": "ent-chomage",
+          "title": "Privatisation de France Travail",
+          "detail": "Édouard Philippe propose de privatiser France Travail.",
+          "kind": "programme",
+          "status": "active",
+          "firstSeen": "2026-11-18",
+          "lastChanged": "2026-11-18",
+          "sourceIds": [
+            "edouardphilippe-2026-11-18-programme-finances"
+          ],
+          "history": [
+            {
+              "date": "2026-11-18",
+              "type": "ajout",
+              "sourceIds": [
+                "edouardphilippe-2026-11-18-programme-finances"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "philippe-inst-suppression-cese",
+          "themeKey": "inst",
+          "subthemeKey": "inst-constitution",
+          "title": "Suppression du Conseil économique, social et environnemental",
+          "detail": "Édouard Philippe propose de supprimer le CESE.",
+          "kind": "programme",
+          "status": "active",
+          "firstSeen": "2026-11-18",
+          "lastChanged": "2026-11-18",
+          "sourceIds": [
+            "edouardphilippe-2026-11-18-programme-finances"
+          ],
+          "history": [
+            {
+              "date": "2026-11-18",
+              "type": "ajout",
+              "sourceIds": [
+                "edouardphilippe-2026-11-18-programme-finances"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "philippe-eco-baisse-allocataires-rsa-30-pct",
+          "themeKey": "eco",
+          "subthemeKey": "eco-prestations",
+          "title": "Réduction de 30 % du nombre d’allocataires du RSA",
+          "detail": "Édouard Philippe vise 30 % d’allocataires du RSA en moins par le suivi individuel, l’insertion dans les métiers en tension et la lutte contre les abus.",
+          "kind": "programme",
+          "status": "active",
+          "firstSeen": "2026-11-18",
+          "lastChanged": "2026-11-18",
+          "sourceIds": [
+            "edouardphilippe-2026-11-18-programme-finances"
+          ],
+          "history": [
+            {
+              "date": "2026-11-18",
+              "type": "ajout",
+              "sourceIds": [
+                "edouardphilippe-2026-11-18-programme-finances"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "philippe-sec-retour-juges-de-paix",
+          "themeKey": "sec",
+          "subthemeKey": "sec-justice",
+          "title": "Rétablissement des juges de paix",
+          "detail": "Édouard Philippe propose le retour des juges de paix pour la justice civile.",
+          "kind": "programme",
+          "status": "active",
+          "firstSeen": "2026-11-18",
+          "lastChanged": "2026-11-18",
+          "sourceIds": [
+            "edouardphilippe-2026-11-18-programme-justice"
+          ],
+          "history": [
+            {
+              "date": "2026-11-18",
+              "type": "ajout",
+              "sourceIds": [
+                "edouardphilippe-2026-11-18-programme-justice"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "philippe-sec-discipline-magistrats",
+          "themeKey": "sec",
+          "subthemeKey": "sec-justice",
+          "title": "Saisine directe du CSM et discipline locale des magistrats",
+          "detail": "Édouard Philippe propose de faciliter la saisine directe du CSM par les justiciables et de donner aux chefs de juridiction un premier pouvoir disciplinaire.",
+          "kind": "programme",
+          "status": "active",
+          "firstSeen": "2026-11-18",
+          "lastChanged": "2026-11-18",
+          "sourceIds": [
+            "edouardphilippe-2026-11-18-programme-justice"
+          ],
+          "history": [
+            {
+              "date": "2026-11-18",
+              "type": "ajout",
+              "sourceIds": [
+                "edouardphilippe-2026-11-18-programme-justice"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "philippe-sec-procedure-penale-100-jours",
+          "themeKey": "sec",
+          "subthemeKey": "sec-justice",
+          "title": "Refonte du code de procédure pénale en 100 jours",
+          "detail": "Édouard Philippe propose un comité chargé de refondre le code de procédure pénale en 100 jours.",
+          "kind": "programme",
+          "status": "active",
+          "firstSeen": "2026-11-18",
+          "lastChanged": "2026-11-18",
+          "sourceIds": [
+            "edouardphilippe-2026-11-18-programme-justice"
+          ],
+          "history": [
+            {
+              "date": "2026-11-18",
+              "type": "ajout",
+              "sourceIds": [
+                "edouardphilippe-2026-11-18-programme-justice"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "philippe-sec-ia-instruction-dossiers",
+          "themeKey": "sec",
+          "subthemeKey": "sec-justice",
+          "title": "Déploiement de l’IA pour accélérer l’instruction des dossiers",
+          "detail": "Édouard Philippe propose de déployer l’intelligence artificielle dans l’instruction des dossiers judiciaires.",
+          "kind": "programme",
+          "status": "active",
+          "firstSeen": "2026-11-18",
+          "lastChanged": "2026-11-18",
+          "sourceIds": [
+            "edouardphilippe-2026-11-18-programme-justice"
+          ],
+          "history": [
+            {
+              "date": "2026-11-18",
+              "type": "ajout",
+              "sourceIds": [
+                "edouardphilippe-2026-11-18-programme-justice"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "philippe-ret-gestion-partenaires-sociaux",
+          "themeKey": "ret",
+          "subthemeKey": "ret-financement",
+          "title": "Gestion des retraites confiée aux partenaires sociaux après retour à l’équilibre",
+          "detail": "Édouard Philippe propose de confier le système de retraites aux partenaires sociaux une fois son équilibre rétabli.",
+          "kind": "programme",
+          "status": "active",
+          "firstSeen": "2026-11-18",
+          "lastChanged": "2026-11-18",
+          "sourceIds": [
+            "edouardphilippe-2026-11-18-programme-retraites"
+          ],
+          "history": [
+            {
+              "date": "2026-11-18",
+              "type": "ajout",
+              "sourceIds": [
+                "edouardphilippe-2026-11-18-programme-retraites"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "philippe-edu-lecture-maternelle-2500-mots",
+          "themeKey": "edu",
+          "subthemeKey": "edu-ecole",
+          "title": "Lecture dès la maternelle et objectif de 2 500 mots à l’entrée au CP",
+          "detail": "Édouard Philippe propose la lecture dès la maternelle, des tests de décodage et un accompagnement vers un vocabulaire de 2 500 mots à l’entrée au CP.",
+          "kind": "programme",
+          "status": "active",
+          "firstSeen": "2026-11-18",
+          "lastChanged": "2026-11-18",
+          "sourceIds": [
+            "edouardphilippe-2026-11-18-programme-ecole"
+          ],
+          "history": [
+            {
+              "date": "2026-11-18",
+              "type": "ajout",
+              "sourceIds": [
+                "edouardphilippe-2026-11-18-programme-ecole"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "philippe-eco-suspension-rsa-condamnation",
+          "themeKey": "eco",
+          "subthemeKey": "eco-prestations",
+          "title": "Suspension automatique du RSA des délinquants condamnés",
+          "detail": "Édouard Philippe propose la suspension automatique du RSA des délinquants condamnés, selon LCP rapportant sa présentation du 18 novembre.",
+          "kind": "declaration",
+          "status": "active",
+          "firstSeen": "2026-11-18",
+          "lastChanged": "2026-11-18",
+          "sourceIds": [
+            "lcp-2026-11-18-philippe-programme"
+          ],
+          "history": [
+            {
+              "date": "2026-11-18",
+              "type": "ajout",
+              "sourceIds": [
+                "lcp-2026-11-18-philippe-programme"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "philippe-edu-selection-universite",
+          "themeKey": "edu",
+          "subthemeKey": "edu-sup",
+          "title": "Sélection à l’université",
+          "detail": "Édouard Philippe défend la sélection à l’université, selon LCP rapportant sa présentation du 18 novembre.",
+          "kind": "declaration",
+          "status": "active",
+          "firstSeen": "2026-11-18",
+          "lastChanged": "2026-11-18",
+          "sourceIds": [
+            "lcp-2026-11-18-philippe-programme"
+          ],
+          "history": [
+            {
+              "date": "2026-11-18",
+              "type": "ajout",
+              "sourceIds": [
+                "lcp-2026-11-18-philippe-programme"
+              ]
+            }
+          ]
         }
-      ]
+      ],
+      "programmeUrl": "https://www.edouardphilippe.fr/programme"
     },
     {
       "id": "philippot",
@@ -57037,12 +57520,12 @@
           },
           "lepen": {
             "value": 2,
-            "note": "Propose un âge de départ à 62 ans, 60 ans pour les carrières commencées avant 20 ans.",
+            "note": "Propose un départ entre 60 et 62 ans selon l’âge d’entrée dans la vie active.",
             "measureIds": [
               "lepen-ret-retraite-62-ans"
             ],
             "sourceIds": [
-              "sudradio-2026-08-27-marine-le-pen-defend-ses-reformes"
+              "lcp-2026-11-17-lepen-penibilite"
             ]
           },
           "ruffin": {
@@ -57189,14 +57672,13 @@
             ]
           },
           "lepen": {
-            "value": 1,
-            "note": "Propose un « pilier de capitalisation », sans chiffrage publié.",
+            "value": 2,
+            "note": "Propose un pilier obligatoire de capitalisation, avec versements annuels et application annoncée en 2028.",
             "measureIds": [
               "lepen-ret-pilier-capitalisation"
             ],
             "sourceIds": [
-              "publicsenat-2026-10-06-140-milliards-d-euros-d-economies",
-              "sudradio-2026-10-06-le-pen-promet-un-effort-radical"
+              "lcp-2026-11-17-lepen-capitalisation"
             ]
           },
           "labib": {
@@ -62435,6 +62917,16 @@
             "sourceIds": [
               "la-convention-2026-07-15-lettre-aux-francais"
             ]
+          },
+          "lepen": {
+            "value": -2,
+            "note": "Propose de supprimer les critères de pénibilité au profit de l’âge d’entrée dans la vie active.",
+            "measureIds": [
+              "lepen-ret-suppression-criteres-penibilite"
+            ],
+            "sourceIds": [
+              "lcp-2026-11-17-lepen-penibilite"
+            ]
           }
         }
       },
@@ -62811,6 +63303,16 @@
               "revolutionpermanente-2026-06-01-kazib-nouvelle-classe-ouvriere",
               "anasse2027-nd-programme-d-anasse-kazib-2027-en",
               "anasse2027-nd-depliant-anasse-2027"
+            ]
+          },
+          "lepen": {
+            "value": -2,
+            "note": "Prévoit 40 à 42 annuités selon l’âge d’entrée dans la vie active.",
+            "measureIds": [
+              "lepen-ret-retraite-62-ans"
+            ],
+            "sourceIds": [
+              "lcp-2026-11-17-lepen-penibilite"
             ]
           }
         }
@@ -66483,6 +66985,16 @@
             ],
             "sourceIds": [
               "attalpresident-2026-08-02-jdd-reforme-institutionnelle"
+            ]
+          },
+          "philippe": {
+            "value": 2,
+            "note": "Propose 30 000 places de prison supplémentaires pour les peines courtes.",
+            "measureIds": [
+              "philippe-sec-nouvelles-places-prison"
+            ],
+            "sourceIds": [
+              "edouardphilippe-2026-11-18-programme-justice"
             ]
           }
         }
@@ -78248,6 +78760,1698 @@
           ]
         }
       ]
+    },
+    {
+      "id": "opinionway-2026-11-12-cnews",
+      "institute": "OpinionWay",
+      "sponsors": [
+        "CNEWS"
+      ],
+      "fieldworkStart": "2026-11-10",
+      "fieldworkEnd": "2026-11-12",
+      "publishedAt": "2026-11-12",
+      "population": "1 001 adultes, dont 964 inscrits ; 660 certains de voter ; bases exprimées : 611 et 600 au premier tour, 504, 471 et 512 au second.",
+      "sampleSize": 1001,
+      "method": "Questionnaire en ligne ; quotas de sexe, âge, profession, région et catégorie d’agglomération ; redressement sociodémographique et politique ; résultats des électeurs certains d’aller voter (notes 9 et 10).",
+      "round": 1,
+      "hypotheses": [
+        {
+          "id": "h1",
+          "label": "Avec Teddy Riner ; Karim Bouamrane publié à moins de 1 %, sans valeur numérique transcrite",
+          "results": [
+            {
+              "candidateId": "arthaud",
+              "value": 1
+            },
+            {
+              "candidateId": "melenchon",
+              "value": 16
+            },
+            {
+              "candidateId": "roussel",
+              "value": 2
+            },
+            {
+              "candidateId": "tondelier",
+              "value": 3
+            },
+            {
+              "candidateId": "glucksmann",
+              "value": 10
+            },
+            {
+              "candidateId": "attal",
+              "value": 3
+            },
+            {
+              "candidateId": "philippe",
+              "value": 12
+            },
+            {
+              "candidateId": "riner",
+              "value": 4
+            },
+            {
+              "candidateId": "retailleau",
+              "value": 4
+            },
+            {
+              "candidateId": "lisnard",
+              "value": 9
+            },
+            {
+              "candidateId": "dupontaignan",
+              "value": 2
+            },
+            {
+              "candidateId": "zemmour",
+              "value": 3
+            },
+            {
+              "candidateId": "lepen",
+              "value": 31
+            }
+          ]
+        },
+        {
+          "id": "h2",
+          "label": "Sans Teddy Riner",
+          "results": [
+            {
+              "candidateId": "arthaud",
+              "value": 1
+            },
+            {
+              "candidateId": "melenchon",
+              "value": 16
+            },
+            {
+              "candidateId": "roussel",
+              "value": 1
+            },
+            {
+              "candidateId": "tondelier",
+              "value": 3
+            },
+            {
+              "candidateId": "glucksmann",
+              "value": 11
+            },
+            {
+              "candidateId": "bouamrane",
+              "value": 1
+            },
+            {
+              "candidateId": "attal",
+              "value": 4
+            },
+            {
+              "candidateId": "philippe",
+              "value": 12
+            },
+            {
+              "candidateId": "retailleau",
+              "value": 5
+            },
+            {
+              "candidateId": "lisnard",
+              "value": 10
+            },
+            {
+              "candidateId": "dupontaignan",
+              "value": 2
+            },
+            {
+              "candidateId": "zemmour",
+              "value": 2
+            },
+            {
+              "candidateId": "lepen",
+              "value": 32
+            }
+          ]
+        }
+      ],
+      "margin": "À 95 % : ±1,4 à ±3,2 points pour 964 inscrits ; ±1,7 à ±3,8 points pour 660 certains de voter.",
+      "noticeUrl": "https://www.commission-des-sondages.fr/notices/medias/fichiers/add/2393"
+    },
+    {
+      "id": "opinionway-2026-11-12-cnews-t2",
+      "institute": "OpinionWay",
+      "sponsors": [
+        "CNEWS"
+      ],
+      "fieldworkStart": "2026-11-10",
+      "fieldworkEnd": "2026-11-12",
+      "publishedAt": "2026-11-12",
+      "population": "1 001 adultes, dont 964 inscrits ; 660 certains de voter ; bases exprimées : 611 et 600 au premier tour, 504, 471 et 512 au second.",
+      "sampleSize": 1001,
+      "method": "Questionnaire en ligne ; quotas de sexe, âge, profession, région et catégorie d’agglomération ; redressement sociodémographique et politique ; résultats des électeurs certains d’aller voter (notes 9 et 10).",
+      "round": 2,
+      "hypotheses": [
+        {
+          "id": "h1",
+          "label": "Édouard Philippe / Marine Le Pen",
+          "results": [
+            {
+              "candidateId": "philippe",
+              "value": 44
+            },
+            {
+              "candidateId": "lepen",
+              "value": 56
+            }
+          ]
+        },
+        {
+          "id": "h2",
+          "label": "Jean-Luc Mélenchon / Marine Le Pen",
+          "results": [
+            {
+              "candidateId": "melenchon",
+              "value": 32
+            },
+            {
+              "candidateId": "lepen",
+              "value": 68
+            }
+          ]
+        },
+        {
+          "id": "h3",
+          "label": "Raphaël Glucksmann / Marine Le Pen",
+          "results": [
+            {
+              "candidateId": "glucksmann",
+              "value": 42
+            },
+            {
+              "candidateId": "lepen",
+              "value": 58
+            }
+          ]
+        }
+      ],
+      "margin": "À 95 % : ±1,4 à ±3,2 points pour 964 inscrits ; ±1,7 à ±3,8 points pour 660 certains de voter.",
+      "noticeUrl": "https://www.commission-des-sondages.fr/notices/medias/fichiers/add/2393"
+    },
+    {
+      "id": "opinionway-2026-11-10-presitrack",
+      "institute": "OpinionWay",
+      "sponsors": [
+        "Les Échos",
+        "Radio Classique"
+      ],
+      "fieldworkStart": "2026-11-09",
+      "fieldworkEnd": "2026-11-10",
+      "publishedAt": "2026-11-12",
+      "population": "1 017 adultes, dont 982 inscrits ; 728 certains de voter ; bases exprimées : 680, 657 et 650 selon la configuration.",
+      "sampleSize": 1017,
+      "method": "Questionnaire en ligne ; quotas de sexe, âge, profession, région et catégorie d’agglomération ; redressement sociodémographique et politique ; résultats des électeurs certains d’aller voter (notes 9 et 10).",
+      "round": 1,
+      "hypotheses": [
+        {
+          "id": "h1",
+          "label": "Gabriel Attal et Édouard Philippe candidats",
+          "results": [
+            {
+              "candidateId": "arthaud",
+              "value": 1
+            },
+            {
+              "candidateId": "melenchon",
+              "value": 17
+            },
+            {
+              "candidateId": "roussel",
+              "value": 1
+            },
+            {
+              "candidateId": "tondelier",
+              "value": 3
+            },
+            {
+              "candidateId": "glucksmann",
+              "value": 11
+            },
+            {
+              "candidateId": "attal",
+              "value": 4
+            },
+            {
+              "candidateId": "philippe",
+              "value": 11
+            },
+            {
+              "candidateId": "retailleau",
+              "value": 4
+            },
+            {
+              "candidateId": "lisnard",
+              "value": 10
+            },
+            {
+              "candidateId": "dupontaignan",
+              "value": 1
+            },
+            {
+              "candidateId": "zemmour",
+              "value": 3
+            },
+            {
+              "candidateId": "lepen",
+              "value": 34
+            }
+          ]
+        },
+        {
+          "id": "h2",
+          "label": "Gabriel Attal seul candidat du centre",
+          "results": [
+            {
+              "candidateId": "arthaud",
+              "value": 1
+            },
+            {
+              "candidateId": "melenchon",
+              "value": 16
+            },
+            {
+              "candidateId": "roussel",
+              "value": 1
+            },
+            {
+              "candidateId": "tondelier",
+              "value": 3
+            },
+            {
+              "candidateId": "glucksmann",
+              "value": 13
+            },
+            {
+              "candidateId": "attal",
+              "value": 10
+            },
+            {
+              "candidateId": "retailleau",
+              "value": 6
+            },
+            {
+              "candidateId": "lisnard",
+              "value": 12
+            },
+            {
+              "candidateId": "dupontaignan",
+              "value": 1
+            },
+            {
+              "candidateId": "zemmour",
+              "value": 3
+            },
+            {
+              "candidateId": "lepen",
+              "value": 34
+            }
+          ]
+        },
+        {
+          "id": "h3",
+          "label": "Édouard Philippe seul candidat du centre",
+          "results": [
+            {
+              "candidateId": "arthaud",
+              "value": 1
+            },
+            {
+              "candidateId": "melenchon",
+              "value": 16
+            },
+            {
+              "candidateId": "roussel",
+              "value": 2
+            },
+            {
+              "candidateId": "tondelier",
+              "value": 3
+            },
+            {
+              "candidateId": "glucksmann",
+              "value": 12
+            },
+            {
+              "candidateId": "philippe",
+              "value": 12
+            },
+            {
+              "candidateId": "retailleau",
+              "value": 4
+            },
+            {
+              "candidateId": "lisnard",
+              "value": 11
+            },
+            {
+              "candidateId": "dupontaignan",
+              "value": 2
+            },
+            {
+              "candidateId": "zemmour",
+              "value": 3
+            },
+            {
+              "candidateId": "lepen",
+              "value": 34
+            }
+          ]
+        }
+      ],
+      "margin": "À 95 % : ±1,4 à ±3,1 points pour 982 inscrits ; marges détaillées dans la notice.",
+      "noticeUrl": "https://www.commission-des-sondages.fr/notices/medias/fichiers/add/2396",
+      "reportUrl": "https://www.opinion-way.com/wp-content/uploads/2026/11/OpinionWay-pour-Les-Echos-et-Radio-Classique-Barometre-Presitrack-2027-Vague-4-Novembre-2026.pdf"
+    },
+    {
+      "id": "cluster17-2026-11-10-politico",
+      "institute": "Cluster17",
+      "sponsors": [
+        "Politico"
+      ],
+      "fieldworkStart": "2026-11-09",
+      "fieldworkEnd": "2026-11-10",
+      "publishedAt": "2026-11-11",
+      "population": "1 242 adultes, dont 1 164 inscrits ; effectifs utiles pondérés des quatre scénarios : 899, 888, 883 et 899.",
+      "sampleSize": 1242,
+      "method": "Questionnaire en ligne ; quotas de sexe, âge, profession, commune et région ; redressement sociodémographique, votes de 2022 et 2024 et probabilité de voter.",
+      "round": 1,
+      "hypotheses": [
+        {
+          "id": "h1",
+          "label": "Édouard Philippe seul candidat du centre",
+          "results": [
+            {
+              "candidateId": "arthaud",
+              "value": 0.5
+            },
+            {
+              "candidateId": "melenchon",
+              "value": 20
+            },
+            {
+              "candidateId": "roussel",
+              "value": 2
+            },
+            {
+              "candidateId": "tondelier",
+              "value": 1.5
+            },
+            {
+              "candidateId": "glucksmann",
+              "value": 11
+            },
+            {
+              "candidateId": "philippe",
+              "value": 13.5
+            },
+            {
+              "candidateId": "lisnard",
+              "value": 10
+            },
+            {
+              "candidateId": "retailleau",
+              "value": 5
+            },
+            {
+              "candidateId": "dupontaignan",
+              "value": 3
+            },
+            {
+              "candidateId": "lepen",
+              "value": 30.5
+            },
+            {
+              "candidateId": "zemmour",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "id": "h2",
+          "label": "Gabriel Attal seul candidat du centre",
+          "results": [
+            {
+              "candidateId": "arthaud",
+              "value": 0.5
+            },
+            {
+              "candidateId": "melenchon",
+              "value": 20.5
+            },
+            {
+              "candidateId": "roussel",
+              "value": 2
+            },
+            {
+              "candidateId": "tondelier",
+              "value": 1.5
+            },
+            {
+              "candidateId": "glucksmann",
+              "value": 11.5
+            },
+            {
+              "candidateId": "attal",
+              "value": 11
+            },
+            {
+              "candidateId": "lisnard",
+              "value": 10
+            },
+            {
+              "candidateId": "retailleau",
+              "value": 6
+            },
+            {
+              "candidateId": "dupontaignan",
+              "value": 3
+            },
+            {
+              "candidateId": "lepen",
+              "value": 31
+            },
+            {
+              "candidateId": "zemmour",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "id": "h3",
+          "label": "Christine Lagarde seule candidate du centre",
+          "results": [
+            {
+              "candidateId": "arthaud",
+              "value": 0.5
+            },
+            {
+              "candidateId": "melenchon",
+              "value": 20.5
+            },
+            {
+              "candidateId": "roussel",
+              "value": 2.5
+            },
+            {
+              "candidateId": "tondelier",
+              "value": 1.5
+            },
+            {
+              "candidateId": "glucksmann",
+              "value": 10
+            },
+            {
+              "candidateId": "lagarde",
+              "value": 14
+            },
+            {
+              "candidateId": "lisnard",
+              "value": 10
+            },
+            {
+              "candidateId": "retailleau",
+              "value": 5.5
+            },
+            {
+              "candidateId": "dupontaignan",
+              "value": 2
+            },
+            {
+              "candidateId": "lepen",
+              "value": 30.5
+            },
+            {
+              "candidateId": "zemmour",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "id": "h4",
+          "label": "Configuration élargie (intitulée « 18 candidats » dans le rapport)",
+          "results": [
+            {
+              "candidateId": "arthaud",
+              "value": 0.5
+            },
+            {
+              "candidateId": "melenchon",
+              "value": 19
+            },
+            {
+              "candidateId": "ruffin",
+              "value": 1.5
+            },
+            {
+              "candidateId": "roussel",
+              "value": 1.5
+            },
+            {
+              "candidateId": "tondelier",
+              "value": 1
+            },
+            {
+              "candidateId": "glucksmann",
+              "value": 8
+            },
+            {
+              "candidateId": "villepin",
+              "value": 1
+            },
+            {
+              "candidateId": "philippe",
+              "value": 8
+            },
+            {
+              "candidateId": "attal",
+              "value": 2
+            },
+            {
+              "candidateId": "lagarde",
+              "value": 8
+            },
+            {
+              "candidateId": "polony",
+              "value": 2.5
+            },
+            {
+              "candidateId": "riner",
+              "value": 2
+            },
+            {
+              "candidateId": "lisnard",
+              "value": 8
+            },
+            {
+              "candidateId": "retailleau",
+              "value": 5
+            },
+            {
+              "candidateId": "asselineau",
+              "value": 1
+            },
+            {
+              "candidateId": "dupontaignan",
+              "value": 2
+            },
+            {
+              "candidateId": "lepen",
+              "value": 27
+            },
+            {
+              "candidateId": "zemmour",
+              "value": 2
+            }
+          ]
+        }
+      ],
+      "margin": "À 95 % : ±1,2 à ±2,8 points pour 1 164 inscrits ; jusqu’à ±3,3 points pour les effectifs utiles de 883 à 899.",
+      "noticeUrl": "https://www.commission-des-sondages.fr/notices/medias/fichiers/add/2387",
+      "reportUrl": "https://cluster17.com/wp-content/uploads/2026/11/Sondage_Cluster17_ITV_P2027-Politico.pdf"
+    },
+    {
+      "id": "elabe-2026-11-13",
+      "institute": "Elabe",
+      "sponsors": [
+        "BFMTV",
+        "La Tribune Dimanche"
+      ],
+      "fieldworkStart": "2026-11-12",
+      "fieldworkEnd": "2026-11-13",
+      "publishedAt": "2026-11-14",
+      "population": "1 500 adultes de France métropolitaine, dont 1 391 inscrits ; bases exprimées au premier tour : 1 050, 1 028, 1 046, 1 046, 1 048 et 1 076 ; au second tour : 847, 952 et 918.",
+      "sampleSize": 1500,
+      "method": "Questionnaire en ligne ; quotas de sexe, âge, profession, région et agglomération ; redressement sociodémographique, logement et votes de 2022 et 2024 ; configurations présentées aléatoirement.",
+      "round": 1,
+      "hypotheses": [
+        {
+          "id": "h1",
+          "label": "Édouard Philippe, Dominique de Villepin et Bruno Retailleau",
+          "results": [
+            {
+              "candidateId": "arthaud",
+              "value": 0.5
+            },
+            {
+              "candidateId": "roussel",
+              "value": 2
+            },
+            {
+              "candidateId": "melenchon",
+              "value": 17
+            },
+            {
+              "candidateId": "tondelier",
+              "value": 3
+            },
+            {
+              "candidateId": "glucksmann",
+              "value": 13.5
+            },
+            {
+              "candidateId": "philippe",
+              "value": 15
+            },
+            {
+              "candidateId": "villepin",
+              "value": 2.5
+            },
+            {
+              "candidateId": "retailleau",
+              "value": 6
+            },
+            {
+              "candidateId": "dupontaignan",
+              "value": 3
+            },
+            {
+              "candidateId": "lepen",
+              "value": 33
+            },
+            {
+              "candidateId": "zemmour",
+              "value": 4.5
+            }
+          ]
+        },
+        {
+          "id": "h2",
+          "label": "Gabriel Attal, Dominique de Villepin et Bruno Retailleau",
+          "results": [
+            {
+              "candidateId": "arthaud",
+              "value": 1
+            },
+            {
+              "candidateId": "roussel",
+              "value": 2.5
+            },
+            {
+              "candidateId": "melenchon",
+              "value": 17.5
+            },
+            {
+              "candidateId": "tondelier",
+              "value": 3
+            },
+            {
+              "candidateId": "glucksmann",
+              "value": 14
+            },
+            {
+              "candidateId": "attal",
+              "value": 10
+            },
+            {
+              "candidateId": "villepin",
+              "value": 3
+            },
+            {
+              "candidateId": "retailleau",
+              "value": 9
+            },
+            {
+              "candidateId": "dupontaignan",
+              "value": 2.5
+            },
+            {
+              "candidateId": "lepen",
+              "value": 33
+            },
+            {
+              "candidateId": "zemmour",
+              "value": 4.5
+            }
+          ]
+        },
+        {
+          "id": "h3",
+          "label": "Gabriel Attal et Édouard Philippe, sans David Lisnard",
+          "results": [
+            {
+              "candidateId": "arthaud",
+              "value": 0.5
+            },
+            {
+              "candidateId": "roussel",
+              "value": 2
+            },
+            {
+              "candidateId": "melenchon",
+              "value": 17.5
+            },
+            {
+              "candidateId": "tondelier",
+              "value": 3.5
+            },
+            {
+              "candidateId": "glucksmann",
+              "value": 13
+            },
+            {
+              "candidateId": "philippe",
+              "value": 12
+            },
+            {
+              "candidateId": "attal",
+              "value": 5.5
+            },
+            {
+              "candidateId": "retailleau",
+              "value": 6
+            },
+            {
+              "candidateId": "dupontaignan",
+              "value": 3
+            },
+            {
+              "candidateId": "lepen",
+              "value": 33
+            },
+            {
+              "candidateId": "zemmour",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "id": "h4",
+          "label": "François Ruffin, Gabriel Attal, Bruno Retailleau et David Lisnard",
+          "results": [
+            {
+              "candidateId": "arthaud",
+              "value": 0.5
+            },
+            {
+              "candidateId": "roussel",
+              "value": 1.5
+            },
+            {
+              "candidateId": "melenchon",
+              "value": 17.5
+            },
+            {
+              "candidateId": "ruffin",
+              "value": 3
+            },
+            {
+              "candidateId": "glucksmann",
+              "value": 14
+            },
+            {
+              "candidateId": "attal",
+              "value": 8.5
+            },
+            {
+              "candidateId": "retailleau",
+              "value": 6
+            },
+            {
+              "candidateId": "lisnard",
+              "value": 10.5
+            },
+            {
+              "candidateId": "dupontaignan",
+              "value": 2.5
+            },
+            {
+              "candidateId": "lepen",
+              "value": 32
+            },
+            {
+              "candidateId": "zemmour",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "id": "h5",
+          "label": "Édouard Philippe, Bruno Retailleau et David Lisnard, sans Marine Tondelier",
+          "results": [
+            {
+              "candidateId": "arthaud",
+              "value": 0.5
+            },
+            {
+              "candidateId": "roussel",
+              "value": 2.5
+            },
+            {
+              "candidateId": "melenchon",
+              "value": 18.5
+            },
+            {
+              "candidateId": "glucksmann",
+              "value": 13.5
+            },
+            {
+              "candidateId": "philippe",
+              "value": 13
+            },
+            {
+              "candidateId": "retailleau",
+              "value": 4
+            },
+            {
+              "candidateId": "lisnard",
+              "value": 9
+            },
+            {
+              "candidateId": "dupontaignan",
+              "value": 3
+            },
+            {
+              "candidateId": "lepen",
+              "value": 32.5
+            },
+            {
+              "candidateId": "zemmour",
+              "value": 3.5
+            }
+          ]
+        },
+        {
+          "id": "h6",
+          "label": "Configuration élargie avec Natacha Polony et Teddy Riner",
+          "results": [
+            {
+              "candidateId": "arthaud",
+              "value": 0.5
+            },
+            {
+              "candidateId": "roussel",
+              "value": 1.5
+            },
+            {
+              "candidateId": "melenchon",
+              "value": 17
+            },
+            {
+              "candidateId": "tondelier",
+              "value": 3
+            },
+            {
+              "candidateId": "glucksmann",
+              "value": 10.5
+            },
+            {
+              "candidateId": "polony",
+              "value": 1.5
+            },
+            {
+              "candidateId": "riner",
+              "value": 4.5
+            },
+            {
+              "candidateId": "philippe",
+              "value": 9.5
+            },
+            {
+              "candidateId": "attal",
+              "value": 4
+            },
+            {
+              "candidateId": "retailleau",
+              "value": 4
+            },
+            {
+              "candidateId": "lisnard",
+              "value": 8
+            },
+            {
+              "candidateId": "dupontaignan",
+              "value": 2
+            },
+            {
+              "candidateId": "lepen",
+              "value": 31
+            },
+            {
+              "candidateId": "zemmour",
+              "value": 3
+            }
+          ]
+        }
+      ],
+      "noticeUrl": "https://www.commission-des-sondages.fr/notices/files/notices/2026/novembre/10375-pres-iv-elabe-14-novembre.pdf"
+    },
+    {
+      "id": "elabe-2026-11-13-t2",
+      "institute": "Elabe",
+      "sponsors": [
+        "BFMTV",
+        "La Tribune Dimanche"
+      ],
+      "fieldworkStart": "2026-11-12",
+      "fieldworkEnd": "2026-11-13",
+      "publishedAt": "2026-11-14",
+      "population": "1 500 adultes de France métropolitaine, dont 1 391 inscrits ; bases exprimées au premier tour : 1 050, 1 028, 1 046, 1 046, 1 048 et 1 076 ; au second tour : 847, 952 et 918.",
+      "sampleSize": 1500,
+      "method": "Questionnaire en ligne ; quotas de sexe, âge, profession, région et agglomération ; redressement sociodémographique, logement et votes de 2022 et 2024 ; configurations présentées aléatoirement.",
+      "round": 2,
+      "hypotheses": [
+        {
+          "id": "h1",
+          "label": "Jean-Luc Mélenchon / Marine Le Pen",
+          "results": [
+            {
+              "candidateId": "melenchon",
+              "value": 31.5
+            },
+            {
+              "candidateId": "lepen",
+              "value": 68.5
+            }
+          ]
+        },
+        {
+          "id": "h2",
+          "label": "Raphaël Glucksmann / Marine Le Pen",
+          "results": [
+            {
+              "candidateId": "glucksmann",
+              "value": 45
+            },
+            {
+              "candidateId": "lepen",
+              "value": 55
+            }
+          ]
+        },
+        {
+          "id": "h3",
+          "label": "Édouard Philippe / Marine Le Pen",
+          "results": [
+            {
+              "candidateId": "philippe",
+              "value": 45
+            },
+            {
+              "candidateId": "lepen",
+              "value": 55
+            }
+          ]
+        }
+      ],
+      "noticeUrl": "https://www.commission-des-sondages.fr/notices/files/notices/2026/novembre/10375-pres-iv-elabe-14-novembre.pdf"
+    },
+    {
+      "id": "ifop-2026-11-16",
+      "institute": "Ifop-Fiducial",
+      "sponsors": [
+        "TF1-LCI",
+        "Le Figaro",
+        "Sud Radio"
+      ],
+      "fieldworkStart": "2026-11-13",
+      "fieldworkEnd": "2026-11-16",
+      "publishedAt": "2026-11-18",
+      "population": "1 823 adultes, dont 1 690 inscrits ; résultats des inscrits certains d’aller voter ayant exprimé un choix. La sixième configuration est publiée dans le rapport complet, page 10, avec la base « inscrits » sans effectif utile distinct indiqué.",
+      "sampleSize": 1823,
+      "method": "Questionnaire en ligne ; quotas, stratification région/agglomération ; redressement sociodémographique et votes de 2022 et 2024.",
+      "round": 1,
+      "hypotheses": [
+        {
+          "id": "h1",
+          "label": "Configuration élargie avec Teddy Riner ; Nathalie Arthaud indiquée « - », sans score numérique",
+          "results": [
+            {
+              "candidateId": "melenchon",
+              "value": 17
+            },
+            {
+              "candidateId": "roussel",
+              "value": 1.5
+            },
+            {
+              "candidateId": "ruffin",
+              "value": 2
+            },
+            {
+              "candidateId": "tondelier",
+              "value": 2
+            },
+            {
+              "candidateId": "glucksmann",
+              "value": 8
+            },
+            {
+              "candidateId": "attal",
+              "value": 4.5
+            },
+            {
+              "candidateId": "philippe",
+              "value": 10
+            },
+            {
+              "candidateId": "villepin",
+              "value": 1.5
+            },
+            {
+              "candidateId": "retailleau",
+              "value": 4
+            },
+            {
+              "candidateId": "lisnard",
+              "value": 8
+            },
+            {
+              "candidateId": "dupontaignan",
+              "value": 1.5
+            },
+            {
+              "candidateId": "lepen",
+              "value": 32
+            },
+            {
+              "candidateId": "zemmour",
+              "value": 3
+            },
+            {
+              "candidateId": "polony",
+              "value": 1
+            },
+            {
+              "candidateId": "riner",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "id": "h2",
+          "label": "Gabriel Attal, Édouard Philippe, Bruno Retailleau et David Lisnard",
+          "results": [
+            {
+              "candidateId": "arthaud",
+              "value": 0.5
+            },
+            {
+              "candidateId": "melenchon",
+              "value": 19
+            },
+            {
+              "candidateId": "roussel",
+              "value": 1.5
+            },
+            {
+              "candidateId": "tondelier",
+              "value": 2.5
+            },
+            {
+              "candidateId": "glucksmann",
+              "value": 10
+            },
+            {
+              "candidateId": "attal",
+              "value": 4
+            },
+            {
+              "candidateId": "philippe",
+              "value": 11
+            },
+            {
+              "candidateId": "retailleau",
+              "value": 4
+            },
+            {
+              "candidateId": "lisnard",
+              "value": 9
+            },
+            {
+              "candidateId": "dupontaignan",
+              "value": 1.5
+            },
+            {
+              "candidateId": "lepen",
+              "value": 34
+            },
+            {
+              "candidateId": "zemmour",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "id": "h3",
+          "label": "Édouard Philippe, Bruno Retailleau et David Lisnard ; Nathalie Arthaud indiquée « - », sans score numérique",
+          "results": [
+            {
+              "candidateId": "melenchon",
+              "value": 19.5
+            },
+            {
+              "candidateId": "roussel",
+              "value": 2.5
+            },
+            {
+              "candidateId": "tondelier",
+              "value": 2.5
+            },
+            {
+              "candidateId": "glucksmann",
+              "value": 10
+            },
+            {
+              "candidateId": "philippe",
+              "value": 12
+            },
+            {
+              "candidateId": "retailleau",
+              "value": 4
+            },
+            {
+              "candidateId": "lisnard",
+              "value": 10
+            },
+            {
+              "candidateId": "dupontaignan",
+              "value": 1.5
+            },
+            {
+              "candidateId": "lepen",
+              "value": 35
+            },
+            {
+              "candidateId": "zemmour",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "id": "h4",
+          "label": "Gabriel Attal, Bruno Retailleau et David Lisnard",
+          "results": [
+            {
+              "candidateId": "arthaud",
+              "value": 0.5
+            },
+            {
+              "candidateId": "melenchon",
+              "value": 19
+            },
+            {
+              "candidateId": "roussel",
+              "value": 2
+            },
+            {
+              "candidateId": "tondelier",
+              "value": 2.5
+            },
+            {
+              "candidateId": "glucksmann",
+              "value": 11
+            },
+            {
+              "candidateId": "attal",
+              "value": 9
+            },
+            {
+              "candidateId": "retailleau",
+              "value": 5
+            },
+            {
+              "candidateId": "lisnard",
+              "value": 11
+            },
+            {
+              "candidateId": "dupontaignan",
+              "value": 2
+            },
+            {
+              "candidateId": "lepen",
+              "value": 35
+            },
+            {
+              "candidateId": "zemmour",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "id": "h5",
+          "label": "Édouard Philippe et David Lisnard, sans Bruno Retailleau",
+          "results": [
+            {
+              "candidateId": "arthaud",
+              "value": 0.5
+            },
+            {
+              "candidateId": "melenchon",
+              "value": 19.5
+            },
+            {
+              "candidateId": "roussel",
+              "value": 2
+            },
+            {
+              "candidateId": "tondelier",
+              "value": 2.5
+            },
+            {
+              "candidateId": "glucksmann",
+              "value": 11
+            },
+            {
+              "candidateId": "philippe",
+              "value": 14
+            },
+            {
+              "candidateId": "lisnard",
+              "value": 12
+            },
+            {
+              "candidateId": "dupontaignan",
+              "value": 1.5
+            },
+            {
+              "candidateId": "lepen",
+              "value": 34
+            },
+            {
+              "candidateId": "zemmour",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "id": "h6",
+          "label": "Édouard Philippe et Bruno Retailleau, sans Gabriel Attal ni David Lisnard (rapport, page 10)",
+          "results": [
+            {
+              "candidateId": "arthaud",
+              "value": 0.5
+            },
+            {
+              "candidateId": "melenchon",
+              "value": 19
+            },
+            {
+              "candidateId": "roussel",
+              "value": 2.5
+            },
+            {
+              "candidateId": "tondelier",
+              "value": 3
+            },
+            {
+              "candidateId": "glucksmann",
+              "value": 11.5
+            },
+            {
+              "candidateId": "philippe",
+              "value": 15
+            },
+            {
+              "candidateId": "retailleau",
+              "value": 7
+            },
+            {
+              "candidateId": "dupontaignan",
+              "value": 2
+            },
+            {
+              "candidateId": "lepen",
+              "value": 36
+            },
+            {
+              "candidateId": "zemmour",
+              "value": 3.5
+            }
+          ]
+        }
+      ],
+      "margin": "Tableau d’intervalles à 95 % fourni par la notice ; aucune marge propre à chaque base utile chiffrée dans les tableaux de résultats.",
+      "noticeUrl": "https://www.commission-des-sondages.fr/notices/medias/fichiers/add/2406",
+      "reportUrl": "https://www.ifopgroup.com/wp-content/uploads/2026/11/122919-petit-dejeuner-electoral-intentions-de-vote-et-determinants-du-vote.pdf"
+    },
+    {
+      "id": "yougov-2026-11-17",
+      "institute": "YouGov",
+      "sponsors": [
+        "Le HuffPost"
+      ],
+      "fieldworkStart": "2026-11-12",
+      "fieldworkEnd": "2026-11-17",
+      "publishedAt": "2026-11-17",
+      "population": "1 030 adultes, dont 952 inscrits ; bases brutes des votants décidés : 704, 708, 718, 668 et 722 au premier tour ; 630, 648, 593, 620 et 473 au second.",
+      "sampleSize": 1030,
+      "method": "Enquête en ligne sur le panel YouGov France ; pondération sur sexe, âge, région, CSP, études, intérêt politique, zone d’habitation et vote de 2022 ; pondération supplémentaire des intentions de vote sur âge, participation en 2022 et probabilité de voter. Résultats pondérés des inscrits ayant exprimé un choix, hors personnes certaines de ne pas voter.",
+      "round": 1,
+      "hypotheses": [
+        {
+          "id": "h1",
+          "label": "Scenario_main",
+          "results": [
+            {
+              "candidateId": "retailleau",
+              "value": 6
+            },
+            {
+              "candidateId": "philippe",
+              "value": 8
+            },
+            {
+              "candidateId": "zemmour",
+              "value": 3
+            },
+            {
+              "candidateId": "roussel",
+              "value": 2
+            },
+            {
+              "candidateId": "attal",
+              "value": 5
+            },
+            {
+              "candidateId": "melenchon",
+              "value": 19
+            },
+            {
+              "candidateId": "lepen",
+              "value": 32
+            },
+            {
+              "candidateId": "tondelier",
+              "value": 4
+            },
+            {
+              "candidateId": "arthaud",
+              "value": 1
+            },
+            {
+              "candidateId": "dupontaignan",
+              "value": 2
+            },
+            {
+              "candidateId": "glucksmann",
+              "value": 9
+            },
+            {
+              "candidateId": "lisnard",
+              "value": 9
+            }
+          ]
+        },
+        {
+          "id": "h2",
+          "label": "Scenario_Attal",
+          "results": [
+            {
+              "candidateId": "retailleau",
+              "value": 8
+            },
+            {
+              "candidateId": "zemmour",
+              "value": 3
+            },
+            {
+              "candidateId": "roussel",
+              "value": 2
+            },
+            {
+              "candidateId": "attal",
+              "value": 7
+            },
+            {
+              "candidateId": "melenchon",
+              "value": 19
+            },
+            {
+              "candidateId": "lepen",
+              "value": 34
+            },
+            {
+              "candidateId": "tondelier",
+              "value": 6
+            },
+            {
+              "candidateId": "arthaud",
+              "value": 1
+            },
+            {
+              "candidateId": "dupontaignan",
+              "value": 1
+            },
+            {
+              "candidateId": "glucksmann",
+              "value": 10
+            },
+            {
+              "candidateId": "lisnard",
+              "value": 10
+            }
+          ]
+        },
+        {
+          "id": "h3",
+          "label": "Scenario_Philippe",
+          "results": [
+            {
+              "candidateId": "retailleau",
+              "value": 7
+            },
+            {
+              "candidateId": "zemmour",
+              "value": 3
+            },
+            {
+              "candidateId": "roussel",
+              "value": 3
+            },
+            {
+              "candidateId": "philippe",
+              "value": 9
+            },
+            {
+              "candidateId": "melenchon",
+              "value": 19
+            },
+            {
+              "candidateId": "lepen",
+              "value": 33
+            },
+            {
+              "candidateId": "tondelier",
+              "value": 4
+            },
+            {
+              "candidateId": "arthaud",
+              "value": 1
+            },
+            {
+              "candidateId": "dupontaignan",
+              "value": 2
+            },
+            {
+              "candidateId": "glucksmann",
+              "value": 10
+            },
+            {
+              "candidateId": "lisnard",
+              "value": 10
+            }
+          ]
+        },
+        {
+          "id": "h4",
+          "label": "Scenario_Philippe_unique",
+          "results": [
+            {
+              "candidateId": "zemmour",
+              "value": 4
+            },
+            {
+              "candidateId": "roussel",
+              "value": 3
+            },
+            {
+              "candidateId": "philippe",
+              "value": 16
+            },
+            {
+              "candidateId": "melenchon",
+              "value": 22
+            },
+            {
+              "candidateId": "lepen",
+              "value": 40
+            },
+            {
+              "candidateId": "arthaud",
+              "value": 1
+            },
+            {
+              "candidateId": "dupontaignan",
+              "value": 2
+            },
+            {
+              "candidateId": "glucksmann",
+              "value": 12
+            }
+          ]
+        },
+        {
+          "id": "h5",
+          "label": "Scenario_Full",
+          "results": [
+            {
+              "candidateId": "retailleau",
+              "value": 6
+            },
+            {
+              "candidateId": "philippe",
+              "value": 7
+            },
+            {
+              "candidateId": "zemmour",
+              "value": 3
+            },
+            {
+              "candidateId": "roussel",
+              "value": 2
+            },
+            {
+              "candidateId": "attal",
+              "value": 4
+            },
+            {
+              "candidateId": "melenchon",
+              "value": 17
+            },
+            {
+              "candidateId": "lepen",
+              "value": 32
+            },
+            {
+              "candidateId": "tondelier",
+              "value": 5
+            },
+            {
+              "candidateId": "arthaud",
+              "value": 1
+            },
+            {
+              "candidateId": "dupontaignan",
+              "value": 2
+            },
+            {
+              "candidateId": "glucksmann",
+              "value": 9
+            },
+            {
+              "candidateId": "lisnard",
+              "value": 9
+            },
+            {
+              "candidateId": "villepin",
+              "value": 2
+            },
+            {
+              "candidateId": "riner",
+              "value": 3
+            }
+          ]
+        }
+      ],
+      "reportUrl": "https://ygo-assets-websites-editorial-emea.yougov.net/documents/R%C3%A9sultats_YouGov_pour_le_HuffPost_Intentions_de_vote_Novembre_2026_17.11.2026.pdf",
+      "noticeUrl": "https://www.commission-des-sondages.fr/notices/files/notices/2026/novembre/10382-pres-iv-yougov-le-huffpost-19-novembre.pdf",
+      "margin": "À 95 % : ±1,4 à ±3,1 points pour 1 000 personnes ; ±1,6 à ±3,7 pour 700 ; ±1,9 à ±4,4 pour 500. Grille de la notice, page 5 ; les bases utiles varient selon l’hypothèse."
+    },
+    {
+      "id": "yougov-2026-11-17-t2",
+      "institute": "YouGov",
+      "sponsors": [
+        "Le HuffPost"
+      ],
+      "fieldworkStart": "2026-11-12",
+      "fieldworkEnd": "2026-11-17",
+      "publishedAt": "2026-11-17",
+      "population": "1 030 adultes, dont 952 inscrits ; bases brutes des votants décidés : 704, 708, 718, 668 et 722 au premier tour ; 630, 648, 593, 620 et 473 au second.",
+      "sampleSize": 1030,
+      "method": "Enquête en ligne sur le panel YouGov France ; pondération sur sexe, âge, région, CSP, études, intérêt politique, zone d’habitation et vote de 2022 ; pondération supplémentaire des intentions de vote sur âge, participation en 2022 et probabilité de voter. Résultats pondérés des inscrits ayant exprimé un choix, hors personnes certaines de ne pas voter.",
+      "round": 2,
+      "hypotheses": [
+        {
+          "id": "h1",
+          "label": "Édouard Philippe / Marine Le Pen",
+          "results": [
+            {
+              "candidateId": "philippe",
+              "value": 46
+            },
+            {
+              "candidateId": "lepen",
+              "value": 54
+            }
+          ]
+        },
+        {
+          "id": "h2",
+          "label": "Marine Le Pen / Raphaël Glucksmann",
+          "results": [
+            {
+              "candidateId": "lepen",
+              "value": 58
+            },
+            {
+              "candidateId": "glucksmann",
+              "value": 42
+            }
+          ]
+        },
+        {
+          "id": "h3",
+          "label": "Jean-Luc Mélenchon / Marine Le Pen",
+          "results": [
+            {
+              "candidateId": "melenchon",
+              "value": 37
+            },
+            {
+              "candidateId": "lepen",
+              "value": 63
+            }
+          ]
+        },
+        {
+          "id": "h4",
+          "label": "Gabriel Attal / Marine Le Pen",
+          "results": [
+            {
+              "candidateId": "attal",
+              "value": 45
+            },
+            {
+              "candidateId": "lepen",
+              "value": 55
+            }
+          ]
+        },
+        {
+          "id": "h5",
+          "label": "Édouard Philippe / Jean-Luc Mélenchon",
+          "results": [
+            {
+              "candidateId": "philippe",
+              "value": 61
+            },
+            {
+              "candidateId": "melenchon",
+              "value": 39
+            }
+          ]
+        }
+      ],
+      "reportUrl": "https://ygo-assets-websites-editorial-emea.yougov.net/documents/R%C3%A9sultats_YouGov_pour_le_HuffPost_Intentions_de_vote_Novembre_2026_17.11.2026.pdf",
+      "noticeUrl": "https://www.commission-des-sondages.fr/notices/files/notices/2026/novembre/10382-pres-iv-yougov-le-huffpost-19-novembre.pdf",
+      "margin": "À 95 % : ±1,4 à ±3,1 points pour 1 000 personnes ; ±1,6 à ±3,7 pour 700 ; ±1,9 à ±4,4 pour 500. Grille de la notice, page 5 ; les bases utiles varient selon l’hypothèse."
     }
   ],
   "agenda": [
@@ -78373,6 +80577,16 @@
       "kind": "echeance",
       "sourceIds": [
         "cnccfp-nd-election-du-president-de-la-republique"
+      ]
+    },
+    {
+      "id": "grand-oral-jeunesse-2026-12-07",
+      "date": "2026-12-07",
+      "title": "Grand Oral de la Jeunesse",
+      "description": "Débat annoncé à 19 h à la Cité des sciences et de l’industrie, en direct sur LCP et Public Sénat. Huit candidats sont attendus selon le communiqué des organisateurs.",
+      "kind": "debat",
+      "sourceIds": [
+        "lcp-2026-11-17-grand-oral-jeunesse"
       ]
     }
   ],
@@ -79666,9 +81880,71 @@
       "sourceIds": [
         "huffingtonpost-2023-01-07-les-voeux-de-philippe-poutou-pour"
       ]
+    },
+    {
+      "id": "evt-tondelier-declaration-2026-11-18",
+      "date": "2026-11-18",
+      "type": "declaration",
+      "candidateIds": [
+        "tondelier",
+        "melenchon"
+      ],
+      "text": "Sur France 2, se dit disposée à négocier une coalition autour de Jean-Luc Mélenchon ; reste candidate à ce stade.",
+      "quote": "« Je suis prête, et les écologistes sont prêts, à travailler à une coalition autour de la candidature de Jean-Luc Mélenchon ».",
+      "sourceIds": [
+        "lcp-2026-11-18-tondelier-coalition"
+      ]
+    },
+    {
+      "id": "evt-philippe-declaration-2026-11-18",
+      "date": "2026-11-18",
+      "type": "declaration",
+      "candidateIds": [
+        "philippe"
+      ],
+      "text": "Présente à Paris le premier volume de son programme, intitulé « Croire en nous ».",
+      "quote": "« Je ne demande pas aux Français d’être d’accord avec moi sur tout. »",
+      "sourceIds": [
+        "lcp-2026-11-18-philippe-programme"
+      ]
+    },
+    {
+      "id": "evt-lisnard-declaration-2026-11-18",
+      "date": "2026-11-18",
+      "type": "declaration",
+      "candidateIds": [
+        "lisnard",
+        "philippe"
+      ],
+      "text": "Sur TF1, juge indispensable la participation d’Édouard Philippe à une éventuelle primaire.",
+      "quote": "« Je suis incapable de vous dire si [la primaire] aura lieu ou pas. »",
+      "sourceIds": [
+        "lcp-2026-11-18-primaire-droite-centre"
+      ]
+    },
+    {
+      "id": "evt-lepen-declaration-2026-11-17",
+      "date": "2026-11-17",
+      "type": "declaration",
+      "candidateIds": [
+        "lepen"
+      ],
+      "text": "Présente au siège du RN sa réforme des retraites, comprenant un volet obligatoire de capitalisation.",
+      "quote": "« La répartition garantit le lien entre les générations et donc le lien social ».",
+      "sourceIds": [
+        "lcp-2026-11-17-lepen-capitalisation"
+      ]
     }
   ],
   "editorialLog": [
+    {
+      "date": "2026-11-19",
+      "text": "Rafraîchissement ciblé des sondages du 19 novembre 2026. Ifop-Fiducial pour TF1-LCI, Le Figaro et Sud Radio, publié le 18 novembre (terrain du 13 au 16 novembre) : ajout du rapport complet de l’institut et de la sixième hypothèse de premier tour, Édouard Philippe et Bruno Retailleau sans Gabriel Attal ni David Lisnard, publiée en page 10 ; les cinq hypothèses déjà saisies sont inchangées. Cette configuration avait été omise lors de la collecte précédente fondée sur la notice de 16 pages, qui ne la contient pas. YouGov pour Le HuffPost (terrain du 12 au 17 novembre) : ajout de la notice 10382 désormais disponible aux deux objets de premier et second tour ; confirmation de tous les scores pondérés des cinq configurations et cinq duels, sans changement de résultats ni de date de première publication ; méthode de pondération et grille de marges d’erreur complétées d’après les pages 4 et 5 de la notice. La liste de la Commission des sondages et les publications récentes des instituts consultées ne font pas apparaître de nouvelle enquête présidentielle postérieure à celles déjà présentes ; les enquêtes de popularité, de programmes et de primaire ne sont pas assimilées à des intentions de vote au scrutin présidentiel. Aucun nouvel objet de sondage ni doublon créé ; 54 objets conservés. Cette passe porte uniquement sur les sondages."
+    },
+    {
+      "date": "2026-11-19",
+      "text": "Veille du 18 novembre 2026, publiée le 2026-11-19 en UTC. Candidatures : aucun statut modifié. Marine Tondelier ouvre des négociations sur une coalition autour de Jean-Luc Mélenchon mais demeure candidate ; la réunion des équipes de Gabriel Attal, Bruno Retailleau et David Lisnard ne constitue pas une alliance arrêtée. Mesures : Marine Le Pen, 3 ajouts et 2 précisions (capitalisation obligatoire et départ entre 60 et 62 ans) ; Édouard Philippe, 11 ajouts et 5 modifications, à partir des pages officielles justice, finances publiques, retraites et école du 18 novembre et du compte rendu de LCP. Le nouvel objectif de déficit, inférieur à 2,5 % du PIB, remplace celui de 2 % en conservant l’identifiant et l’historique ; les 30 000 places de prison sont désormais chiffrées. Les autres chapitres du nouveau volume restent à passer en revue lors de la rotation. Questionnaire : 2 positions du test actualisées pour Marine Le Pen et 3 positions de la banque ajoutées (pénibilité et durée de cotisation pour Marine Le Pen ; places de prison pour Édouard Philippe). Rotation de la banque : retraites, finances publiques, éducation et sécurité, à partir des documents examinés pour ces deux candidats ; les autres thèmes restent à couvrir. Sondages : 6 enquêtes, représentées par 9 objets (6 premiers tours et 3 seconds tours), 36 hypothèses au total : OpinionWay/CNEWS du 12 novembre, PrésiTrack OpinionWay/Les Échos/Radio Classique (rapport daté du 12 novembre, notice classée au 13 novembre), Cluster17/Politico du 11 novembre, Elabe/BFMTV/La Tribune Dimanche du 14 novembre, YouGov/Le HuffPost du 17 novembre et Ifop-Fiducial/TF1-LCI/Le Figaro/Sud Radio du 18 novembre. Rapports ou notices intégrales ouverts et colonnes publiées reprises sans moyenne. Le score de Karim Bouamrane « moins de 1 % » est conservé dans le libellé de l’hypothèse CNEWS, sans estimation numérique ; les tirets de Nathalie Arthaud dans deux hypothèses Ifop sont également signalés sans leur attribuer un zéro. Le rapport YouGov comporte cinq configurations de premier tour et cinq duels ; aucune notice correspondante retrouvée dans la liste de la Commission consultée, aucune marge d’erreur inventée. Les tableaux Elabe de duels portent par erreur « 1er tour » en page 10 : le questionnaire Q9-Q11 confirme le second tour. Vie de la campagne : 4 déclarations ajoutées (Marine Le Pen, Édouard Philippe, David Lisnard, Marine Tondelier), une par candidat sur la semaine. Parrainages : aucun relevé ajouté ; aucun nouveau chiffre vérifiable relevé dans les pages examinées. Agenda : débat du Grand Oral de la Jeunesse le 7 décembre, annoncé par LCP. Rotation complémentaire : Nathalie Arthaud (site de campagne), Karim Bouamrane (manifeste), Philippe Herlin (programme), Rémi Revillon d’Apreval (site), Xavier Bertrand (site Nous France), Anasse Kazib (programme), Selma Labib (page de campagne, intervention vidéo du 16 novembre repérée mais sans transcription exploitable), Jean-Noël Barrot (entretien officiel du 8 novembre), Delphine Batho (page parrainages ; page d’accueil inaccessible). Aucun changement nouveau établi dans ces seules pages pour ces candidats ; aucune citation vidéo non vérifiée transcrite. La recherche Jean-François Legendre n’a livré que des agrégateurs, sans ajout. Cette passe ne constitue pas une revue exhaustive de leurs programmes. Les consultations sont consignées dans le compte rendu local de la veille ; les candidats non examinés restent dans la rotation hebdomadaire."
+    },
     {
       "date": "2026-11-18",
       "text": "Intégration des déclarations du débat LCI du 16 novembre : ajout de six mesures déclaratives nouvelles (suppression de la CSG salariale proposée par Gabriel Attal, trois propositions de Marine Le Pen sur les apprentis, le permis et le train, transformation de bureaux en logements, objectif de 400 000 paysans avancé par Jean-Luc Mélenchon) ; ajout de sources et précisions du débat à plusieurs mesures déjà recensées. Les comptes rendus divergent notamment sur le montant de l’allocation d’autonomie de Mélenchon (1 300 € ou 1 337 €) ; l’écart est conservé et signalé."
