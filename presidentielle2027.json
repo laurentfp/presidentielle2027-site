@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-19T23:06:27Z",
+  "updatedAt": "2026-11-23T05:56:52Z",
   "election": {
     "name": "Élection présidentielle 2027",
     "round1": "2027-04-18",
@@ -6103,6 +6103,27 @@
       "url": "https://lcp.fr/presse/communiques-de-presse/emission-speciale-presidentielle-2027-les-candidats-face-aux-etudiants",
       "date": "2026-11-17",
       "kind": "officiel"
+    },
+    "lcp-2026-11-20-villepin-candidature": {
+      "title": "Présidentielle 2027: Dominique de Villepin officiellement candidat à l'Élysée",
+      "publisher": "LCP - Assemblée nationale",
+      "url": "https://lcp.fr/actualites/presidentielle-2027-dominique-de-villepin-officiellement-candidat-a-l-elysee-445372",
+      "date": "2026-11-20",
+      "kind": "presse"
+    },
+    "lcp-2026-11-21-ruffin-retrait": {
+      "title": "François Ruffin se retire de la présidentielle 2027 sans soutenir aucun des candidats de gauche encore en lice",
+      "publisher": "LCP - Assemblée nationale",
+      "url": "https://lcp.fr/actualites/francois-ruffin-se-retire-de-la-presidentielle-2027-sans-soutenir-aucun-des-candidats-de",
+      "date": "2026-11-21",
+      "kind": "presse"
+    },
+    "lafrancehumaniste-2026-11-20-programme-258": {
+      "title": "Réussir à nouveau : le programme de Dominique de Villepin pour 2027",
+      "publisher": "La France humaniste",
+      "url": "https://lafrancehumaniste.fr/programme/reussir-a-nouveau/",
+      "date": "2026-11-20",
+      "kind": "programme"
     }
   },
   "candidates": [
@@ -48839,12 +48860,13 @@
       "sortName": "ruffin",
       "party": "Debout !",
       "partyShort": "Debout !",
-      "status": "declare",
-      "statusDate": "2026-01-26",
+      "status": "retire",
+      "statusDate": "2026-11-21",
       "statusSourceIds": [
         "sudradio-2026-01-27-presidentielle-2027-francois-ruffin-un-o",
         "lcp-2026-05-12-presidentielle-2027-s-il-n-y",
-        "lyoncapitale-2026-04-09-a-lyon-francois-ruffin-passera-un"
+        "lyoncapitale-2026-04-09-a-lyon-francois-ruffin-passera-un",
+        "lcp-2026-11-21-ruffin-retrait"
       ],
       "statusHistory": [
         {
@@ -48854,6 +48876,14 @@
           "sourceIds": [
             "sudradio-2026-01-27-presidentielle-2027-francois-ruffin-un-o",
             "lcp-2026-05-12-presidentielle-2027-s-il-n-y"
+          ]
+        },
+        {
+          "date": "2026-11-21",
+          "status": "retire",
+          "note": "Retire sa candidature, indiquant prendre acte de l’impasse de sa campagne ; il ne rallie aucun autre candidat.",
+          "sourceIds": [
+            "lcp-2026-11-21-ruffin-retrait"
           ]
         }
       ],
@@ -54101,11 +54131,12 @@
       "sortName": "villepin",
       "party": "La France humaniste",
       "partyShort": "LFH",
-      "status": "pressenti",
-      "statusDate": "2026-03-29",
+      "status": "declare",
+      "statusDate": "2026-11-20",
       "statusSourceIds": [
         "lcp-2026-10-14-presidentielle-2027-la-liste-des-candidats",
-        "lefigaro-2026-08-17-en-septembre-tout-sera-pret-dominique"
+        "lefigaro-2026-08-17-en-septembre-tout-sera-pret-dominique",
+        "lcp-2026-11-20-villepin-candidature"
       ],
       "statusHistory": [
         {
@@ -54114,6 +54145,14 @@
           "note": "Présenté comme n'étant pas encore officiellement candidat, sa candidature étant décrite comme « se précisant ».",
           "sourceIds": [
             "huffingtonpost-2026-03-29-pourquoi-villepin-ne-croit-pas-que"
+          ]
+        },
+        {
+          "date": "2026-11-20",
+          "status": "declare",
+          "note": "Annonce officiellement sa candidature à la présidentielle 2027 lors d’une conférence de presse.",
+          "sourceIds": [
+            "lcp-2026-11-20-villepin-candidature"
           ]
         }
       ],
@@ -54747,7 +54786,8 @@
           "firstSeen": "2026-09-01",
           "lastChanged": "2026-09-01",
           "sourceIds": [
-            "lafrancehumaniste-2026-09-01-refonder-l-ecole"
+            "lafrancehumaniste-2026-09-01-refonder-l-ecole",
+            "lafrancehumaniste-2026-11-20-programme-258"
           ],
           "history": [
             {
@@ -55004,7 +55044,8 @@
             "lafrancehumaniste-2026-08-28-big-bang-la-regle-republicaine",
             "lcp-2026-08-28-villepin-nouvelle-abolition-des-privileges",
             "lafrancehumaniste-nd-programme-economique-20-propositions",
-            "linfodurable-2026-10-21-villepin-plateforme-commune-anticrise"
+            "linfodurable-2026-10-21-villepin-plateforme-commune-anticrise",
+            "lafrancehumaniste-2026-11-20-programme-258"
           ],
           "history": [
             {
@@ -55571,7 +55612,8 @@
           "firstSeen": "2026-05-24",
           "lastChanged": "2026-05-24",
           "sourceIds": [
-            "lafrancehumaniste-2026-05-24-le-chemin-gaulliste"
+            "lafrancehumaniste-2026-05-24-le-chemin-gaulliste",
+            "lafrancehumaniste-2026-11-20-programme-258"
           ],
           "history": [
             {
@@ -55648,6 +55690,190 @@
               "type": "ajout",
               "sourceIds": [
                 "linfodurable-2026-10-21-villepin-plateforme-commune-anticrise"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "villepin-inst-vote-16-ans",
+          "themeKey": "inst",
+          "subthemeKey": "inst-scrutin",
+          "title": "Droit de vote ouvert à partir de 16 ans avec apprentissage civique",
+          "detail": "Dominique de Villepin propose d’abaisser le droit de vote à 16 ans et d’associer cette ouverture à un apprentissage civique dans l’Éducation nationale et les maisons du lien locales. Les 16-18 ans voteraient dans leur établissement scolaire. Proposition 75 du programme « Réussir à nouveau ».",
+          "kind": "programme",
+          "status": "active",
+          "firstSeen": "2026-11-20",
+          "lastChanged": "2026-11-20",
+          "sourceIds": [
+            "lafrancehumaniste-2026-11-20-programme-258"
+          ],
+          "history": [
+            {
+              "date": "2026-11-20",
+              "type": "ajout",
+              "sourceIds": [
+                "lafrancehumaniste-2026-11-20-programme-258"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "villepin-inst-vote-obligatoire-blanc",
+          "themeKey": "inst",
+          "subthemeKey": "inst-scrutin",
+          "title": "Vote obligatoire sans sanction et prise en compte du vote blanc",
+          "detail": "Dominique de Villepin propose de rendre le vote obligatoire sans sanction et de comptabiliser les votes blancs. Lorsque ceux-ci atteindraient 50 % des suffrages, une nouvelle élection serait organisée. Proposition 76 du programme « Réussir à nouveau ».",
+          "kind": "programme",
+          "status": "active",
+          "firstSeen": "2026-11-20",
+          "lastChanged": "2026-11-20",
+          "sourceIds": [
+            "lafrancehumaniste-2026-11-20-programme-258"
+          ],
+          "history": [
+            {
+              "date": "2026-11-20",
+              "type": "ajout",
+              "sourceIds": [
+                "lafrancehumaniste-2026-11-20-programme-258"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "villepin-ent-zero-accident-mortel-2032",
+          "themeKey": "ent",
+          "subthemeKey": "ent-droit-travail",
+          "title": "Objectif de zéro accident du travail mortel en 2032",
+          "detail": "Dominique de Villepin propose de fixer l’objectif « zéro accident du travail mortel » en 2032, dans le cadre d’un des cinq chantiers présidentiels. Proposition 157 du programme « Réussir à nouveau ».",
+          "kind": "programme",
+          "status": "active",
+          "firstSeen": "2026-11-20",
+          "lastChanged": "2026-11-20",
+          "sourceIds": [
+            "lafrancehumaniste-2026-11-20-programme-258"
+          ],
+          "history": [
+            {
+              "date": "2026-11-20",
+              "type": "ajout",
+              "sourceIds": [
+                "lafrancehumaniste-2026-11-20-programme-258"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "villepin-ent-securite-sociale-professionnelle",
+          "themeKey": "ent",
+          "subthemeKey": "ent-chomage",
+          "title": "Sécurité sociale professionnelle avec revenu de transition et droit à la requalification",
+          "detail": "Dominique de Villepin propose une sécurité sociale professionnelle incluant l’assurance chômage et le service public de l’emploi, avec un revenu de transition et un droit à la requalification vers les métiers d’avenir adossé au compte personnel de formation. Proposition 158 du programme « Réussir à nouveau ».",
+          "kind": "programme",
+          "status": "active",
+          "firstSeen": "2026-11-20",
+          "lastChanged": "2026-11-20",
+          "sourceIds": [
+            "lafrancehumaniste-2026-11-20-programme-258"
+          ],
+          "history": [
+            {
+              "date": "2026-11-20",
+              "type": "ajout",
+              "sourceIds": [
+                "lafrancehumaniste-2026-11-20-programme-258"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "villepin-ret-retraites-trois-etages",
+          "themeKey": "ret",
+          "subthemeKey": "ret-financement",
+          "title": "Système de retraite à trois étages obligatoires",
+          "detail": "Dominique de Villepin propose un minimum de retraite garanti par l’État, un régime professionnel majoritaire par points fonctionnant par répartition et géré par les partenaires sociaux, et un étage de capitalisation publique à rendement fixe doté de 15 milliards d’euros par an via le Fonds France. Le départ serait possible à l’âge choisi, selon une formule intégrant les points acquis, leur valeur et l’espérance de vie selon le métier. Proposition 162 du programme « Réussir à nouveau ».",
+          "kind": "programme",
+          "status": "active",
+          "firstSeen": "2026-11-20",
+          "lastChanged": "2026-11-20",
+          "sourceIds": [
+            "lafrancehumaniste-2026-11-20-programme-258"
+          ],
+          "history": [
+            {
+              "date": "2026-11-20",
+              "type": "ajout",
+              "sourceIds": [
+                "lafrancehumaniste-2026-11-20-programme-258"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "villepin-num-defilement-infini-mineurs",
+          "themeKey": "num",
+          "subthemeKey": "num-mineurs",
+          "title": "Interdiction des algorithmes de défilement infini qui captent l’attention des jeunes",
+          "detail": "Dominique de Villepin propose de limiter l’exposition des enfants aux écrans en interdisant les algorithmes de défilement infini qui captent l’attention, notamment celle des jeunes. Proposition 243 du programme « Réussir à nouveau ».",
+          "kind": "programme",
+          "status": "active",
+          "firstSeen": "2026-11-20",
+          "lastChanged": "2026-11-20",
+          "sourceIds": [
+            "lafrancehumaniste-2026-11-20-programme-258"
+          ],
+          "history": [
+            {
+              "date": "2026-11-20",
+              "type": "ajout",
+              "sourceIds": [
+                "lafrancehumaniste-2026-11-20-programme-258"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "villepin-fis-taxation-contenus-ia-culture",
+          "themeKey": "fis",
+          "subthemeKey": "fis-consommation",
+          "title": "Taxation des contenus culturels générés par intelligence artificielle",
+          "detail": "Dominique de Villepin propose une taxation à l’acte des contenus générés par intelligence artificielle à vocation culturelle ou de divertissement, destinée à financer la création humaine et conçue à l’échelle européenne. Proposition 245 du programme « Réussir à nouveau ».",
+          "kind": "programme",
+          "status": "active",
+          "firstSeen": "2026-11-20",
+          "lastChanged": "2026-11-20",
+          "sourceIds": [
+            "lafrancehumaniste-2026-11-20-programme-258"
+          ],
+          "history": [
+            {
+              "date": "2026-11-20",
+              "type": "ajout",
+              "sourceIds": [
+                "lafrancehumaniste-2026-11-20-programme-258"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "villepin-eco-revenu-artistes-1000",
+          "themeKey": "eco",
+          "subthemeKey": "eco-prestations",
+          "title": "Revenu garanti de 1 000 € par mois pour les artistes",
+          "detail": "Dominique de Villepin propose un statut garantissant aux créateurs un revenu mensuel de 1 000 €, des droits et des moyens de poursuivre leur activité. Des chambres des artistes départementales, régionales et nationales, avec des instances démocratiquement élues, fixeraient les critères d’admission et géreraient notamment les Maisons des Arts. Proposition 246 du programme « Réussir à nouveau ».",
+          "kind": "programme",
+          "status": "active",
+          "firstSeen": "2026-11-20",
+          "lastChanged": "2026-11-20",
+          "sourceIds": [
+            "lafrancehumaniste-2026-11-20-programme-258"
+          ],
+          "history": [
+            {
+              "date": "2026-11-20",
+              "type": "ajout",
+              "sourceIds": [
+                "lafrancehumaniste-2026-11-20-programme-258"
               ]
             }
           ]
@@ -80452,6 +80678,192 @@
       "reportUrl": "https://ygo-assets-websites-editorial-emea.yougov.net/documents/R%C3%A9sultats_YouGov_pour_le_HuffPost_Intentions_de_vote_Novembre_2026_17.11.2026.pdf",
       "noticeUrl": "https://www.commission-des-sondages.fr/notices/files/notices/2026/novembre/10382-pres-iv-yougov-le-huffpost-19-novembre.pdf",
       "margin": "À 95 % : ±1,4 à ±3,1 points pour 1 000 personnes ; ±1,6 à ±3,7 pour 700 ; ±1,9 à ±4,4 pour 500. Grille de la notice, page 5 ; les bases utiles varient selon l’hypothèse."
+    },
+    {
+      "id": "ifop-2026-11-20-sud-radio-t1",
+      "institute": "Ifop-Fiducial",
+      "sponsors": [
+        "Sud Radio"
+      ],
+      "fieldworkStart": "2026-11-02",
+      "fieldworkEnd": "2026-11-04",
+      "publishedAt": "2026-11-20",
+      "population": "1 834 personnes inscrites sur les listes électorales, extraites d’un échantillon représentatif de 1 978 personnes âgées de 18 ans et plus ; résultats en pourcentage des suffrages exprimés.",
+      "sampleSize": 1978,
+      "method": "Questionnaire auto-administré en ligne, méthode des quotas (sexe, âge, profession) après stratification par région et catégorie d’agglomération ; redressements sociodémographique et politique.",
+      "round": 1,
+      "hypotheses": [
+        {
+          "id": "h1",
+          "label": "Édouard Philippe candidat unique de la droite et du centre",
+          "results": [
+            {
+              "candidateId": "arthaud",
+              "value": 0.5
+            },
+            {
+              "candidateId": "melenchon",
+              "value": 18
+            },
+            {
+              "candidateId": "roussel",
+              "value": 3
+            },
+            {
+              "candidateId": "tondelier",
+              "value": 3
+            },
+            {
+              "candidateId": "glucksmann",
+              "value": 13
+            },
+            {
+              "candidateId": "philippe",
+              "value": 19
+            },
+            {
+              "candidateId": "dupontaignan",
+              "value": 1.5
+            },
+            {
+              "candidateId": "lepen",
+              "value": 37
+            },
+            {
+              "candidateId": "zemmour",
+              "value": 5
+            }
+          ]
+        },
+        {
+          "id": "h2",
+          "label": "Bruno Retailleau candidat unique de la droite et du centre",
+          "results": [
+            {
+              "candidateId": "arthaud",
+              "value": 0.5
+            },
+            {
+              "candidateId": "melenchon",
+              "value": 18
+            },
+            {
+              "candidateId": "roussel",
+              "value": 3
+            },
+            {
+              "candidateId": "tondelier",
+              "value": 3.5
+            },
+            {
+              "candidateId": "glucksmann",
+              "value": 17
+            },
+            {
+              "candidateId": "retailleau",
+              "value": 14
+            },
+            {
+              "candidateId": "dupontaignan",
+              "value": 2
+            },
+            {
+              "candidateId": "lepen",
+              "value": 38
+            },
+            {
+              "candidateId": "zemmour",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "id": "h3",
+          "label": "David Lisnard candidat unique de la droite et du centre",
+          "results": [
+            {
+              "candidateId": "arthaud",
+              "value": 1
+            },
+            {
+              "candidateId": "melenchon",
+              "value": 17
+            },
+            {
+              "candidateId": "roussel",
+              "value": 3.5
+            },
+            {
+              "candidateId": "tondelier",
+              "value": 3.5
+            },
+            {
+              "candidateId": "glucksmann",
+              "value": 18
+            },
+            {
+              "candidateId": "lisnard",
+              "value": 14
+            },
+            {
+              "candidateId": "dupontaignan",
+              "value": 2
+            },
+            {
+              "candidateId": "lepen",
+              "value": 37
+            },
+            {
+              "candidateId": "zemmour",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "id": "h4",
+          "label": "Gabriel Attal candidat unique de la droite et du centre",
+          "results": [
+            {
+              "candidateId": "arthaud",
+              "value": 1
+            },
+            {
+              "candidateId": "melenchon",
+              "value": 18
+            },
+            {
+              "candidateId": "roussel",
+              "value": 3
+            },
+            {
+              "candidateId": "tondelier",
+              "value": 3
+            },
+            {
+              "candidateId": "glucksmann",
+              "value": 16
+            },
+            {
+              "candidateId": "attal",
+              "value": 13
+            },
+            {
+              "candidateId": "dupontaignan",
+              "value": 3
+            },
+            {
+              "candidateId": "lepen",
+              "value": 38
+            },
+            {
+              "candidateId": "zemmour",
+              "value": 5
+            }
+          ]
+        }
+      ],
+      "reportUrl": "https://www.sudradio.fr/sud-radio/presidentielle-2027-le-pen-au-dessus-du-lot-philippe-seul-resistant-face-a-melenchon",
+      "noticeUrl": "https://www.commission-des-sondages.fr/notices/files/notices/2026/novembre/10392-pres-iv-ifop-sud-radio-20-novembre.pdf"
     }
   ],
   "agenda": [
@@ -81934,9 +82346,41 @@
       "sourceIds": [
         "lcp-2026-11-17-lepen-capitalisation"
       ]
+    },
+    {
+      "id": "evt-villepin-candidature-2026-11-20",
+      "date": "2026-11-20",
+      "type": "candidature",
+      "candidateIds": [
+        "villepin"
+      ],
+      "text": "Annonce officiellement sa candidature à la présidentielle 2027.",
+      "sourceIds": [
+        "lcp-2026-11-20-villepin-candidature"
+      ]
+    },
+    {
+      "id": "evt-ruffin-retrait-2026-11-21",
+      "date": "2026-11-21",
+      "type": "retrait",
+      "candidateIds": [
+        "ruffin"
+      ],
+      "text": "Retire sa candidature à la présidentielle 2027 sans rallier un autre candidat.",
+      "sourceIds": [
+        "lcp-2026-11-21-ruffin-retrait"
+      ]
     }
   ],
   "editorialLog": [
+    {
+      "date": "2026-11-23",
+      "text": "Mise à jour du 23 novembre 2026 et intégration ciblée du programme présidentiel de Dominique de Villepin, publié le 20 novembre. Ajout de sept mesures sourcées dans les thèmes institutions, travail, retraites, numérique, fiscalité et prestations : vote à 16 ans, obligation de vote et vote blanc, sécurité sociale professionnelle, objectif zéro accident du travail mortel en 2032, retraite à trois étages, défilement infini ciblant les jeunes, taxation des contenus culturels générés par IA et revenu garanti des artistes. La source officielle est ajoutée aux mesures déjà suivies sur le déficit, la revalorisation des métiers pédagogiques et le référendum sur les retraites. Le programme complet de 258 propositions n’est pas encore intégralement transcrit."
+    },
+    {
+      "date": "2026-11-21",
+      "text": "Veille du 21 novembre 2026. Candidatures : Dominique de Villepin passe de pressenti à déclaré le 20 novembre ; François Ruffin retire sa candidature le 21 novembre sans ralliement. Vie de campagne : deux événements ajoutés pour ces changements de statut. Mesures : le programme publié par Dominique de Villepin le 20 novembre est repéré mais ses 258 propositions restent à examiner dans une passe dédiée ; aucune mesure n’est ajoutée ici. Sondages : ajout d’Ifop-Fiducial pour Sud Radio, publié le 20 novembre, terrain du 2 au 4 novembre, quatre hypothèses de premier tour ; résultats transcrits depuis la notice 10392 de la Commission des sondages. Campagne des Écologistes : la proposition de coalition de Marine Tondelier ne modifie pas son statut, et l’événement du 18 novembre est conservé sans doublon ; Yannick Jadot quitte le parti mais n’est pas candidat dans la base. Les sources consultées ne permettent pas d’établir d’autre changement de statut dans cette passe."
+    },
     {
       "date": "2026-11-19",
       "text": "Rafraîchissement ciblé des sondages du 19 novembre 2026. Ifop-Fiducial pour TF1-LCI, Le Figaro et Sud Radio, publié le 18 novembre (terrain du 13 au 16 novembre) : ajout du rapport complet de l’institut et de la sixième hypothèse de premier tour, Édouard Philippe et Bruno Retailleau sans Gabriel Attal ni David Lisnard, publiée en page 10 ; les cinq hypothèses déjà saisies sont inchangées. Cette configuration avait été omise lors de la collecte précédente fondée sur la notice de 16 pages, qui ne la contient pas. YouGov pour Le HuffPost (terrain du 12 au 17 novembre) : ajout de la notice 10382 désormais disponible aux deux objets de premier et second tour ; confirmation de tous les scores pondérés des cinq configurations et cinq duels, sans changement de résultats ni de date de première publication ; méthode de pondération et grille de marges d’erreur complétées d’après les pages 4 et 5 de la notice. La liste de la Commission des sondages et les publications récentes des instituts consultées ne font pas apparaître de nouvelle enquête présidentielle postérieure à celles déjà présentes ; les enquêtes de popularité, de programmes et de primaire ne sont pas assimilées à des intentions de vote au scrutin présidentiel. Aucun nouvel objet de sondage ni doublon créé ; 54 objets conservés. Cette passe porte uniquement sur les sondages."
