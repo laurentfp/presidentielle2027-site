@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-11-15",
+  "updatedAt": "2026-11-21",
   "reports": [
+    {
+      "title": "Veille hebdomadaire - 16 au 21 novembre 2026",
+      "path": "./reports/veille%20presidentielle%202027%202026-11-21.pdf",
+      "date": "21 novembre 2026",
+      "summary": "Dominique de Villepin officialise sa candidature et publie un programme de 258 propositions ; François Ruffin retire la sienne sans ralliement. La proposition de coalition de Marine Tondelier ouvre un vote militant chez Les Écologistes. Ifop-Fiducial pour Sud Radio publie quatre scénarios de premier tour, sur un terrain réalisé du 2 au 4 novembre."
+    },
     {
       "title": "Veille initiale - 9 au 15 novembre 2026",
       "path": "./reports/veille%20presidentielle%202027%202026-11-15.pdf",
@@ -10,74 +16,24 @@
   ],
   "matrix": [
     {
-      "theme": "Démographie",
-      "analysis": "Teddy Riner a dit vouloir une réforme des retraites qui tienne compte de la démographie, maintienne la répartition et n’exclue pas une part de capitalisation. L’Insee projette, dans son scénario central, 69,7 millions d’habitants en 2040; les 65 ans et plus représenteraient 26,6% de la population.",
-      "implication": "Préciser les paramètres, les transferts entre générations et la répartition des risques; ces annonces ne sont pas chiffrées."
-    },
-    {
-      "theme": "IA et emploi",
-      "analysis": "Au Grand Oral, Bruno Retailleau et Gabriel Attal ont présenté l’IA et la réorganisation comme leviers de productivité et de réduction des effectifs publics. Les contours des postes, les gains attendus et le calendrier ne sont pas établis dans les sources consultées.",
-      "implication": "Évaluer les effets sur les métiers, la qualité du service et les compétences, avec des indicateurs vérifiables."
-    },
-    {
-      "theme": "Productivité",
-      "analysis": "Les économies attribuées à l’IA ou à la réorganisation sont des objectifs politiques rapportés, non des gains observés. Les propositions d’embauche et d’investissement des autres candidats ne fournissent pas non plus de mesure commune de productivité.",
-      "implication": "Exiger un scénario de référence, les coûts de transition et une mesure de service rendu par euro dépensé."
-    },
-    {
-      "theme": "Industrie",
-      "analysis": "Aucune nouvelle proposition industrielle candidate significative n’a été repérée dans la période. Le débat de la semaine porte surtout sur les services publics.",
-      "implication": "Suivre les propositions futures sur investissement, compétences, chaînes d’approvisionnement et décarbonation."
-    },
-    {
       "theme": "Finances publiques",
-      "analysis": "Les annonces de réductions d’effectifs, de recrutements et d’investissements publics divergent fortement. Elles ne sont pas directement comparables et les sources de cette semaine ne donnent pas de chiffrage indépendant homogène. L’avis du HCFP porte sur les hypothèses budgétaires publiques, pas sur ces programmes candidats.",
-      "implication": "Publier coûts, économies, recettes, calendrier et hypothèses macroéconomiques sur un même horizon."
+      "analysis": "Dominique de Villepin propose une trajectoire pluriannuelle visant un déficit public inférieur à 3 % en 2031. Les hypothèses de recettes, d’économies et de croissance restent à documenter.",
+      "implication": "Comparer les trajectoires sur des hypothèses communes et détailler leur répartition par génération."
     },
     {
-      "theme": "Éducation",
-      "analysis": "Les propositions rapportées vont de la hausse de rémunération des enseignants et au remplacement de Parcoursup à la fin du collège unique ou à des changements d’examens. La DEPP fournit des repères statistiques 2026, mais pas d’évaluation causale de ces annonces.",
-      "implication": "Relier chaque réforme aux apprentissages, aux inégalités et aux besoins de recrutement à long terme."
+      "theme": "Retraites et contrat intergénérationnel",
+      "analysis": "Le programme de Dominique de Villepin propose un processus de concertation et un référendum sur les retraites en avril 2028.",
+      "implication": "Préciser les paramètres soumis au vote et leurs effets sur financement, âge de départ et niveaux de pension."
     },
     {
-      "theme": "Énergie",
-      "analysis": "Aucune nouvelle proposition candidate significative repérée cette semaine. RTE présente des trajectoires électriques jusqu’en 2035: elles dépendent du rythme d’électrification et de décarbonation; elles ne constituent pas une prévision pour 2040.",
-      "implication": "Suivre la cohérence entre demande, production bas-carbone, réseaux, stockage, prix et calendrier industriel."
+      "theme": "Institutions et participation",
+      "analysis": "Le programme propose le droit de vote à 16 ans et une obligation de vote sans sanction. Ces propositions sont distinctes d’une réforme déjà adoptée.",
+      "implication": "Documenter les modalités pratiques, l’inscription électorale et les effets attendus sur la participation."
     },
     {
-      "theme": "Eau",
-      "analysis": "Aucune proposition candidate significative repérée. Fin octobre 2026, l’OFB indiquait des écoulements interrompus ou des assecs sur 880 stations suivies, soit 28% du réseau ONDE, contre 49,6% fin septembre. C’est une observation ponctuelle, pas une projection climatique.",
-      "implication": "Comparer chaque année disponibilité, usages, qualité, sobriété et investissements d’adaptation."
-    },
-    {
-      "theme": "Alimentation",
-      "analysis": "Aucune proposition candidate significative repérée cette semaine. Agreste estime que la production française couvrait 13% de la consommation de riz en 2023-2024: un indicateur sectoriel qui ne résume pas la sécurité alimentaire.",
-      "implication": "Suivre les dépendances par filière, les sols, l’eau, les revenus agricoles et l’accès à une alimentation saine."
-    },
-    {
-      "theme": "Adaptation climatique",
-      "analysis": "Aucune nouvelle mesure candidate d’adaptation significative identifiée dans les sources consultées. Le Haut Conseil pour le climat appelle en 2026 à renforcer les politiques d’atténuation et d’adaptation.",
-      "implication": "Demander des objectifs territoriaux, des financements et des mesures de résilience aux chaleurs, sécheresses et inondations."
-    },
-    {
-      "theme": "Politique de santé",
-      "analysis": "Les propositions rapportées comprennent notamment l’IA, des changements d’organisation, la régulation de l’installation médicale et l’extension de compétences à certains professionnels. La DREES propose des projections de médecins jusqu’en 2070; aucune source consultée ne valide le rendement annoncé des mesures candidates.",
-      "implication": "Tester l’effet sur l’accès réel aux soins, les délais, la répartition territoriale et la charge des équipes."
-    },
-    {
-      "theme": "Défense",
-      "analysis": "Aucune évolution candidate significative sur la défense n’a été relevée dans les sources de cette semaine.",
-      "implication": "À documenter lors des prochaines éditions: effort, capacités, industrie, réserves et articulation européenne."
-    },
-    {
-      "theme": "Souveraineté européenne",
-      "analysis": "Aucune nouvelle proposition candidate significative sur la souveraineté européenne n’a été relevée dans la période.",
-      "implication": "Suivre les positions concrètes sur énergie, défense, technologies, commerce et règles budgétaires européennes."
-    },
-    {
-      "theme": "Contrat intergénérationnel",
-      "analysis": "La réforme des retraites évoquée par Teddy Riner et les visions opposées des effectifs publics font émerger une question de répartition: qui finance les services, les pensions et les transitions, et qui en bénéficie? Les annonces disponibles ne répondent pas encore à cette question par des trajectoires chiffrées.",
-      "implication": "Rendre visibles les effets par âge, génération, revenu et territoire, à court et long terme."
+      "theme": "Coalitions et candidatures",
+      "analysis": "François Ruffin retire sa candidature sans annoncer de ralliement. Marine Tondelier dit rester candidate tout en proposant de travailler à une coalition autour de Jean-Luc Mélenchon; les adhérents écologistes doivent voter du 10 au 13 décembre.",
+      "implication": "Suivre les décisions formelles, les accords de programme et les conséquences sur les candidatures."
     }
   ]
 }
