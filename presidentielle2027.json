@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-23T05:56:52Z",
+  "updatedAt": "2026-11-25T21:53:27Z",
   "election": {
     "name": "Élection présidentielle 2027",
     "round1": "2027-04-18",
@@ -6124,6 +6124,20 @@
       "url": "https://lafrancehumaniste.fr/programme/reussir-a-nouveau/",
       "date": "2026-11-20",
       "kind": "programme"
+    },
+    "leparisien-2026-11-24-attal-philippe-primaire": {
+      "title": "Gabriel Attal monte le son pour une primaire : « Édouard Philippe doit proposer une autre modalité de départage »",
+      "publisher": "Le Parisien",
+      "url": "https://www.leparisien.fr/elections/presidentielle/gabriel-attal-monte-le-son-pour-une-primaire-edouard-philippe-doit-proposer-une-autre-modalite-de-departage-24-11-2026-EKRI3NCTHVBKVOUCLFHAO2I2KU.php",
+      "date": "2026-11-24",
+      "kind": "entretien"
+    },
+    "generation-s-2026-11-23-melenchon": {
+      "title": "Génération·s s’engage dans la campagne de Jean-Luc Mélenchon !",
+      "publisher": "Génération·s",
+      "url": "https://www.generation-s.fr/generation%C2%B7s-sengage-dans-la-campagne-de-jean-luc-melenchon-au-service-de-la-victoire-de-la-gauche-et-de-lecologie/",
+      "date": "2026-11-23",
+      "kind": "officiel"
     }
   },
   "candidates": [
@@ -80864,6 +80878,240 @@
       ],
       "reportUrl": "https://www.sudradio.fr/sud-radio/presidentielle-2027-le-pen-au-dessus-du-lot-philippe-seul-resistant-face-a-melenchon",
       "noticeUrl": "https://www.commission-des-sondages.fr/notices/files/notices/2026/novembre/10392-pres-iv-ifop-sud-radio-20-novembre.pdf"
+    },
+    {
+      "institute": "Toluna Harris Interactive",
+      "sponsors": [
+        "M6",
+        "RTL",
+        "L’Express"
+      ],
+      "fieldworkStart": "2026-11-18",
+      "fieldworkEnd": "2026-11-19",
+      "publishedAt": "2026-11-23",
+      "population": "Échantillon de 2 088 personnes inscrites sur les listes électorales, issu d’un échantillon de 2 378 personnes représentatif de la population française âgée de 18 ans et plus.",
+      "sampleSize": 2378,
+      "method": "Enquête en ligne auprès du panel propriétaire Toluna Harris Interactive ; méthode des quotas et redressement selon le sexe, l’âge, la catégorie socioprofessionnelle, la région de résidence et le comportement électoral antérieur.",
+      "noticeUrl": "https://www.commission-des-sondages.fr/notices/files/notices/2026/novembre/10393-pres-iv-vague-10-toluna-harris-interactive-23-novembre.pdf",
+      "reportUrl": "https://tolunacorporate.com/wp-content/uploads/2026/11/Rapport-Toluna-Barometre-Presidentielle-2027-Vague-10-M6-RTL-LExpress-23-novembre-2026.pdf",
+      "id": "toluna-harris-interactive-2026-11-19",
+      "margin": "Entre 1,4 et 3,0 points selon le score et la configuration au 1er tour",
+      "round": 1,
+      "hypotheses": [
+        {
+          "id": "h1",
+          "label": "Gabriel Attal et Édouard Philippe",
+          "results": [
+            {
+              "candidateId": "arthaud",
+              "value": 1
+            },
+            {
+              "candidateId": "melenchon",
+              "value": 18
+            },
+            {
+              "candidateId": "roussel",
+              "value": 1
+            },
+            {
+              "candidateId": "tondelier",
+              "value": 1
+            },
+            {
+              "candidateId": "glucksmann",
+              "value": 11
+            },
+            {
+              "candidateId": "attal",
+              "value": 4
+            },
+            {
+              "candidateId": "philippe",
+              "value": 9
+            },
+            {
+              "candidateId": "villepin",
+              "value": 1
+            },
+            {
+              "candidateId": "lisnard",
+              "value": 11
+            },
+            {
+              "candidateId": "retailleau",
+              "value": 4
+            },
+            {
+              "candidateId": "dupontaignan",
+              "value": 1
+            },
+            {
+              "candidateId": "lepen",
+              "value": 31
+            },
+            {
+              "candidateId": "zemmour",
+              "value": 3
+            },
+            {
+              "candidateId": "riner",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "id": "h2",
+          "label": "Édouard Philippe candidat unique du centre",
+          "results": [
+            {
+              "candidateId": "arthaud",
+              "value": 1
+            },
+            {
+              "candidateId": "melenchon",
+              "value": 19
+            },
+            {
+              "candidateId": "roussel",
+              "value": 1
+            },
+            {
+              "candidateId": "tondelier",
+              "value": 1
+            },
+            {
+              "candidateId": "glucksmann",
+              "value": 11
+            },
+            {
+              "candidateId": "philippe",
+              "value": 10
+            },
+            {
+              "candidateId": "villepin",
+              "value": 2
+            },
+            {
+              "candidateId": "lisnard",
+              "value": 11
+            },
+            {
+              "candidateId": "retailleau",
+              "value": 4
+            },
+            {
+              "candidateId": "dupontaignan",
+              "value": 1
+            },
+            {
+              "candidateId": "lepen",
+              "value": 31
+            },
+            {
+              "candidateId": "zemmour",
+              "value": 4
+            },
+            {
+              "candidateId": "riner",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "id": "h3",
+          "label": "Gabriel Attal candidat unique du centre",
+          "results": [
+            {
+              "candidateId": "arthaud",
+              "value": 1
+            },
+            {
+              "candidateId": "melenchon",
+              "value": 19
+            },
+            {
+              "candidateId": "roussel",
+              "value": 1
+            },
+            {
+              "candidateId": "tondelier",
+              "value": 2
+            },
+            {
+              "candidateId": "glucksmann",
+              "value": 11
+            },
+            {
+              "candidateId": "attal",
+              "value": 7
+            },
+            {
+              "candidateId": "villepin",
+              "value": 2
+            },
+            {
+              "candidateId": "lisnard",
+              "value": 12
+            },
+            {
+              "candidateId": "retailleau",
+              "value": 5
+            },
+            {
+              "candidateId": "dupontaignan",
+              "value": 1
+            },
+            {
+              "candidateId": "lepen",
+              "value": 30
+            },
+            {
+              "candidateId": "zemmour",
+              "value": 4
+            },
+            {
+              "candidateId": "riner",
+              "value": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "institute": "Toluna Harris Interactive",
+      "sponsors": [
+        "M6",
+        "RTL",
+        "L’Express"
+      ],
+      "fieldworkStart": "2026-11-18",
+      "fieldworkEnd": "2026-11-19",
+      "publishedAt": "2026-11-23",
+      "population": "Échantillon de 2 088 personnes inscrites sur les listes électorales, issu d’un échantillon de 2 378 personnes représentatif de la population française âgée de 18 ans et plus.",
+      "sampleSize": 2378,
+      "method": "Enquête en ligne auprès du panel propriétaire Toluna Harris Interactive ; méthode des quotas et redressement selon le sexe, l’âge, la catégorie socioprofessionnelle, la région de résidence et le comportement électoral antérieur.",
+      "noticeUrl": "https://www.commission-des-sondages.fr/notices/files/notices/2026/novembre/10393-pres-iv-vague-10-toluna-harris-interactive-23-novembre.pdf",
+      "reportUrl": "https://tolunacorporate.com/wp-content/uploads/2026/11/Rapport-Toluna-Barometre-Presidentielle-2027-Vague-10-M6-RTL-LExpress-23-novembre-2026.pdf",
+      "id": "toluna-harris-interactive-2026-11-19-t2",
+      "margin": "Entre 2,9 et 3,0 points au 2nd tour",
+      "round": 2,
+      "hypotheses": [
+        {
+          "id": "h1",
+          "label": "Marine Le Pen et Jean-Luc Mélenchon",
+          "results": [
+            {
+              "candidateId": "melenchon",
+              "value": 35
+            },
+            {
+              "candidateId": "lepen",
+              "value": 65
+            }
+          ]
+        }
+      ]
     }
   ],
   "agenda": [
@@ -81003,6 +81251,32 @@
     }
   ],
   "campaignEvents": [
+    {
+      "id": "evt-attal-primaire-2026-11-24",
+      "date": "2026-11-24",
+      "type": "declaration",
+      "candidateIds": [
+        "attal",
+        "philippe"
+      ],
+      "text": "Dans un entretien au Parisien, presse Édouard Philippe de proposer une autre modalité de départage après son refus de participer à une primaire.",
+      "quote": "« Édouard Philippe doit proposer une autre modalité de départage. »",
+      "sourceIds": [
+        "leparisien-2026-11-24-attal-philippe-primaire"
+      ]
+    },
+    {
+      "id": "evt-generation-s-melenchon-alliance-2026-11-23",
+      "date": "2026-11-23",
+      "type": "alliance",
+      "candidateIds": [
+        "melenchon"
+      ],
+      "text": "La formation Génération·s approuve à 85 % le soutien à la candidature de Jean-Luc Mélenchon et un accord de majorité législative avec La France insoumise.",
+      "sourceIds": [
+        "generation-s-2026-11-23-melenchon"
+      ]
+    },
     {
       "id": "evt-zemmour-declaration-2026-11-10",
       "date": "2026-11-10",
@@ -82373,6 +82647,10 @@
     }
   ],
   "editorialLog": [
+    {
+      "date": "2026-11-25",
+      "text": "Mise à jour du 25 novembre 2026 : ajout de la vague 10 de Toluna Harris Interactive (terrain des 18–19 novembre, publiée le 23 novembre), avec ses trois hypothèses de premier tour et le duel Mélenchon–Le Pen de second tour, d’après le rapport et la notice n° 10393 de la Commission des sondages. Ajout de l’accord de soutien de Génération·s à Jean-Luc Mélenchon annoncé le 23 novembre et de l’appel de Gabriel Attal à Édouard Philippe à proposer une autre modalité de départage, rapporté par Le Parisien le 24 novembre. Pas de nouvelle échéance électorale officielle identifiée."
+    },
     {
       "date": "2026-11-23",
       "text": "Mise à jour du 23 novembre 2026 et intégration ciblée du programme présidentiel de Dominique de Villepin, publié le 20 novembre. Ajout de sept mesures sourcées dans les thèmes institutions, travail, retraites, numérique, fiscalité et prestations : vote à 16 ans, obligation de vote et vote blanc, sécurité sociale professionnelle, objectif zéro accident du travail mortel en 2032, retraite à trois étages, défilement infini ciblant les jeunes, taxation des contenus culturels générés par IA et revenu garanti des artistes. La source officielle est ajoutée aux mesures déjà suivies sur le déficit, la revalorisation des métiers pédagogiques et le référendum sur les retraites. Le programme complet de 258 propositions n’est pas encore intégralement transcrit."
